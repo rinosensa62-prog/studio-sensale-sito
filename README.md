@@ -12,7 +12,8 @@ Il programma:
 - pubblica solo titoli, date, categoria e link alle pagine originali dell'ente;
 - non scrive o interpreta pareri professionali;
 - non sovrascrive dati esistenti se meno di due feed possono essere letti;
-- aggiorna il file [assets/aggiornamenti-ufficiali.json](assets/aggiornamenti-ufficiali.json) soltanto quando cambiano i contenuti.
+- aggiunge le nuove segnalazioni all'archivio cumulativo [assets/aggiornamenti-ufficiali.json](assets/aggiornamenti-ufficiali.json), senza eliminare quelle storiche; l'ordine è dalla più recente alla meno recente;
+- conserva le categorie che alimentano le sette sezioni tematiche del sito e aggiorna il file soltanto quando cambiano i contenuti.
 
 ## Integrazione con Netlify
 
