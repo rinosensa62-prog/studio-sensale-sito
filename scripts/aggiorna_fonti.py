@@ -24,7 +24,7 @@ FEEDS = [
     ('MIMIT Notizie', 'https://www.mimit.gov.it/index.php/it/notizie-stampa?format=feed&type=rss', 'mimit.gov.it'),
 ]
 CATEGORIES = [
-    ('Bandi e finanziamenti', r'\b(band[oi]|finanziament|voucher|incentiv|agevolazion|fondo perduto|bonus assunzion|credito d.imposta|autoimpiego|start.up)\w*'),
+    ('Bandi e finanziamenti', r'\b(band[oi]|finanziament[oi] agevolat|finanziament[oi] a fondo perduto|voucher|incentiv|agevolazion|fondo perduto|bonus assunzion|credito d.imposta|autoimpiego|start.up)\w*'),
     ('Successioni e tributi locali', r'\b(succession|eredit|eredi|imu|tari|tributi locali|imposta di registro|donazion)\w*'),
     ('Locazioni e immobili', r'\b(locazion|affitt|catast|immobil|cedolare secca|sister)\w*'),
     ('Famiglie e CAF', r'\b(isee|assegno unico|assegno di inclusione|bonus mamm|famigli|dsu|730|pension|naspi|conged|invalidit|disabilit)\w*'),
@@ -85,6 +85,15 @@ def official_url(raw, institution_host):
 def classify(title):
     if re.search(REJECT, title, re.I):
         return None
+    # Gli interpelli molto specialistici non sono automaticamente notizie
+    # di interesse generale per famiglie, clienti CAF e piccole imprese.
+    if re.match(r'^\\s*Interpello:', title, re.I) and not re.search(
+        r'agevolazion\\w* disabil|regime forfettari|bonus mamm|\\bisee\\b|succession|\\b730\\b',
+        title, re.I
+    ):
+        return None
+    if re.search(r'fondazioni di origine bancaria', title, re.I):
+        return None
     for label, pattern in CATEGORIES:
         if re.search(pattern, title, re.I):
             return label
@@ -137,7 +146,17 @@ def build(fetch=fetch_feed, now=None, previous=None):
     if len(successes) < 2:
         raise RuntimeError('Meno di due feed verificati: mantengo i dati precedenti')
     unique = {item['id']: item for item in items}
-    ordered = sorted(unique.values(), key=lambda x: x['published_at'], reverse=True)[:16]
+    # Impedisce a un solo ente di saturare l'intera sezione.
+    candidates = sorted(unique.values(), key=lambda x: x['published_at'], reverse=True)
+    ordered, source_counts = [], {}
+    for item in candidates:
+        entity = item['source'].split(' ')[0]
+        if source_counts.get(entity, 0) >= 8:
+            continue
+        source_counts[entity] = source_counts.get(entity, 0) + 1
+        ordered.append(item)
+        if len(ordered) >= 16:
+            break
     old = previous or {}
     if ordered == old.get('items') and successes == old.get('feeds_ok') and failures == old.get('feeds_failed'):
         return None
