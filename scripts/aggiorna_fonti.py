@@ -85,6 +85,9 @@ def official_url(raw, institution_host):
 def classify(title):
     if re.search(REJECT, title, re.I):
         return None
+    # Agevolazioni per disabilita e ISEE sono temi CAF, non bandi impresa.
+    if re.search(r'agevolazion\w* disabil|acquisto auto cointestat|\bisee\b|bonus mamm|assegno unico', title, re.I):
+        return 'Famiglie e CAF'
     # Gli interpelli molto specialistici non sono automaticamente notizie
     # di interesse generale per famiglie, clienti CAF e piccole imprese.
     if re.match(r'^\s*Interpello:', title, re.I) and not re.search(
@@ -157,12 +160,29 @@ def build(fetch=fetch_feed, now=None, previous=None):
         ordered.append(item)
         if len(ordered) >= 16:
             break
+    # Archivio cumulativo delle segnalazioni, preservato tra le esecuzioni.
     old = previous or {}
-    if ordered == old.get('items') and successes == old.get('feeds_ok') and failures == old.get('feeds_failed'):
+    keep = {}
+    for entry in old.get('items', []):
+        if not isinstance(entry, dict):
+            continue
+        url = entry.get('url', '')
+        source = next((src for src in FEEDS if src[0] == entry.get('source')), None)
+        if not source or not official_url(url, source[2]) or not pub_date(entry.get('published_at', '')):
+            continue
+        if not entry.get('title') or not classify(entry['title']):
+            continue
+        fixed = dict(entry)
+        fixed['category'] = classify(entry['title'])
+        keep[hashlib.sha256(url.encode()).hexdigest()[:18]] = fixed
+    for entry in ordered:
+        keep[entry['id']] = entry
+    archive = sorted(keep.values(), key=lambda x: x['published_at'], reverse=True)[:1200]
+    if archive == old.get('items') and successes == old.get('feeds_ok') and failures == old.get('feeds_failed'):
         return None
     return {'schema_version': 1, 'updated_at': now.isoformat(timespec='seconds'),
-            'items': ordered, 'feeds_ok': successes, 'feeds_failed': failures,
-            'note': 'Selezione automatica di titoli e link istituzionali: non costituisce un parere dello Studio.'}
+            'items': archive, 'feeds_ok': successes, 'feeds_failed': failures,
+            'note': 'Archivio cumulativo di titoli e link istituzionali; non costituisce un parere dello Studio.'}
 
 if __name__ == '__main__':
     previous = json.loads(OUTPUT.read_text(encoding='utf-8')) if OUTPUT.exists() else {}
