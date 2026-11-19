@@ -1,0 +1,38 @@
+name: Aggiornamento quotidiano notizie istituzionali
+on:
+  schedule:
+    # 07:20 UTC = 08:20 in inverno e 09:20 in estate (Roma).
+    - cron: '20 7 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: studio-sensale-feed
+  cancel-in-progress: false
+jobs:
+  aggiorna:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verifica sicurezza e parser
+        run: python -m unittest discover -s tests -v
+      - name: Recupera nuovi titoli dalle fonti ufficiali
+        run: python scripts/aggiorna_fonti.py
+      - name: Salva le novita, solo se cambiate
+        shell: bash
+        run: |
+          if git diff --quiet -- assets/aggiornamenti-ufficiali.json; then
+            echo "Nessun aggiornamento da pubblicare."
+            exit 0
+          fi
+          git config user.name "Studio Sensale Notizie Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/aggiornamenti-ufficiali.json
+          git commit -m "Aggiorna notizie da fonti istituzionali"
+          git push origin HEAD:main
