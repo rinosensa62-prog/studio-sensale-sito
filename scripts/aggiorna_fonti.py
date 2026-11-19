@@ -177,7 +177,7 @@ def build(fetch=fetch_feed, now=None, previous=None):
         keep[hashlib.sha256(url.encode()).hexdigest()[:18]] = fixed
     for entry in ordered:
         keep[entry['id']] = entry
-    archive = sorted(keep.values(), key=lambda x: x['published_at'], reverse=True)[:1200]
+    archive = sorted(keep.values(), key=lambda x: x['published_at'], reverse=True)
     if archive == old.get('items') and successes == old.get('feeds_ok') and failures == old.get('feeds_failed'):
         return None
     return {'schema_version': 1, 'updated_at': now.isoformat(timespec='seconds'),
