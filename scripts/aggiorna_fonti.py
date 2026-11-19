@@ -87,8 +87,8 @@ def classify(title):
         return None
     # Gli interpelli molto specialistici non sono automaticamente notizie
     # di interesse generale per famiglie, clienti CAF e piccole imprese.
-    if re.match(r'^\\s*Interpello:', title, re.I) and not re.search(
-        r'agevolazion\\w* disabil|regime forfettari|bonus mamm|\\bisee\\b|succession|\\b730\\b',
+    if re.match(r'^\s*Interpello:', title, re.I) and not re.search(
+        r'agevolazion\w* disabil|regime forfettari|bonus mamm|\bisee\b|succession|\b730\b',
         title, re.I
     ):
         return None
