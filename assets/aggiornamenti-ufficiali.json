@@ -1,8 +1,147 @@
 {
   "schema_version": 1,
-  "updated_at": null,
-  "items": [],
-  "feeds_ok": [],
-  "feeds_failed": [],
-  "note": "Il sistema di aggiornamento quotidiano non ha ancora prodotto una selezione delle fonti istituzionali."
+  "updated_at": "2026-11-19T17:29:26+00:00",
+  "items": [
+    {
+      "id": "a516179fb0179c7ac0",
+      "title": "Interpello: Ritenute sugli interessi – finanziamento erogato da una stabile organizzazione extra–UE di banca UE. Requisiti per esenzione da ritenuta ai sensi dell'articolo articolo 26, comma",
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/10443592/Risposta+n.+222_2026/24488bc7-3d6b-5c53-2e2f-901135d5a309",
+      "source": "Agenzia delle Entrate",
+      "category": "Bandi e finanziamenti",
+      "published_at": "2026-11-18T00:00:00+00:00"
+    },
+    {
+      "id": "d1a752ed1f0a56d570",
+      "title": "Interpello: Ritenute sugli interessi relativi a finanziamenti a medio–lungo termine – applicabilità dell'esenzione a un finanziamento erogato da un REIT estero – articolo 26, comma 5–bis, de",
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/10443592/Risposta+n.+221_2026/9cb75aec-7752-dde3-0f3b-cd1cebe164a5",
+      "source": "Agenzia delle Entrate",
+      "category": "Bandi e finanziamenti",
+      "published_at": "2026-11-18T00:00:00+00:00"
+    },
+    {
+      "id": "b78f665167cbf7babc",
+      "title": "Interpello: Trattamento fiscale delle indennità corrisposte a esperti in missione all'estero – applicabilità dell'articolo 51, comma 5, del TUIR (risposta n. 219)",
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/10443592/Risposta+n.+219_2026/4f38fa37-465a-a4b2-482f-5827d569f1af",
+      "source": "Agenzia delle Entrate",
+      "category": "Dichiarazioni e Fisco",
+      "published_at": "2026-11-18T00:00:00+00:00"
+    },
+    {
+      "id": "2f371502457bbae69e",
+      "title": "Interpello: Imposta sostitutiva dell'IRPEF, prevista per le persone fisiche titolari di redditi da pensione di fonte estera: adesione al piano pensionistico Self–Invested Personal Pension (S",
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/10443592/Risposta+n.+218_2026/3dd9e126-690b-7d4f-72da-ed7d2cf997fd",
+      "source": "Agenzia delle Entrate",
+      "category": "Famiglie e CAF",
+      "published_at": "2026-11-18T00:00:00+00:00"
+    },
+    {
+      "id": "cd539f678b48ba92b3",
+      "title": "Definizione della percentuale del credito d’imposta spettante per l’anno 2026 alle Fondazioni di origine bancaria, di cui all’articolo 62, comma 6, del decreto legislativo 3 luglio 2017, n. ",
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/10471313/Provvedimento+credito+FOB+FUN+2026_17.11.26/59e27ee0-9f74-a8e2-33dc-a9614192334d",
+      "source": "Agenzia delle Entrate",
+      "category": "Bandi e finanziamenti",
+      "published_at": "2026-11-17T00:00:00+00:00"
+    },
+    {
+      "id": "a3289e07174a9519b7",
+      "title": "Interpello: Riorganizzazione societaria e valutazione antiabuso – regime ''a realizzo controllato'' – apporto di partecipazioni ''qualificate'' a patrimonio netto in caso di pluralità di soc",
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/10443592/Risposta+n.+217_2026/eaf9476a-f8f6-30a4-9520-757889ecce82",
+      "source": "Agenzia delle Entrate",
+      "category": "Aprire e gestire un’attività",
+      "published_at": "2026-11-16T00:00:00+00:00"
+    },
+    {
+      "id": "1c5c00e770f80ac56c",
+      "title": "Interpello: Scissioni parziali tra società infragruppo – Reciprocità delle operazioni – Valutazione antiabuso – Articolo 10–bis della legge 27 luglio 2000 n. 212 ( risposta n. 216)",
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/10443592/Risposta+n.+216_2026/4bf2ba88-399a-aa0c-4601-1d427d1ba3f5",
+      "source": "Agenzia delle Entrate",
+      "category": "Aprire e gestire un’attività",
+      "published_at": "2026-11-16T00:00:00+00:00"
+    },
+    {
+      "id": "23cd1ba886c1b18668",
+      "title": "Istituzione del codice tributo per il versamento, mediante modello F24, dell’imposta sostitutiva sui differenziali positivi derivanti dalla cessione o dalla compensazione di crediti d’impost",
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/10440314/RIS_n_45_del_13_11_2026/8daa63c1-c668-888c-4764-bd2f82018964",
+      "source": "Agenzia delle Entrate",
+      "category": "Dichiarazioni e Fisco",
+      "published_at": "2026-11-13T00:00:00+00:00"
+    },
+    {
+      "id": "a7e4ccb469843d6c0e",
+      "title": "Accertamento delle medie dei cambi delle valute estere relative al mese di ottobre 2026 (provvedimento)",
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/10440017/Provvedimento+cambi+valute+estere+ottobre+2026++del+13+novembre+2026/d5a71aa1-4566-3d37-f9e0-ebc14e9e84b1",
+      "source": "Agenzia delle Entrate",
+      "category": "Dichiarazioni e Fisco",
+      "published_at": "2026-11-13T00:00:00+00:00"
+    },
+    {
+      "id": "d2354e607bdfd9db94",
+      "title": "Interpello: Operazione di merger leveraged buy–out (MLBO) con acquisizione della totalità di una partecipazione nella società target e successiva fusione inversa – Disapplicazione delle disp",
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/10443592/Risposta+n.+215_2026/7e0708a7-3367-8c76-dcd3-1e0a691b1d38",
+      "source": "Agenzia delle Entrate",
+      "category": "Aprire e gestire un’attività",
+      "published_at": "2026-11-13T00:00:00+00:00"
+    },
+    {
+      "id": "0ce13e02d728c1d725",
+      "title": "Interpello: Trattamento ai fini IVA applicabile alla tariffa per il rilascio dell'attestazione di inutilizzabilità dei veicoli fuori uso (risposta n. 212)",
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/10443592/Risposta+n.+212_2026/a2e53b72-ca48-904c-8d02-4724a6b59ff4",
+      "source": "Agenzia delle Entrate",
+      "category": "Successioni e tributi locali",
+      "published_at": "2026-11-11T00:00:00+00:00"
+    },
+    {
+      "id": "2b4a803152f1788750",
+      "title": "Interpello: Agevolazioni disabili. Acquisto auto cointestata (risposta n. 211)",
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/10443592/Risposta+n.+211_2026/2f9937d4-fbce-5ed5-6f20-59703ec435db",
+      "source": "Agenzia delle Entrate",
+      "category": "Bandi e finanziamenti",
+      "published_at": "2026-11-11T00:00:00+00:00"
+    },
+    {
+      "id": "7f550dbc640e36b519",
+      "title": "Interpello: Fertilizzanti – pollina di gallina – aliquota IVA applicabile (risposta n. 210)",
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/10443592/Risposta+n.+210_2026/627c9941-64d6-5914-b533-b18d491549dd",
+      "source": "Agenzia delle Entrate",
+      "category": "Dichiarazioni e Fisco",
+      "published_at": "2026-11-11T00:00:00+00:00"
+    },
+    {
+      "id": "683635b1b917eebf78",
+      "title": "Interpello: Integratori alimentari – aliquota IVA applicabile (risposta n. 209)",
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/10443592/Risposta+n.+209_2026/db6bc486-6044-8349-d6ba-49b451e2a0f2",
+      "source": "Agenzia delle Entrate",
+      "category": "Dichiarazioni e Fisco",
+      "published_at": "2026-11-11T00:00:00+00:00"
+    },
+    {
+      "id": "75f40fdda3f6735bc0",
+      "title": "Causali contributo per il versamento, tramite modello F24, dei contributi all’INPS da destinare ad Enti Bilaterali – Ridenominazione causale contributo SALU (risoluzione n. 44)",
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/10440314/RIS_n_44_del_10_11_2026/258fc4e7-c13d-0dc3-d162-b7abae497d4c",
+      "source": "Agenzia delle Entrate",
+      "category": "Dichiarazioni e Fisco",
+      "published_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "id": "1181a86e670b00fb02",
+      "title": "Ravvedimento di cui all’articolo 29 del decreto legislativo 7 agosto 2026, n. 148 – Versamento, mediante modello F24, dell’imposta sostitutiva – Soggetti che rinnovano l’adesione al concorda",
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/ris_n_43_del_10_11_2026",
+      "source": "Agenzia delle Entrate",
+      "category": "Dichiarazioni e Fisco",
+      "published_at": "2026-11-10T00:00:00+00:00"
+    }
+  ],
+  "feeds_ok": [
+    "Agenzia delle Entrate",
+    "INPS Notizie",
+    "INPS Circolari",
+    "INPS Messaggi",
+    "INAIL Notizie",
+    "INAIL Avvisi",
+    "Ministero del Lavoro"
+  ],
+  "feeds_failed": [
+    "MIMIT Notizie"
+  ],
+  "note": "Selezione automatica di titoli e link istituzionali: non costituisce un parere dello Studio."
 }
