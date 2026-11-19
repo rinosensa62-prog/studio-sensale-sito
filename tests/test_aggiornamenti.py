@@ -17,7 +17,7 @@ class ParserTests(unittest.TestCase):
     def test_legitimate_news(self):
         a = m.parse(rss(), SOURCE, NOW)
         self.assertEqual(len(a), 1)
-        self.assertEqual(a[0]['category'], 'Bandi e finanziamenti')
+        self.assertEqual(a[0]['category'], 'Famiglie e CAF')
     def test_reject_external_url(self):
         self.assertEqual(m.parse(rss(link='https://example.org/bonus'), SOURCE, NOW), [])
         self.assertIsNone(m.official_url('https://inps.it.example.com/abc', 'inps.it'))
