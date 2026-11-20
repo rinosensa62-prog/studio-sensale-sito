@@ -114,7 +114,7 @@ def official_url(raw, institution_host):
 def classify(title):
     if excluded_news(title) or re.search(REJECT, title, re.I):
         return None
-    if re.match(r'^\\s*(circolare|messaggio) numero \\d+ del \\d{2}[-/]\\d{2}[-/]\\d{4}', title, re.I):
+    if re.match(r'^\s*(circolare|messaggio) numero \d+ del \d{2}[-/]\d{2}[-/]\d{4}', title, re.I):
         return None
     # Agevolazioni per disabilita e ISEE sono temi CAF, non bandi impresa.
     if re.search(r'agevolazion\w* disabil|acquisto auto cointestat|\bisee\b|bonus mamm|assegno unico', title, re.I):
