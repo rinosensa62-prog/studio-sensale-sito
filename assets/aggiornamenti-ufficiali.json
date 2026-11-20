@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-20T22:33:00+00:00",
+  "updated_at": "2026-11-20T22:43:27+00:00",
   "items": [
     {
       "id": "fe3c94590473e79312",
@@ -16,14 +16,6 @@
       "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.11.previdenza-si-rafforza-la-cooperazione-tra-italia-e-romania.html",
       "source": "INPS Notizie",
       "category": "Lavoro e paghe",
-      "published_at": "2026-11-20T00:00:00+00:00"
-    },
-    {
-      "id": "e534f084703112d694",
-      "title": "Circolare numero 114 del 20-11-2026",
-      "url": "https://www.inps.it/it/it/inps-comunica/atti/circolari-messaggi-e-normativa/dettaglio.circolari-e-messaggi.2026.11.circolare-numero-114-del-20-11-2026_16423.html",
-      "source": "INPS Circolari",
-      "category": "Famiglie e CAF",
       "published_at": "2026-11-20T00:00:00+00:00"
     },
     {
@@ -51,22 +43,6 @@
       "published_at": "2026-11-19T00:00:00+00:00"
     },
     {
-      "id": "e794e7bd7c5c8fe8dc",
-      "title": "Dr Piemonte: selezione comparativa per incarico a tempo determinato n. 38 ore branca medicina legale - sede Novara",
-      "url": "https://www.inail.it/portale/it/inail-comunica/scadenze/scadenza.2026.11.scad-sel-comp-novara-med-legale-38-h.html",
-      "source": "INAIL Avvisi",
-      "category": "Dichiarazioni e Fisco",
-      "published_at": "2026-11-19T00:00:00+00:00"
-    },
-    {
-      "id": "2b446a9fb145c61284",
-      "title": "Dr Piemonte: selezione comparativa per incarico a tempo indeterminato n. 20 ore branca ortopedia - sede Novara",
-      "url": "https://www.inail.it/portale/it/inail-comunica/scadenze/scadenza.2026.11.scad-sel-comp-ortopedia-novara-2026.html",
-      "source": "INAIL Avvisi",
-      "category": "Dichiarazioni e Fisco",
-      "published_at": "2026-11-19T00:00:00+00:00"
-    },
-    {
       "id": "ab926768dda08403f8",
       "title": "Piano pensionistico britannico Sipp, sì all'imposta sostitutiva del 7%",
       "url": "https://www.fiscooggi.it/portale/-/piano-pensionistico-britannico-sipp-s%C3%AC-all-imposta-sostitutiva-del-7-",
@@ -79,7 +55,7 @@
       "title": "Credito di imposta autotrasportatori, in apertura la piattaforma di accesso",
       "url": "https://www.fiscooggi.it/portale/-/credito-di-imposta-autotrasportatori-in-apertura-la-piattaforma-di-accesso",
       "source": "FiscoOggi Attualità",
-      "category": "Dichiarazioni e Fisco",
+      "category": "Bandi e finanziamenti",
       "published_at": "2026-11-18T17:24:00+00:00"
     },
     {
@@ -99,36 +75,52 @@
       "published_at": "2026-11-18T00:00:00+00:00"
     },
     {
-      "id": "303ff44d89dbfbf443",
-      "title": "Circolare numero 113 del 18-11-2026",
-      "url": "https://www.inps.it/it/it/inps-comunica/atti/circolari-messaggi-e-normativa/dettaglio.circolari-e-messaggi.2026.11.circolare-numero-113-del-18-11-2026_16420.html",
-      "source": "INPS Circolari",
+      "id": "278f1489a6d07f3e90",
+      "title": "Tax credit fondazioni bancarie: fissata la percentuale 2026",
+      "url": "https://www.fiscooggi.it/portale/-/tax-credit-fondazioni-bancarie-fissata-la-percentuale-2026",
+      "source": "FiscoOggi Normativa",
+      "category": "Dichiarazioni e Fisco",
+      "published_at": "2026-11-17T19:24:00+00:00"
+    },
+    {
+      "id": "e242f8f1f6e54193f1",
+      "title": "Commissione sull’Anagrafe tributaria, conclusa l’indagine sul Fisco digitale",
+      "url": "https://www.fiscooggi.it/portale/-/commissione-sull-anagrafe-tributaria-conclusa-l-indagine-sul-fisco-digitale",
+      "source": "FiscoOggi Attualità",
+      "category": "Dichiarazioni e Fisco",
+      "published_at": "2026-11-17T17:06:00+00:00"
+    },
+    {
+      "id": "4ffbf58ac068c76048",
+      "title": "Doppia scissione societaria infragruppo, nessun abuso se c’è riorganizzazione",
+      "url": "https://www.fiscooggi.it/portale/-/doppia-scissione-societaria-infragruppo-nessun-abuso-se-c-%C3%A8-riorganizzazione",
+      "source": "FiscoOggi Normativa",
+      "category": "Aprire e gestire un’attività",
+      "published_at": "2026-11-16T17:57:00+00:00"
+    },
+    {
+      "id": "74796ddada596c6cb5",
+      "title": "Consultazioni catastali e ipotecarie: pubblicata una nuova brochure",
+      "url": "https://www.fiscooggi.it/portale/-/consultazioni-catastali-e-ipotecarie-pubblicata-una-nuova-brochure",
+      "source": "FiscoOggi Attualità",
+      "category": "Locazioni e immobili",
+      "published_at": "2026-11-16T15:07:00+00:00"
+    },
+    {
+      "id": "86eec524fdbe5f9f1f",
+      "title": "UNIEMENS: nuove istruzioni per i congedi di maternità e paternità",
+      "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.11.uniemens-nuove-istruzioni-per-i-congedi-di-maternit-e-paternit.html",
+      "source": "INPS Notizie",
       "category": "Famiglie e CAF",
-      "published_at": "2026-11-18T00:00:00+00:00"
+      "published_at": "2026-11-16T00:00:00+00:00"
     },
     {
-      "id": "b5878e2025dd6e29db",
-      "title": "Messaggio numero 3768 del 18-11-2026",
-      "url": "https://www.inps.it/it/it/inps-comunica/atti/circolari-messaggi-e-normativa/dettaglio.circolari-e-messaggi.2026.11.messaggio-numero-3768-del-18-11-2026_16419.html",
-      "source": "INPS Messaggi",
-      "category": "Lavoro e paghe",
-      "published_at": "2026-11-18T00:00:00+00:00"
-    },
-    {
-      "id": "1a3414cf64350b6c8e",
-      "title": "Dr Liguria: selezione comparativa incarico a tempo indeterminato n. 20 ore branca ortopedia - sede di Savona",
-      "url": "https://www.inail.it/portale/it/inail-comunica/scadenze/scadenza.2026.11.scad-sel-comp-ortopedia-indet-20-ore-savona.html",
-      "source": "INAIL Avvisi",
-      "category": "Dichiarazioni e Fisco",
-      "published_at": "2026-11-18T00:00:00+00:00"
-    },
-    {
-      "id": "fa7521216f41f39cfc",
-      "title": "Dr Liguria: selezione comparativa incarico a tempo indeterminato n. 12 ore branca ortopedia - sede Imperia",
-      "url": "https://www.inail.it/portale/it/inail-comunica/scadenze/scadenza.2026.11.scad-sel-comp-imperia-ortopedia-12-ore-indet.html",
-      "source": "INAIL Avvisi",
-      "category": "Dichiarazioni e Fisco",
-      "published_at": "2026-11-18T00:00:00+00:00"
+      "id": "7f08067dd6ba8b40eb",
+      "title": "Piano sportivo individualizzato, un progetto su misura per i percorsi di inclusione e benessere",
+      "url": "https://www.inail.it/portale/it/inail-comunica/news/notizia.2026.11.piano-sportivo-individualizzato--un-progetto-su-misura-nei-percorsi-di-inclusione-e-benessere.html",
+      "source": "INAIL Notizie",
+      "category": "Famiglie e CAF",
+      "published_at": "2026-11-16T00:00:00+00:00"
     },
     {
       "id": "23cd1ba886c1b18668",
