@@ -15,9 +15,6 @@ from xml.etree import ElementTree as ET
 OUTPUT = Path(__file__).resolve().parent.parent / 'assets' / 'aggiornamenti-ufficiali.json'
 FEEDS = [
     ('Agenzia delle Entrate', 'https://www.agenziaentrate.gov.it/portale/c/portal/rss/entrate?idrss=0753fcb1-1a42-4f8c-f40d-02793c6aefb4', 'agenziaentrate.gov.it'),
-    ('Agenzia Entrate - Notizie', 'https://www.agenziaentrate.gov.it/portale/c/portal/rss/entrate?idrss=79b071d0-a537-4a3d-86cc-7a7d5a36f2a9', 'agenziaentrate.gov.it'),
-    ('FiscoOggi - Attualità', 'https://www.fiscooggi.it/feed/rubrica/attualit', 'fiscooggi.it'),
-    ('FiscoOggi - Normativa', 'https://www.fiscooggi.it/feed/rubrica/normativa-e-prassi', 'fiscooggi.it'),
     ('INPS Notizie', 'https://www.inps.it/it/it.rss.news.xml', 'inps.it'),
     ('INPS Circolari', 'https://www.inps.it/it/it.rss.circolari.xml', 'inps.it'),
     ('INPS Messaggi', 'https://www.inps.it/it/it.rss.messaggi.xml', 'inps.it'),
