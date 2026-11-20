@@ -15,6 +15,9 @@ from xml.etree import ElementTree as ET
 OUTPUT = Path(__file__).resolve().parent.parent / 'assets' / 'aggiornamenti-ufficiali.json'
 FEEDS = [
     ('Agenzia delle Entrate', 'https://www.agenziaentrate.gov.it/portale/c/portal/rss/entrate?idrss=0753fcb1-1a42-4f8c-f40d-02793c6aefb4', 'agenziaentrate.gov.it'),
+    # FiscoOggi e' la rivista telematica dell'Agenzia delle Entrate.
+    ('FiscoOggi Attualità', 'https://www.fiscooggi.it/feed/rubrica/attualit', 'fiscooggi.it'),
+    ('FiscoOggi Normativa', 'https://www.fiscooggi.it/feed/rubrica/normativa-e-prassi', 'fiscooggi.it'),
     ('INPS Notizie', 'https://www.inps.it/it/it.rss.news.xml', 'inps.it'),
     ('INPS Circolari', 'https://www.inps.it/it/it.rss.circolari.xml', 'inps.it'),
     ('INPS Messaggi', 'https://www.inps.it/it/it.rss.messaggi.xml', 'inps.it'),
@@ -69,15 +72,27 @@ def link_of(node):
     return ''
 
 def pub_date(raw):
-    if not raw:
+    if not raw or not isinstance(raw, str):
         return None
-    try:
-        dt = parsedate_to_datetime(raw)
-    except (ValueError, TypeError, IndexError):
+    raw = raw.strip()
+    dt = None
+    # RSS INPS fornisce spesso la data italiana GG/MM/AAAA (senza orario).
+    # Il parser email standard e fromisoformat non riconoscono quel formato.
+    for fmt in ('%d/%m/%Y', '%d/%m/%Y %H:%M:%S', '%d/%m/%Y %H:%M',
+                '%d-%m-%Y'):
         try:
-            dt = datetime.fromisoformat(raw.replace('Z', '+00:00'))
-        except (ValueError, TypeError):
-            return None
+            dt = datetime.strptime(raw, fmt).replace(tzinfo=timezone.utc)
+            break
+        except ValueError:
+            continue
+    if dt is None:
+        try:
+            dt = parsedate_to_datetime(raw)
+        except (ValueError, TypeError, IndexError):
+            try:
+                dt = datetime.fromisoformat(raw.replace('Z', '+00:00'))
+            except (ValueError, TypeError):
+                return None
     if dt.tzinfo is None:
         dt = dt.replace(tzinfo=timezone.utc)
     return dt.astimezone(timezone.utc)
@@ -127,7 +142,11 @@ def parse(xml_bytes, source, now):
         title = re.sub(r'\s+', ' ', title).strip()[:190]
         date = pub_date(child_text(node, ('pubdate', 'published', 'updated', 'date', 'created')))
         url = official_url(link_of(node), source[2])
-        group = classify(title)
+        # Se il titolo e' generico, usa la descrizione RSS solo per la categoria.
+        # La scheda mostra comunque il titolo originale e un link istituzionale.
+        description = html.unescape(re.sub('<[^>]*>', ' ', child_text(node, ('description', 'summary'))))
+        description = re.sub(r'\s+', ' ', description).strip()[:650]
+        group = classify(title) or (classify(title + ' ' + description) if description else None)
         if not (title and url and date and group) or excluded_news(title, url):
             continue
         if not timedelta(hours=-6) <= now - date <= timedelta(days=14):
