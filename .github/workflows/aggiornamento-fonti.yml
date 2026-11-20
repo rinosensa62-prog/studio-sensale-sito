@@ -1,5 +1,10 @@
 name: Aggiornamento quotidiano notizie istituzionali
 on:
+  push:
+    paths:
+      - 'scripts/aggiorna_fonti.py'
+      - 'tests/test_aggiornamenti.py'
+      - '.github/workflows/aggiornamento-fonti.yml'
   schedule:
     # 07:20 UTC = 08:20 in inverno e 09:20 in estate (Roma).
     - cron: '20 7 * * *'
