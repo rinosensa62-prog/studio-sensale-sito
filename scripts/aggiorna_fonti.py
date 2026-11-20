@@ -151,7 +151,8 @@ def parse(xml_bytes, source, now):
         # Non accettare comunicati di selezione di personale, anche quando
         # il sommario contiene termini fiscali o previdenziali.
         if re.search(REJECT, title, re.I) or re.match(
-            r'^\\s*(circolare|messaggio) numero \\d+ del \\d{2}[-/]\\d{2}[-/]\\d{4}\\s*
+            r'^\s*(circolare|messaggio) numero \d+ del \d{2}[-/]\d{2}[-/]\d{4}', title, re.I):
+            continue
         group = classify(title) or (classify(title + ' ' + description) if description else None)
         if not (title and url and date and group) or excluded_news(title, url):
             continue
