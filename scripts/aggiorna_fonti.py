@@ -15,6 +15,9 @@ from xml.etree import ElementTree as ET
 OUTPUT = Path(__file__).resolve().parent.parent / 'assets' / 'aggiornamenti-ufficiali.json'
 FEEDS = [
     ('Agenzia delle Entrate', 'https://www.agenziaentrate.gov.it/portale/c/portal/rss/entrate?idrss=0753fcb1-1a42-4f8c-f40d-02793c6aefb4', 'agenziaentrate.gov.it'),
+    ('Agenzia Entrate - Notizie', 'https://www.agenziaentrate.gov.it/portale/c/portal/rss/entrate?idrss=79b071d0-a537-4a3d-86cc-7a7d5a36f2a9', 'agenziaentrate.gov.it'),
+    ('FiscoOggi - Attualità', 'https://www.fiscooggi.it/feed/rubrica/attualit', 'fiscooggi.it'),
+    ('FiscoOggi - Normativa', 'https://www.fiscooggi.it/feed/rubrica/normativa-e-prassi', 'fiscooggi.it'),
     ('INPS Notizie', 'https://www.inps.it/it/it.rss.news.xml', 'inps.it'),
     ('INPS Circolari', 'https://www.inps.it/it/it.rss.circolari.xml', 'inps.it'),
     ('INPS Messaggi', 'https://www.inps.it/it/it.rss.messaggi.xml', 'inps.it'),
@@ -33,6 +36,20 @@ CATEGORIES = [
     ('Aprire e gestire un’attività', r'\b(partita iva|professionist|impres|societ|attivit[aà] economic|commerc|costituzion|ateco|artigian)\w*')
 ]
 REJECT = r'\b(concors[oi]|selezione del personale|visita istituzionale|conferenza stampa)\b'
+# Esclusione editoriale esplicita dello Studio (20/11/2026): notizia SEND/recupero indebiti INPS.
+EXCLUDED_URL_PARTS = ('piattaforma-send-notifiche-degli-indebiti', 'messaggio-numero-3801-del-19-11-2026')
+
+def excluded_news(title, url=''):
+    title = (title or '').lower()
+    url = (url or '').lower()
+    return (any(fragment in url for fragment in EXCLUDED_URL_PARTS) or
+            ('indebit' in title and any(word in title for word in ('send', 'notific', 'gennaio 2027'))))
+
+def headline_key(title):
+    # Normalizzazione di punteggiatura/spazi per deduplicare notizie identiche.
+    import unicodedata
+    folded = unicodedata.normalize('NFKD', title).encode('ascii', 'ignore').decode('ascii')
+    return re.sub(r'[^a-z0-9]+', ' ', folded.lower()).strip()
 
 def simple(tag):
     return tag.rsplit('}', 1)[-1].split(':')[-1].lower()
@@ -83,7 +100,7 @@ def official_url(raw, institution_host):
         return None
 
 def classify(title):
-    if re.search(REJECT, title, re.I):
+    if excluded_news(title) or re.search(REJECT, title, re.I):
         return None
     # Agevolazioni per disabilita e ISEE sono temi CAF, non bandi impresa.
     if re.search(r'agevolazion\w* disabil|acquisto auto cointestat|\bisee\b|bonus mamm|assegno unico', title, re.I):
@@ -114,7 +131,7 @@ def parse(xml_bytes, source, now):
         date = pub_date(child_text(node, ('pubdate', 'published', 'updated', 'date', 'created')))
         url = official_url(link_of(node), source[2])
         group = classify(title)
-        if not (title and url and date and group):
+        if not (title and url and date and group) or excluded_news(title, url):
             continue
         if not timedelta(hours=-6) <= now - date <= timedelta(days=14):
             continue
@@ -151,12 +168,16 @@ def build(fetch=fetch_feed, now=None, previous=None):
     unique = {item['id']: item for item in items}
     # Impedisce a un solo ente di saturare l'intera sezione.
     candidates = sorted(unique.values(), key=lambda x: x['published_at'], reverse=True)
-    ordered, source_counts = [], {}
+    ordered, source_counts, seen_titles = [], {}, set()
     for item in candidates:
+        title_key = headline_key(item['title'])
+        if title_key in seen_titles:
+            continue
         entity = item['source'].split(' ')[0]
         if source_counts.get(entity, 0) >= 8:
             continue
         source_counts[entity] = source_counts.get(entity, 0) + 1
+        seen_titles.add(title_key)
         ordered.append(item)
         if len(ordered) >= 16:
             break
@@ -170,14 +191,20 @@ def build(fetch=fetch_feed, now=None, previous=None):
         source = next((src for src in FEEDS if src[0] == entry.get('source')), None)
         if not source or not official_url(url, source[2]) or not pub_date(entry.get('published_at', '')):
             continue
-        if not entry.get('title') or not classify(entry['title']):
+        if not entry.get('title') or not classify(entry['title']) or excluded_news(entry['title'], url):
             continue
         fixed = dict(entry)
         fixed['category'] = classify(entry['title'])
         keep[hashlib.sha256(url.encode()).hexdigest()[:18]] = fixed
     for entry in ordered:
         keep[entry['id']] = entry
-    archive = sorted(keep.values(), key=lambda x: x['published_at'], reverse=True)
+    archive = []
+    archived_titles = set()
+    for entry in sorted(keep.values(), key=lambda x: x['published_at'], reverse=True):
+        key = headline_key(entry['title'])
+        if key not in archived_titles:
+            archive.append(entry)
+            archived_titles.add(key)
     if archive == old.get('items') and successes == old.get('feeds_ok') and failures == old.get('feeds_failed'):
         return None
     return {'schema_version': 1, 'updated_at': now.isoformat(timespec='seconds'),
