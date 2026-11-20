@@ -27,7 +27,7 @@ FEEDS = [
     ('MIMIT Notizie', 'https://www.mimit.gov.it/index.php/it/notizie-stampa?format=feed&type=rss', 'mimit.gov.it'),
 ]
 CATEGORIES = [
-    ('Bandi e finanziamenti', r'\b(band[oi]|finanziament[oi] agevolat|finanziament[oi] a fondo perduto|voucher|incentiv|agevolazion|fondo perduto|bonus assunzion|credito (?:d[’']|di )imposta|autoimpiego|start.up)\w*'),
+    ('Bandi e finanziamenti', r'\b(band[oi]|finanziament[oi] agevolat|finanziament[oi] a fondo perduto|voucher|incentiv|agevolazion|fondo perduto|bonus assunzion|credito (?:d.imposta|di imposta)|autoimpiego|start.up)\w*'),
     ('Successioni e tributi locali', r'\b(succession|eredit|eredi|imu|tari|tributi locali|imposta di registro|donazion)\w*'),
     ('Locazioni e immobili', r'\b(locazion|affitt|catast|immobil|cedolare secca|sister)\w*'),
     ('Famiglie e CAF', r'\b(isee|assegno unico|assegno di inclusione|bonus mamm|famigli|dsu|730|pension|naspi|conged|invalidit|disabilit)\w*'),
