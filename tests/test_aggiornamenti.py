@@ -31,6 +31,16 @@ class ParserTests(unittest.TestCase):
     def test_atom_feed(self):
         doc = b'<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>Partita IVA e obblighi fiscali</title><link rel="alternate" href="https://www.inps.it/info/partita-iva"/><updated>2026-11-18T12:00:00Z</updated></entry></feed>'
         self.assertEqual(len(m.parse(doc, SOURCE, NOW)), 1)
+    def test_inps_italian_date(self):
+        self.assertEqual(m.pub_date('20/11/2026').date().isoformat(), '2026-11-20')
+        sample = rss(title='Bonus mamme: istruzioni INPS', date='18/11/2026')
+        self.assertEqual(len(m.parse(sample, SOURCE, NOW)), 1)
+    def test_fiscooggi_rss(self):
+        source = ('FiscoOggi Attualità', 'https://www.fiscooggi.it/feed/rubrica/attualit', 'fiscooggi.it')
+        sample = rss(title='Credito imposta ZES: comunicazioni integrative', link='https://www.fiscooggi.it/portale/-/credito-imposta-zes', date='Wed, 18 Nov 2026 13:00:00 +0000')
+        got = m.parse(sample, source, NOW)
+        self.assertEqual(len(got), 1)
+        self.assertEqual(got[0]['source'], 'FiscoOggi Attualità')
     def test_excluded_send_indebiti(self):
         self.assertIsNone(m.classify('INPS: notifiche SEND degli indebiti da gennaio 2027'))
         self.assertEqual(m.parse(rss(title='Notifiche SEND per gli indebiti da gennaio 2027'), SOURCE, NOW), [])
