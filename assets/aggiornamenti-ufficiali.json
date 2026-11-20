@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-20T22:32:03+00:00",
+  "updated_at": "2026-11-20T22:33:00+00:00",
   "items": [
     {
       "id": "fe3c94590473e79312",
@@ -91,6 +91,14 @@
       "published_at": "2026-11-18T00:00:00+00:00"
     },
     {
+      "id": "54ed3f2e02d0578b50",
+      "title": "Tutela dei lavoratori, firmato a Torino un nuovo protocollo d’intesa",
+      "url": "https://www.inail.it/portale/it/inail-comunica/news/notizia.2026.11.tutela-dei-lavoratori--firmato-a-torino-un-nuovo-protocollo-d-intesa.html",
+      "source": "INAIL Notizie",
+      "category": "Lavoro e paghe",
+      "published_at": "2026-11-18T00:00:00+00:00"
+    },
+    {
       "id": "303ff44d89dbfbf443",
       "title": "Circolare numero 113 del 18-11-2026",
       "url": "https://www.inps.it/it/it/inps-comunica/atti/circolari-messaggi-e-normativa/dettaglio.circolari-e-messaggi.2026.11.circolare-numero-113-del-18-11-2026_16420.html",
@@ -103,14 +111,6 @@
       "title": "Messaggio numero 3768 del 18-11-2026",
       "url": "https://www.inps.it/it/it/inps-comunica/atti/circolari-messaggi-e-normativa/dettaglio.circolari-e-messaggi.2026.11.messaggio-numero-3768-del-18-11-2026_16419.html",
       "source": "INPS Messaggi",
-      "category": "Lavoro e paghe",
-      "published_at": "2026-11-18T00:00:00+00:00"
-    },
-    {
-      "id": "54ed3f2e02d0578b50",
-      "title": "Tutela dei lavoratori, firmato a Torino un nuovo protocollo d’intesa",
-      "url": "https://www.inail.it/portale/it/inail-comunica/news/notizia.2026.11.tutela-dei-lavoratori--firmato-a-torino-un-nuovo-protocollo-d-intesa.html",
-      "source": "INAIL Notizie",
       "category": "Lavoro e paghe",
       "published_at": "2026-11-18T00:00:00+00:00"
     },
