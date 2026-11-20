@@ -31,6 +31,12 @@ class ParserTests(unittest.TestCase):
     def test_atom_feed(self):
         doc = b'<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>Partita IVA e obblighi fiscali</title><link rel="alternate" href="https://www.inps.it/info/partita-iva"/><updated>2026-11-18T12:00:00Z</updated></entry></feed>'
         self.assertEqual(len(m.parse(doc, SOURCE, NOW)), 1)
+    def test_excluded_send_indebiti(self):
+        self.assertIsNone(m.classify('INPS: notifiche SEND degli indebiti da gennaio 2027'))
+        self.assertEqual(m.parse(rss(title='Notifiche SEND per gli indebiti da gennaio 2027'), SOURCE, NOW), [])
+    def test_deduplicate_same_title(self):
+        a = m.build(fetch=lambda _: rss(), now=NOW)
+        self.assertEqual(len(a['items']), 1)
     def test_stop_on_unavailable_sources(self):
         def fail(_):
             raise OSError('offline')
