@@ -149,7 +149,232 @@ def parse(xml_bytes, source, now):
         description = re.sub(r'\s+', ' ', description).strip()[:650]
         # Non accettare comunicati di selezione di personale, anche quando
         # il sommario contiene termini fiscali o previdenziali.
-        if re.search(REJECT, title, re.I):
+        if re.search(REJECT, title, re.I) or re.match(
+            r'^\\s*(circolare|messaggio) numero \\d+ del \\d{2}[-/]\\d{2}[-/]\\d{4}\\s*
+        group = classify(title) or (classify(title + ' ' + description) if description else None)
+        if not (title and url and date and group) or excluded_news(title, url):
+            continue
+        if not timedelta(hours=-6) <= now - date <= timedelta(days=14):
+            continue
+        out.append({
+            'id': hashlib.sha256(url.encode()).hexdigest()[:18],
+            'title': title, 'url': url, 'source': source[0],
+            'category': group, 'published_at': date.isoformat(timespec='seconds'),
+        })
+    return out
+
+def fetch_feed(url):
+    req = Request(url, headers={'User-Agent': 'Mozilla/5.0 (compatible; StudioSensaleFeed/1.0; +https://studiosensale.it)',
+                                'Accept': 'application/rss+xml,application/atom+xml,application/xml,text/xml;q=0.9,*/*;q=0.3'})
+    with urlopen(req, timeout=20) as resp:
+        data = resp.read(3_000_001)
+    if len(data) > 3_000_000:
+        raise ValueError('Dimensione feed eccessiva')
+    return data
+
+def build(fetch=fetch_feed, now=None, previous=None):
+    now = now or datetime.now(timezone.utc)
+    successes, failures, items = [], [], []
+    for source in FEEDS:
+        try:
+            found = parse(fetch(source[1]), source, now)
+            successes.append(source[0])
+            items.extend(found)
+            print(f"{source[0]}: {len(found)} notizie pertinenti", file=sys.stderr)
+        except Exception as exc:
+            failures.append(source[0])
+            print(f"Feed non disponibile: {source[0]} ({type(exc).__name__}: {exc})", file=sys.stderr)
+    if len(successes) < 2:
+        raise RuntimeError('Meno di due feed verificati: mantengo i dati precedenti')
+    unique = {item['id']: item for item in items}
+    # Impedisce a un solo ente di saturare l'intera sezione.
+    candidates = sorted(unique.values(), key=lambda x: x['published_at'], reverse=True)
+    ordered, source_counts, seen_titles = [], {}, set()
+    for item in candidates:
+        title_key = headline_key(item['title'])
+        if title_key in seen_titles:
+            continue
+        entity = item['source'].split(' ')[0]
+        if source_counts.get(entity, 0) >= 8:
+            continue
+        source_counts[entity] = source_counts.get(entity, 0) + 1
+        seen_titles.add(title_key)
+        ordered.append(item)
+        if len(ordered) >= 16:
+            break
+    # Archivio cumulativo delle segnalazioni, preservato tra le esecuzioni.
+    old = previous or {}
+    keep = {}
+    for entry in old.get('items', []):
+        if not isinstance(entry, dict):
+            continue
+        url = entry.get('url', '')
+        source = next((src for src in FEEDS if src[0] == entry.get('source')), None)
+        if not source or not official_url(url, source[2]) or not pub_date(entry.get('published_at', '')):
+            continue
+        if not entry.get('title') or re.search(REJECT, entry['title'], re.I) or not classify(entry['title']) or excluded_news(entry['title'], url):
+            continue
+        fixed = dict(entry)
+        fixed['category'] = classify(entry['title'])
+        keep[hashlib.sha256(url.encode()).hexdigest()[:18]] = fixed
+    for entry in ordered:
+        keep[entry['id']] = entry
+    archive = []
+    archived_titles = set()
+    for entry in sorted(keep.values(), key=lambda x: x['published_at'], reverse=True):
+        key = headline_key(entry['title'])
+        if key not in archived_titles:
+            archive.append(entry)
+            archived_titles.add(key)
+    if archive == old.get('items') and successes == old.get('feeds_ok') and failures == old.get('feeds_failed'):
+        return None
+    return {'schema_version': 1, 'updated_at': now.isoformat(timespec='seconds'),
+            'items': archive, 'feeds_ok': successes, 'feeds_failed': failures,
+            'note': 'Archivio cumulativo di titoli e link istituzionali; non costituisce un parere dello Studio.'}
+
+if __name__ == '__main__':
+    previous = json.loads(OUTPUT.read_text(encoding='utf-8')) if OUTPUT.exists() else {}
+    try:
+        result = build(previous=previous)
+        if result is None:
+            print('Nessuna variazione.')
+        else:
+            OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+            OUTPUT.write_text(json.dumps(result, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+            print(f"Aggiornate {len(result['items'])} notizie.")
+    except Exception as exc:
+        print(f"Nessun aggiornamento: {exc}", file=sys.stderr)
+        sys.exit(1)
+, title, re.I):
+        return None
+    # Agevolazioni per disabilita e ISEE sono temi CAF, non bandi impresa.
+    if re.search(r'agevolazion\w* disabil|acquisto auto cointestat|\bisee\b|bonus mamm|assegno unico', title, re.I):
+        return 'Famiglie e CAF'
+    # Gli interpelli molto specialistici non sono automaticamente notizie
+    # di interesse generale per famiglie, clienti CAF e piccole imprese.
+    if re.match(r'^\s*Interpello:', title, re.I) and not re.search(
+        r'agevolazion\w* disabil|regime forfettari|bonus mamm|\bisee\b|succession|\b730\b',
+        title, re.I
+    ):
+        return None
+    if re.search(r'fondazioni di origine bancaria', title, re.I):
+        return None
+    for label, pattern in CATEGORIES:
+        if re.search(pattern, title, re.I):
+            return label
+    return None
+
+def parse(xml_bytes, source, now):
+    root = ET.fromstring(xml_bytes)
+    nodes = [n for n in root.iter() if simple(n.tag) in ('item', 'entry')]
+    if not nodes:
+        raise ValueError('Feed RSS/Atom senza voci riconosciute')
+    out = []
+    for node in nodes[:120]:
+        title = html.unescape(re.sub('<[^>]*>', ' ', child_text(node, ('title',))))
+        title = re.sub(r'\s+', ' ', title).strip()[:190]
+        date = pub_date(child_text(node, ('pubdate', 'published', 'updated', 'date', 'created')))
+        url = official_url(link_of(node), source[2])
+        # Se il titolo e' generico, usa la descrizione RSS solo per la categoria.
+        # La scheda mostra comunque il titolo originale e un link istituzionale.
+        description = html.unescape(re.sub('<[^>]*>', ' ', child_text(node, ('description', 'summary'))))
+        description = re.sub(r'\s+', ' ', description).strip()[:650]
+        group = classify(title) or (classify(title + ' ' + description) if description else None)
+        if not (title and url and date and group) or excluded_news(title, url):
+            continue
+        if not timedelta(hours=-6) <= now - date <= timedelta(days=14):
+            continue
+        out.append({
+            'id': hashlib.sha256(url.encode()).hexdigest()[:18],
+            'title': title, 'url': url, 'source': source[0],
+            'category': group, 'published_at': date.isoformat(timespec='seconds'),
+        })
+    return out
+
+def fetch_feed(url):
+    req = Request(url, headers={'User-Agent': 'Mozilla/5.0 (compatible; StudioSensaleFeed/1.0; +https://studiosensale.it)',
+                                'Accept': 'application/rss+xml,application/atom+xml,application/xml,text/xml;q=0.9,*/*;q=0.3'})
+    with urlopen(req, timeout=20) as resp:
+        data = resp.read(3_000_001)
+    if len(data) > 3_000_000:
+        raise ValueError('Dimensione feed eccessiva')
+    return data
+
+def build(fetch=fetch_feed, now=None, previous=None):
+    now = now or datetime.now(timezone.utc)
+    successes, failures, items = [], [], []
+    for source in FEEDS:
+        try:
+            found = parse(fetch(source[1]), source, now)
+            successes.append(source[0])
+            items.extend(found)
+            print(f"{source[0]}: {len(found)} notizie pertinenti", file=sys.stderr)
+        except Exception as exc:
+            failures.append(source[0])
+            print(f"Feed non disponibile: {source[0]} ({type(exc).__name__}: {exc})", file=sys.stderr)
+    if len(successes) < 2:
+        raise RuntimeError('Meno di due feed verificati: mantengo i dati precedenti')
+    unique = {item['id']: item for item in items}
+    # Impedisce a un solo ente di saturare l'intera sezione.
+    candidates = sorted(unique.values(), key=lambda x: x['published_at'], reverse=True)
+    ordered, source_counts, seen_titles = [], {}, set()
+    for item in candidates:
+        title_key = headline_key(item['title'])
+        if title_key in seen_titles:
+            continue
+        entity = item['source'].split(' ')[0]
+        if source_counts.get(entity, 0) >= 8:
+            continue
+        source_counts[entity] = source_counts.get(entity, 0) + 1
+        seen_titles.add(title_key)
+        ordered.append(item)
+        if len(ordered) >= 16:
+            break
+    # Archivio cumulativo delle segnalazioni, preservato tra le esecuzioni.
+    old = previous or {}
+    keep = {}
+    for entry in old.get('items', []):
+        if not isinstance(entry, dict):
+            continue
+        url = entry.get('url', '')
+        source = next((src for src in FEEDS if src[0] == entry.get('source')), None)
+        if not source or not official_url(url, source[2]) or not pub_date(entry.get('published_at', '')):
+            continue
+        if not entry.get('title') or not classify(entry['title']) or excluded_news(entry['title'], url):
+            continue
+        fixed = dict(entry)
+        fixed['category'] = classify(entry['title'])
+        keep[hashlib.sha256(url.encode()).hexdigest()[:18]] = fixed
+    for entry in ordered:
+        keep[entry['id']] = entry
+    archive = []
+    archived_titles = set()
+    for entry in sorted(keep.values(), key=lambda x: x['published_at'], reverse=True):
+        key = headline_key(entry['title'])
+        if key not in archived_titles:
+            archive.append(entry)
+            archived_titles.add(key)
+    if archive == old.get('items') and successes == old.get('feeds_ok') and failures == old.get('feeds_failed'):
+        return None
+    return {'schema_version': 1, 'updated_at': now.isoformat(timespec='seconds'),
+            'items': archive, 'feeds_ok': successes, 'feeds_failed': failures,
+            'note': 'Archivio cumulativo di titoli e link istituzionali; non costituisce un parere dello Studio.'}
+
+if __name__ == '__main__':
+    previous = json.loads(OUTPUT.read_text(encoding='utf-8')) if OUTPUT.exists() else {}
+    try:
+        result = build(previous=previous)
+        if result is None:
+            print('Nessuna variazione.')
+        else:
+            OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+            OUTPUT.write_text(json.dumps(result, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+            print(f"Aggiornate {len(result['items'])} notizie.")
+    except Exception as exc:
+        print(f"Nessun aggiornamento: {exc}", file=sys.stderr)
+        sys.exit(1)
+,
+            title, re.I):
             continue
         group = classify(title) or (classify(title + ' ' + description) if description else None)
         if not (title and url and date and group) or excluded_news(title, url):
