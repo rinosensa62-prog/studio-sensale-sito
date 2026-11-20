@@ -27,7 +27,7 @@ FEEDS = [
     ('MIMIT Notizie', 'https://www.mimit.gov.it/index.php/it/notizie-stampa?format=feed&type=rss', 'mimit.gov.it'),
 ]
 CATEGORIES = [
-    ('Bandi e finanziamenti', r'\b(band[oi]|finanziament[oi] agevolat|finanziament[oi] a fondo perduto|voucher|incentiv|agevolazion|fondo perduto|bonus assunzion|credito d.imposta|autoimpiego|start.up)\w*'),
+    ('Bandi e finanziamenti', r'\b(band[oi]|finanziament[oi] agevolat|finanziament[oi] a fondo perduto|voucher|incentiv|agevolazion|fondo perduto|bonus assunzion|credito (?:d[’']|di )imposta|autoimpiego|start.up)\w*'),
     ('Successioni e tributi locali', r'\b(succession|eredit|eredi|imu|tari|tributi locali|imposta di registro|donazion)\w*'),
     ('Locazioni e immobili', r'\b(locazion|affitt|catast|immobil|cedolare secca|sister)\w*'),
     ('Famiglie e CAF', r'\b(isee|assegno unico|assegno di inclusione|bonus mamm|famigli|dsu|730|pension|naspi|conged|invalidit|disabilit)\w*'),
@@ -35,7 +35,8 @@ CATEGORIES = [
     ('Dichiarazioni e Fisco', r'\b(fisco|fiscal|irpef|iva|fattur|imposta|dichiarazion|redditi|770|compliance|accertament|versament|f24|rottamazion|codice tributo|adempiment)\w*'),
     ('Aprire e gestire un’attività', r'\b(partita iva|professionist|impres|societ|attivit[aà] economic|commerc|costituzion|ateco|artigian)\w*')
 ]
-REJECT = r'\b(concors[oi]|selezione del personale|visita istituzionale|conferenza stampa)\b'
+REJECT = r'\b(concors[oi]|selezione del personale|selezione comparativa|incarico a tempo (?:determinato|indeterminato)|visita istituzionale|conferenza stampa)\b'
+GENERIC_INPS = re.compile(r'^(?:circolare|messaggio)\s+numero\s+\d+\s+del\s+\d{2}[-/]\d{2}[-/]\d{4}\s*$', re.I)
 # Esclusione editoriale esplicita dello Studio (20/11/2026): notizia SEND/recupero indebiti INPS.
 EXCLUDED_URL_PARTS = ('piattaforma-send-notifiche-degli-indebiti', 'messaggio-numero-3801-del-19-11-2026')
 
@@ -112,7 +113,7 @@ def official_url(raw, institution_host):
         return None
 
 def classify(title):
-    if excluded_news(title) or re.search(REJECT, title, re.I):
+    if excluded_news(title) or re.search(REJECT, title, re.I) or GENERIC_INPS.match(title):
         return None
     # Agevolazioni per disabilita e ISEE sono temi CAF, non bandi impresa.
     if re.search(r'agevolazion\w* disabil|acquisto auto cointestat|\bisee\b|bonus mamm|assegno unico', title, re.I):
@@ -146,6 +147,9 @@ def parse(xml_bytes, source, now):
         # La scheda mostra comunque il titolo originale e un link istituzionale.
         description = html.unescape(re.sub('<[^>]*>', ' ', child_text(node, ('description', 'summary'))))
         description = re.sub(r'\s+', ' ', description).strip()[:650]
+        # Escludi selezioni di personale e titoli privi di contesto anche con sommario pertinente.
+        if re.search(REJECT, title, re.I) or GENERIC_INPS.match(title):
+            continue
         group = classify(title) or (classify(title + ' ' + description) if description else None)
         if not (title and url and date and group) or excluded_news(title, url):
             continue
