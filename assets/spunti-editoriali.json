@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-21T14:43:59+00:00",
+  "updated_at": "2026-11-21T19:31:44+00:00",
   "publication_mode": "link_esterni_per_categoria",
   "items": [
     {
@@ -40,21 +40,21 @@
       "status": "link_esterno_da_verificare"
     },
     {
-      "id": "7862f1072ff7b9f762",
-      "title": "Fabbricati Tupini e aliquote IVA: il nuovo Testo Unico cambia la numerazione, non i dubbi",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/21/fabbricati-tupini-aliquote-iva-testo-unico-cambia-numerazione-non-dubbi",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-21T05:00:00+00:00",
-      "category": "Locazioni e immobili",
-      "status": "link_esterno_da_verificare"
-    },
-    {
       "id": "9111379c8db0ed872b",
       "title": "Società di nuova quotazione: quali clausole inserire nello statuto prima dell’IPO",
       "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/21/societa-nuova-quotazione-clausole-inserire-statuto-prima-ipo",
       "source": "IPSOA Impresa",
       "published_at": "2026-11-21T05:00:00+00:00",
       "category": "Aprire e gestire un’attività",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "7862f1072ff7b9f762",
+      "title": "Fabbricati Tupini e aliquote IVA: il nuovo Testo Unico cambia la numerazione, non i dubbi",
+      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/21/fabbricati-tupini-aliquote-iva-testo-unico-cambia-numerazione-non-dubbi",
+      "source": "IPSOA Fisco",
+      "published_at": "2026-11-21T05:00:00+00:00",
+      "category": "Locazioni e immobili",
       "status": "link_esterno_da_verificare"
     },
     {
@@ -400,21 +400,21 @@
       "status": "link_esterno_da_verificare"
     },
     {
-      "id": "52bb5bbb9172c9d293",
-      "title": "Nuove procedure di infrazione UE contro l'Italia: energia, fisco e trasporti",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/20/nuove-procedure-infrazione-ue-italia-energia-fisco-trasporti",
-      "source": "IPSOA Impresa",
-      "published_at": "2026-11-19T19:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
       "id": "d68e4a3865ec84744d",
       "title": "Fondo antiusura: nuove somme a sostegno di PMI e famiglie in difficoltà",
       "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/20/fondo-antiusura-nuove-somme-sostegno-pmi-famiglie-difficolta",
       "source": "IPSOA Impresa",
       "published_at": "2026-11-19T19:00:00+00:00",
       "category": "Famiglie e CAF",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "52bb5bbb9172c9d293",
+      "title": "Nuove procedure di infrazione UE contro l'Italia: energia, fisco e trasporti",
+      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/20/nuove-procedure-infrazione-ue-italia-energia-fisco-trasporti",
+      "source": "IPSOA Impresa",
+      "published_at": "2026-11-19T19:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
       "status": "link_esterno_da_verificare"
     },
     {
@@ -643,15 +643,6 @@
       "status": "link_esterno_da_verificare"
     },
     {
-      "id": "d5b6c2f472e1ee582e",
-      "title": "Il cambio di controllo indiretto nel riporto delle perdite fiscali: l’interpretazione autentica del decreto Omnibus",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/18/cambio-controllo-indiretto-riporto-perdite-fiscali-interpretazione-autentica-decreto-omnibus",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-18T05:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
       "id": "e1734536db7c326ec7",
       "title": "NIS2: adempimenti e scadenze 2027 per le imprese",
       "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/18/nis2-adempimenti-scadenze-2027-imprese",
@@ -670,6 +661,15 @@
       "status": "link_esterno_da_verificare"
     },
     {
+      "id": "d5b6c2f472e1ee582e",
+      "title": "Il cambio di controllo indiretto nel riporto delle perdite fiscali: l’interpretazione autentica del decreto Omnibus",
+      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/18/cambio-controllo-indiretto-riporto-perdite-fiscali-interpretazione-autentica-decreto-omnibus",
+      "source": "IPSOA Fisco",
+      "published_at": "2026-11-18T05:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
+    {
       "id": "dd3ed724cc280bbbc1",
       "title": "Saldo IMU 2026 entro il 16 dicembre - Le aliquote da applicare",
       "url": "https://www.redazionefiscale.it/c/circolari-fiscali/52390-saldo-imu-2026-entro-il-16-dicembre---le-aliquote-da-applicare",
@@ -685,6 +685,15 @@
       "source": "Redazione Fiscale",
       "published_at": "2026-11-18T00:00:00+00:00",
       "category": "Aprire e gestire un’attività",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "49ff823a85a7bd4bc7",
+      "title": "Concordato minore, dal voto all’omologa: il ruolo del Fisco",
+      "url": "https://www.ecnews.it/fiscale/societa-e-bilancio/crisi-impresa/concordato-minore-dal-voto-allomologa-il-ruolo-del-fisco/",
+      "source": "Euroconference News",
+      "published_at": "2026-11-17T23:04:00+00:00",
+      "category": "Dichiarazioni e Fisco",
       "status": "link_esterno_da_verificare"
     },
     {
@@ -733,21 +742,21 @@
       "status": "link_esterno_da_verificare"
     },
     {
-      "id": "700f681ce3010e2da6",
-      "title": "Deducibilità IRAP e IRES: cosa cambia nel 2027 per il settore finanziario ed energetico",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/17/deducibilita-irap-ires-cambia-2027-settore-finanziario-energetico",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-17T05:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
       "id": "b78cd2a93cc80fbcf9",
       "title": "Le scadenze di dicembre 2026: bonus mamme, sgravio contratti di solidarietà, adempimento collaborativo, saldo IMU",
       "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/17/scadenze-dicembre-2026-bonus-mamme-sgravio-contratti-solidarieta-adempimento-collaborativo-saldo-imu",
       "source": "IPSOA Impresa",
       "published_at": "2026-11-17T05:00:00+00:00",
       "category": "Successioni e tributi locali",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "700f681ce3010e2da6",
+      "title": "Deducibilità IRAP e IRES: cosa cambia nel 2027 per il settore finanziario ed energetico",
+      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/17/deducibilita-irap-ires-cambia-2027-settore-finanziario-energetico",
+      "source": "IPSOA Fisco",
+      "published_at": "2026-11-17T05:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
       "status": "link_esterno_da_verificare"
     },
     {
@@ -908,14 +917,15 @@
     "Fiscal Focus",
     "Fisco e Tasse",
     "Informazione Fiscale",
-    "IPSOA Fisco",
     "IPSOA Impresa",
     "LavoroSì",
     "Eutekne",
     "Euroconference News",
     "Redazione Fiscale"
   ],
-  "feeds_failed": [],
+  "feeds_failed": [
+    "IPSOA Fisco"
+  ],
   "other_sources": [
     {
       "name": "IPSOA - aree ulteriori",
