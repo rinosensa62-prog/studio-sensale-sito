@@ -4,6 +4,7 @@ I titoli NON alimentano automaticamente il sito pubblico: richiedono
 verifica dei provvedimenti e redazione originale prima della pubblicazione.
 """
 import hashlib
+import html
 import json
 import re
 import sys
@@ -22,6 +23,8 @@ FEEDS = (
     ("Informazione Fiscale", "https://www.informazionefiscale.it/spip.php?page=backend", "informazionefiscale.it"),
     ("IPSOA Fisco", "https://www.ipsoa.it/RSS-Feeds/Fisco.aspx", "ipsoa.it"),
     ("IPSOA Impresa", "https://www.ipsoa.it/RSS-Feeds/Impresa.aspx", "ipsoa.it"),
+    ("LavoroSì", "https://www.lavorosi.it/feed/", "lavorosi.it"),
+    ("Eutekne", "https://www.eutekne.info/Rss.ashx", "eutekne.info"),
 )
 # Le altre testate sono nel monitoraggio editoriale ChatGPT.
 # Non inventiamo indirizzi RSS: prima vanno verificati e testati.
@@ -32,7 +35,6 @@ OTHER_SOURCES = (
     ("Eutekne", "https://www.eutekne.info/"),
     ("IPSOA - aree ulteriori", "https://www.ipsoa.it/"),
     ("Redazione Fiscale", "https://www.redazionefiscale.it/"),
-    ("LavoroSì", "https://www.lavorosi.it/"),
 )
 EXCLUDE = re.compile(r'\b(concorso|selezione comparativa|offerta di lavoro|evento formativo|webinar|corso a pagamento)\b', re.I)
 KEYWORDS = re.compile(
@@ -122,7 +124,11 @@ def parse(xml_bytes, source, now):
     for item in root.iter():
         if simple(item.tag) not in ("item", "entry"):
             continue
-        title = re.sub(r"\s+", " ", field(item, ("title",)))[:180].strip()
+        title = re.sub(r"\s+", " ", field(item, ("title",))).strip()
+        # Eutekne può racchiudere il titolo in un CDATA sfuggito come testo XML.
+        if title.startswith("<![CDATA[") and title.endswith("]]>"):
+            title = title[9:-3].strip()
+        title = html.unescape(title)[:180]
         url = field(item, ("link",))
         date = get_date(field(item, ("pubdate", "published", "updated", "date")))
         host = (urlsplit(url).hostname or "").lower()
