@@ -14,6 +14,10 @@ from pathlib import Path
 from urllib.parse import urlsplit
 from urllib.request import Request, urlopen
 from xml.etree import ElementTree as ET
+try:
+    from fonti_web_pubbliche import collect_public_site
+except ImportError:
+    from scripts.fonti_web_pubbliche import collect_public_site
 
 OUTPUT = Path(__file__).resolve().parent.parent / "assets" / "spunti-editoriali.json"
 # Feed RSS reperiti dalla pagina RSS pubblica di Fiscal Focus.
@@ -26,15 +30,17 @@ FEEDS = (
     ("LavoroSì", "https://www.lavorosi.it/feed/", "lavorosi.it"),
     ("Eutekne", "https://www.eutekne.info/Rss.ashx", "eutekne.info"),
 )
+# Fonti con RSS non utilizzabile: si controllano soltanto titoli/date/link pubblici.
+HTML_SOURCES = (
+    ('Euroconference News', 'https://www.ecnews.it/', 'www.ecnews.it'),
+    ('Redazione Fiscale', 'https://www.redazionefiscale.it/', 'www.redazionefiscale.it'),
+)
 # Le altre testate sono nel monitoraggio editoriale ChatGPT.
 # Non inventiamo indirizzi RSS: prima vanno verificati e testati.
 OTHER_SOURCES = (
     
     
-    ("Euroconference News", "https://www.ecnews.it/"),
-    ("Eutekne", "https://www.eutekne.info/"),
     ("IPSOA - aree ulteriori", "https://www.ipsoa.it/"),
-    ("Redazione Fiscale", "https://www.redazionefiscale.it/"),
 )
 EXCLUDE = re.compile(r'\b(concorso|selezione comparativa|offerta di lavoro|evento formativo|webinar|corso a pagamento)\b', re.I)
 KEYWORDS = re.compile(
@@ -165,9 +171,19 @@ def build(fetcher=fetch, now=None, previous=None):
             failed.append(feed[0])
             print(f"RSS specializzato non disponibile {feed[0]}: {type(exc).__name__}", file=sys.stderr)
 
+    for source, homepage, domain in HTML_SOURCES:
+        try:
+            selected = collect_public_site(fetcher, source, homepage, domain, now, classify, get_date)
+            entries.extend(selected)
+            ok.append(source)
+            print(f'{source}: {len(selected)} titoli verificati con data', file=sys.stderr)
+        except Exception as exc:
+            failed.append(source)
+            print(f'Pagine pubbliche non disponibili {source}: {type(exc).__name__}: {exc}', file=sys.stderr)
+
     # Archivio persistente: non cancellare notizie storiche quando scadono dal feed.
     previous = previous or {}
-    allowed_sources = {feed[0]: feed[2] for feed in FEEDS}
+    allowed_sources = {feed[0]: feed[2] for feed in FEEDS + HTML_SOURCES}
     for item in previous.get("items", []):
         if not isinstance(item, dict) or item.get("source") not in allowed_sources:
             continue
