@@ -6,8 +6,9 @@ on:
       - 'tests/test_aggiornamenti.py'
       - '.github/workflows/aggiornamento-fonti.yml'
   schedule:
-    # 07:20 UTC = 08:20 in inverno e 09:20 in estate (Roma).
-    - cron: '20 7 * * *'
+    # Tre verifiche quotidiane (UTC): mattina, primo pomeriggio e sera.
+    # In Italia: 08:20/13:20/18:20 in inverno; 09:20/14:20/19:20 in estate.
+    - cron: '20 7,12,17 * * *'
   workflow_dispatch:
 permissions:
   contents: write
