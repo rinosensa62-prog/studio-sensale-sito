@@ -17,17 +17,20 @@ from xml.etree import ElementTree as ET
 OUTPUT = Path(__file__).resolve().parent.parent / "assets" / "spunti-editoriali.json"
 # Feed RSS reperiti dalla pagina RSS pubblica di Fiscal Focus.
 FEEDS = (
-    ("Fiscal Focus - News24", "https://www.fiscal-focus.it/rss/news24.rss", "fiscal-focus.it"),
-    ("Fiscal Focus - In primo piano", "https://www.fiscal-focus.it/rss/primo-piano.rss", "fiscal-focus.it"),
+    ("Fiscal Focus", "https://www.fiscal-focus.it/rss/news24.rss", "fiscal-focus.it"),
+    ("Fisco e Tasse", "https://www.fiscoetasse.com/feed", "fiscoetasse.com"),
+    ("Informazione Fiscale", "https://www.informazionefiscale.it/spip.php?page=backend", "informazionefiscale.it"),
+    ("IPSOA Fisco", "https://www.ipsoa.it/RSS-Feeds/Fisco.aspx", "ipsoa.it"),
+    ("IPSOA Impresa", "https://www.ipsoa.it/RSS-Feeds/Impresa.aspx", "ipsoa.it"),
 )
 # Le altre testate sono nel monitoraggio editoriale ChatGPT.
 # Non inventiamo indirizzi RSS: prima vanno verificati e testati.
 OTHER_SOURCES = (
-    ("Fisco e Tasse", "https://www.fiscoetasse.com/"),
-    ("Informazione Fiscale", "https://www.informazionefiscale.it/"),
+    
+    
     ("Euroconference News", "https://www.ecnews.it/"),
     ("Eutekne", "https://www.eutekne.info/"),
-    ("IPSOA", "https://www.ipsoa.it/"),
+    ("IPSOA - aree ulteriori", "https://www.ipsoa.it/"),
     ("Redazione Fiscale", "https://www.redazionefiscale.it/"),
     ("LavoroSì", "https://www.lavorosi.it/"),
 )
