@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-21T14:29:32+00:00",
+  "updated_at": "2026-11-21T14:43:59+00:00",
   "publication_mode": "link_esterni_per_categoria",
   "items": [
     {
@@ -40,21 +40,21 @@
       "status": "link_esterno_da_verificare"
     },
     {
-      "id": "9111379c8db0ed872b",
-      "title": "Società di nuova quotazione: quali clausole inserire nello statuto prima dell’IPO",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/21/societa-nuova-quotazione-clausole-inserire-statuto-prima-ipo",
-      "source": "IPSOA Impresa",
-      "published_at": "2026-11-21T05:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
-    },
-    {
       "id": "7862f1072ff7b9f762",
       "title": "Fabbricati Tupini e aliquote IVA: il nuovo Testo Unico cambia la numerazione, non i dubbi",
       "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/21/fabbricati-tupini-aliquote-iva-testo-unico-cambia-numerazione-non-dubbi",
       "source": "IPSOA Fisco",
       "published_at": "2026-11-21T05:00:00+00:00",
       "category": "Locazioni e immobili",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "9111379c8db0ed872b",
+      "title": "Società di nuova quotazione: quali clausole inserire nello statuto prima dell’IPO",
+      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/21/societa-nuova-quotazione-clausole-inserire-statuto-prima-ipo",
+      "source": "IPSOA Impresa",
+      "published_at": "2026-11-21T05:00:00+00:00",
+      "category": "Aprire e gestire un’attività",
       "status": "link_esterno_da_verificare"
     },
     {
@@ -265,6 +265,69 @@
       "status": "link_esterno_da_verificare"
     },
     {
+      "id": "55d2895a89ed8194ad",
+      "title": "STP in forma di S.r.l. con due terzi dei voti ai professionisti",
+      "url": "https://www.redazionefiscale.it/c/fisco-passo-passo/52417-stp-in-forma-di-srl-con-due-terzi-dei-voti-ai-professionisti",
+      "source": "Redazione Fiscale",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "category": "Aprire e gestire un’attività",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "2641fb8dfc3bf4c084",
+      "title": "Saldo IMU 2026 sulle aree fabbricabili",
+      "url": "https://www.redazionefiscale.it/c/notizie-flash/52407-saldo-imu-2026-sulle-aree-fabbricabili",
+      "source": "Redazione Fiscale",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "category": "Successioni e tributi locali",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "f4c3e67d89b3f610b4",
+      "title": "Bollo sulle fatture elettroniche del terzo trimestre 2026",
+      "url": "https://www.redazionefiscale.it/c/notizie-flash/52410-bollo-sulle-fatture-elettroniche-del-terzo-trimestre-2026",
+      "source": "Redazione Fiscale",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "0313e1fa2e66130808",
+      "title": "Recesso del socio e valore dell’avviamento nella liquidazione della società",
+      "url": "https://www.redazionefiscale.it/c/evoluzione-giurisprudenza/52416-recesso-del-socio-e-valore-dellavviamento-nella-liquidazione-della-societ",
+      "source": "Redazione Fiscale",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "category": "Aprire e gestire un’attività",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "d486946021006d00cf",
+      "title": "Contributi Enasarco del terzo trimestre 2026 entro il 20 novembre",
+      "url": "https://www.redazionefiscale.it/c/notizie-flash/52412-contributi-enasarco-del-terzo-trimestre-2026-entro-il-20-novembre",
+      "source": "Redazione Fiscale",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "a7e9243769591091b5",
+      "title": "Salario giusto, il CCNL leader non sottrae la retribuzione al controllo del giudice",
+      "url": "https://www.ecnews.it/lavoro/rapporto-di-lavoro/gestione-del-rapporto/salario-giusto-il-ccnl-leader-non-sottrae-la-retribuzione-al-controllo-del-giudice/",
+      "source": "Euroconference News",
+      "published_at": "2026-11-19T23:05:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "856d94cacd35ecbe28",
+      "title": "Imposta sostitutiva del 7% per le prestazioni del piano SIPP britannico",
+      "url": "https://www.ecnews.it/lavoro/imposte-contributi-e-premi/tassazione-e-redditi-di-lavoro/imposta-sostitutiva-del-7-per-le-prestazioni-del-piano-sipp-britannico/",
+      "source": "Euroconference News",
+      "published_at": "2026-11-19T23:04:00+00:00",
+      "category": "Famiglie e CAF",
+      "status": "link_esterno_da_verificare"
+    },
+    {
       "id": "2928b0078cc7fe4bad",
       "title": "Ore 13.33 - Cessione di quote di s.n.c.: i poteri di controllo del socio non amministratore non escludono il dolo",
       "url": "https://www.fiscal-focus.it/news,190292",
@@ -337,21 +400,21 @@
       "status": "link_esterno_da_verificare"
     },
     {
-      "id": "d68e4a3865ec84744d",
-      "title": "Fondo antiusura: nuove somme a sostegno di PMI e famiglie in difficoltà",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/20/fondo-antiusura-nuove-somme-sostegno-pmi-famiglie-difficolta",
-      "source": "IPSOA Impresa",
-      "published_at": "2026-11-19T19:00:00+00:00",
-      "category": "Famiglie e CAF",
-      "status": "link_esterno_da_verificare"
-    },
-    {
       "id": "52bb5bbb9172c9d293",
       "title": "Nuove procedure di infrazione UE contro l'Italia: energia, fisco e trasporti",
       "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/20/nuove-procedure-infrazione-ue-italia-energia-fisco-trasporti",
       "source": "IPSOA Impresa",
       "published_at": "2026-11-19T19:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "d68e4a3865ec84744d",
+      "title": "Fondo antiusura: nuove somme a sostegno di PMI e famiglie in difficoltà",
+      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/20/fondo-antiusura-nuove-somme-sostegno-pmi-famiglie-difficolta",
+      "source": "IPSOA Impresa",
+      "published_at": "2026-11-19T19:00:00+00:00",
+      "category": "Famiglie e CAF",
       "status": "link_esterno_da_verificare"
     },
     {
@@ -463,6 +526,42 @@
       "status": "link_esterno_da_verificare"
     },
     {
+      "id": "736a2930c5cb54b8a2",
+      "title": "Locazioni a canone concordato – Requisiti, cedolare secca e sanzioni",
+      "url": "https://www.redazionefiscale.it/c/circolari-fiscali/52419-locazioni-a-canone-concordato--requisiti-cedolare-secca-e-sanzioni",
+      "source": "Redazione Fiscale",
+      "published_at": "2026-11-19T00:00:00+00:00",
+      "category": "Locazioni e immobili",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "4d87278c51aa44cfa1",
+      "title": "Ecobonus - Calcoli di convenienza in vista di fine anno",
+      "url": "https://www.redazionefiscale.it/c/info-flash-fiscali/52403-ecobonus---calcoli-di-convenienza-in-vista-di-fine-anno",
+      "source": "Redazione Fiscale",
+      "published_at": "2026-11-19T00:00:00+00:00",
+      "category": "Locazioni e immobili",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "883521a1f7beac7474",
+      "title": "Retribuzioni IRCCS privati: chiarimenti sulla modalità di calcolo dei limiti per dipendenti e collaboratori",
+      "url": "https://www.ecnews.it/lavoro/rapporto-di-lavoro/gestione-del-rapporto/retribuzioni-irccs-privati-chiarimenti-sulla-modalita-di-calcolo-dei-limiti-per-dipendenti-e-collaboratori/",
+      "source": "Euroconference News",
+      "published_at": "2026-11-18T23:04:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "72e06a634661613d62",
+      "title": "Cause ereditarie su quote: i limiti informativi del Registro delle Imprese",
+      "url": "https://www.ecnews.it/fiscale/societa-e-bilancio/penale-tributario-fisco-lavoro/cause-ereditarie-su-quote-i-limiti-informativi-del-registro-delle-imprese/",
+      "source": "Euroconference News",
+      "published_at": "2026-11-18T23:03:00+00:00",
+      "category": "Successioni e tributi locali",
+      "status": "link_esterno_da_verificare"
+    },
+    {
       "id": "d67862838b870d4729",
       "title": "Ore 14.27 – Fondo solidarietà Bolzano, contributi ridotti del 40% anche nel 2027 per le piccole imprese",
       "url": "https://www.fiscal-focus.it/news,190228",
@@ -487,15 +586,6 @@
       "source": "Fiscal Focus",
       "published_at": "2026-11-18T23:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "2f2aac2e12bd490e1a",
-      "title": "Esenzione dalle ritenute sugli interessi relativi a finanziamenti a medio–lungo termine: in quali casi?",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/19/esenzione-ritenute-interessi-relativi-finanziamenti-medio-lungo-termine-casi",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-18T20:00:00+00:00",
-      "category": "Bandi e finanziamenti",
       "status": "link_esterno_da_verificare"
     },
     {
@@ -526,6 +616,15 @@
       "status": "link_esterno_da_verificare"
     },
     {
+      "id": "2f2aac2e12bd490e1a",
+      "title": "Esenzione dalle ritenute sugli interessi relativi a finanziamenti a medio–lungo termine: in quali casi?",
+      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/19/esenzione-ritenute-interessi-relativi-finanziamenti-medio-lungo-termine-casi",
+      "source": "IPSOA Fisco",
+      "published_at": "2026-11-18T20:00:00+00:00",
+      "category": "Bandi e finanziamenti",
+      "status": "link_esterno_da_verificare"
+    },
+    {
       "id": "59fcf32c51345bc36a",
       "title": "Collaboratore domestico: mansioni e retribuzione",
       "url": "https://www.informazionefiscale.it/collaboratore-domestico-mansioni-retribuzione-colf-badante",
@@ -541,6 +640,15 @@
       "source": "Informazione Fiscale",
       "published_at": "2026-11-18T14:46:43+00:00",
       "category": "Bandi e finanziamenti",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "d5b6c2f472e1ee582e",
+      "title": "Il cambio di controllo indiretto nel riporto delle perdite fiscali: l’interpretazione autentica del decreto Omnibus",
+      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/18/cambio-controllo-indiretto-riporto-perdite-fiscali-interpretazione-autentica-decreto-omnibus",
+      "source": "IPSOA Fisco",
+      "published_at": "2026-11-18T05:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
       "status": "link_esterno_da_verificare"
     },
     {
@@ -562,12 +670,21 @@
       "status": "link_esterno_da_verificare"
     },
     {
-      "id": "d5b6c2f472e1ee582e",
-      "title": "Il cambio di controllo indiretto nel riporto delle perdite fiscali: l’interpretazione autentica del decreto Omnibus",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/18/cambio-controllo-indiretto-riporto-perdite-fiscali-interpretazione-autentica-decreto-omnibus",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-18T05:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
+      "id": "dd3ed724cc280bbbc1",
+      "title": "Saldo IMU 2026 entro il 16 dicembre - Le aliquote da applicare",
+      "url": "https://www.redazionefiscale.it/c/circolari-fiscali/52390-saldo-imu-2026-entro-il-16-dicembre---le-aliquote-da-applicare",
+      "source": "Redazione Fiscale",
+      "published_at": "2026-11-18T00:00:00+00:00",
+      "category": "Successioni e tributi locali",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "5a87a843ddebfbe4e0",
+      "title": "Differenziali sui bonus edilizi per i professionisti – I codici tributo",
+      "url": "https://www.redazionefiscale.it/c/info-flash-fiscali/52388-differenziali-sui-bonus-edilizi-per-i-professionisti--i-codici-tributo",
+      "source": "Redazione Fiscale",
+      "published_at": "2026-11-18T00:00:00+00:00",
+      "category": "Aprire e gestire un’attività",
       "status": "link_esterno_da_verificare"
     },
     {
@@ -598,12 +715,30 @@
       "status": "link_esterno_da_verificare"
     },
     {
+      "id": "f312fd3bc17fda0fb0",
+      "title": "Il saldo IMU 2026: calcoli, particolarità e immobili delle società",
+      "url": "https://www.ecnews.it/fiscale/mondo-professione/in-diretta/il-saldo-imu-2026-calcoli-particolarita-e-immobili-delle-societa/",
+      "source": "Euroconference News",
+      "published_at": "2026-11-17T22:55:00+00:00",
+      "category": "Successioni e tributi locali",
+      "status": "link_esterno_da_verificare"
+    },
+    {
       "id": "4cdaae13f39abf155a",
       "title": "Ritenuta sui dividendi percepiti da una società non residente: il calcolo del risultato",
       "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/18/ritenuta-dividendi-percepiti-societa-non-residente-calcolo-risultato",
       "source": "IPSOA Fisco",
       "published_at": "2026-11-17T20:00:00+00:00",
       "category": "Aprire e gestire un’attività",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "700f681ce3010e2da6",
+      "title": "Deducibilità IRAP e IRES: cosa cambia nel 2027 per il settore finanziario ed energetico",
+      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/17/deducibilita-irap-ires-cambia-2027-settore-finanziario-energetico",
+      "source": "IPSOA Fisco",
+      "published_at": "2026-11-17T05:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
       "status": "link_esterno_da_verificare"
     },
     {
@@ -616,12 +751,12 @@
       "status": "link_esterno_da_verificare"
     },
     {
-      "id": "700f681ce3010e2da6",
-      "title": "Deducibilità IRAP e IRES: cosa cambia nel 2027 per il settore finanziario ed energetico",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/17/deducibilita-irap-ires-cambia-2027-settore-finanziario-energetico",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-17T05:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
+      "id": "78d99c77b81f289514",
+      "title": "Fotovoltaico, il confine sottile tra autoconsumo e attività commerciale",
+      "url": "https://www.ecnews.it/fiscale/societa-e-bilancio/bilancio/fotovoltaico-il-confine-sottile-tra-autoconsumo-e-attivita-commerciale/",
+      "source": "Euroconference News",
+      "published_at": "2026-11-16T23:05:00+00:00",
+      "category": "Bandi e finanziamenti",
       "status": "link_esterno_da_verificare"
     },
     {
@@ -751,6 +886,15 @@
       "status": "link_esterno_da_verificare"
     },
     {
+      "id": "0ccb9db7ba0829843d",
+      "title": "Agevolazioni contributive: dal 1° dicembre la vacancy SIISL diventa requisito operativo",
+      "url": "https://www.ecnews.it/lavoro/mondo-professione/sintesi-ai/agevolazioni-contributive-dal-1-dicembre-la-vacancy-siisl-diventa-requisito-operativo/",
+      "source": "Euroconference News",
+      "published_at": "2026-11-12T23:04:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "link_esterno_da_verificare"
+    },
+    {
       "id": "99218eb2a42423cc10",
       "title": "Garanzia per i debiti ereditari: criteri ed esoneri per ETS ed enti non profit",
       "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/13/garanzia-debiti-ereditari-criteri-esoneri-ets-enti-non-profit",
@@ -764,32 +908,18 @@
     "Fiscal Focus",
     "Fisco e Tasse",
     "Informazione Fiscale",
+    "IPSOA Fisco",
     "IPSOA Impresa",
     "LavoroSì",
-    "Eutekne"
+    "Eutekne",
+    "Euroconference News",
+    "Redazione Fiscale"
   ],
-  "feeds_failed": [
-    "IPSOA Fisco"
-  ],
+  "feeds_failed": [],
   "other_sources": [
-    {
-      "name": "Euroconference News",
-      "url": "https://www.ecnews.it/",
-      "mode": "monitoraggio_editoriale"
-    },
-    {
-      "name": "Eutekne",
-      "url": "https://www.eutekne.info/",
-      "mode": "monitoraggio_editoriale"
-    },
     {
       "name": "IPSOA - aree ulteriori",
       "url": "https://www.ipsoa.it/",
-      "mode": "monitoraggio_editoriale"
-    },
-    {
-      "name": "Redazione Fiscale",
-      "url": "https://www.redazionefiscale.it/",
       "mode": "monitoraggio_editoriale"
     }
   ]
