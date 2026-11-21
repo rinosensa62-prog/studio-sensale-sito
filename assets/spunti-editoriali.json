@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-21T14:11:06+00:00",
+  "updated_at": "2026-11-21T14:29:32+00:00",
   "publication_mode": "link_esterni_per_categoria",
   "items": [
     {
@@ -40,15 +40,6 @@
       "status": "link_esterno_da_verificare"
     },
     {
-      "id": "7862f1072ff7b9f762",
-      "title": "Fabbricati Tupini e aliquote IVA: il nuovo Testo Unico cambia la numerazione, non i dubbi",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/21/fabbricati-tupini-aliquote-iva-testo-unico-cambia-numerazione-non-dubbi",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-21T05:00:00+00:00",
-      "category": "Locazioni e immobili",
-      "status": "link_esterno_da_verificare"
-    },
-    {
       "id": "9111379c8db0ed872b",
       "title": "Società di nuova quotazione: quali clausole inserire nello statuto prima dell’IPO",
       "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/21/societa-nuova-quotazione-clausole-inserire-statuto-prima-ipo",
@@ -58,10 +49,46 @@
       "status": "link_esterno_da_verificare"
     },
     {
+      "id": "7862f1072ff7b9f762",
+      "title": "Fabbricati Tupini e aliquote IVA: il nuovo Testo Unico cambia la numerazione, non i dubbi",
+      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/21/fabbricati-tupini-aliquote-iva-testo-unico-cambia-numerazione-non-dubbi",
+      "source": "IPSOA Fisco",
+      "published_at": "2026-11-21T05:00:00+00:00",
+      "category": "Locazioni e immobili",
+      "status": "link_esterno_da_verificare"
+    },
+    {
       "id": "523f5c79bc1b4ec56f",
       "title": "Fattura elettronica 2027 nuove specifiche tecniche 110",
       "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4831-fattura-elettronica-2027-nuove-specifiche-tecniche-110.html",
       "source": "Fisco e Tasse",
+      "published_at": "2026-11-21T00:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "d7c0705f0f40e98d81",
+      "title": "Il mancato ricorso contro l’annullamento dello sconto in fattura complica la difesa",
+      "url": "https://www.eutekne.info/Sezioni/Articolo.aspx?ID=1131360",
+      "source": "Eutekne",
+      "published_at": "2026-11-21T00:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "28c9d55d732a10926e",
+      "title": "Nuove specifiche tecniche della fattura elettronica adeguate al Testo unico IVA",
+      "url": "https://www.eutekne.info/Sezioni/Articolo.aspx?ID=1132482",
+      "source": "Eutekne",
+      "published_at": "2026-11-21T00:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "8346c8f07d43a6ec71",
+      "title": "Cambio di regime IVA in agricoltura da ponderare con attenzione",
+      "url": "https://www.eutekne.info/Sezioni/Articolo.aspx?ID=1131905",
+      "source": "Eutekne",
       "published_at": "2026-11-21T00:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
       "status": "link_esterno_da_verificare"
@@ -82,6 +109,24 @@
       "source": "IPSOA Fisco",
       "published_at": "2026-11-20T20:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "0c0539b6099a3f7273",
+      "title": "Rendita vitalizia per il personale a contratto MAECI: le istruzioni INPS",
+      "url": "https://www.lavorosi.it/rendita-vitalizia-per-il-personale-a-contratto-maeci-le-istruzioni-inps/",
+      "source": "LavoroSì",
+      "published_at": "2026-11-20T16:14:08+00:00",
+      "category": "Lavoro e paghe",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "1be037e3c98604983c",
+      "title": "Fondo di solidarietà bilaterale di Bolzano: confermata per il 2027 la riduzione del 40% dell’aliquota INPS",
+      "url": "https://www.lavorosi.it/fondo-di-solidarieta-bilaterale-di-bolzano-confermata-per-il-2027-la-riduzione-del-40-dellaliquota-inps/",
+      "source": "LavoroSì",
+      "published_at": "2026-11-20T15:20:16+00:00",
+      "category": "Lavoro e paghe",
       "status": "link_esterno_da_verificare"
     },
     {
@@ -136,6 +181,24 @@
       "source": "Informazione Fiscale",
       "published_at": "2026-11-20T10:02:35+00:00",
       "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "361c460fba0e1df1b6",
+      "title": "Cassazione: quali somme risarcitorie corrisposte al lavoratore sono assoggettate a contribuzione?",
+      "url": "https://www.lavorosi.it/cassazione-quali-somme-risarcitorie-corrisposte-al-lavoratore-sono-assoggettate-a-contribuzione/",
+      "source": "LavoroSì",
+      "published_at": "2026-11-20T09:26:23+00:00",
+      "category": "Lavoro e paghe",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "2b14dff112c16feaac",
+      "title": "Pensione britannica SIPP. Ok dalle Entrate al regime agevolativo con trasferimento in Italia",
+      "url": "https://www.lavorosi.it/pensione-britannica-sipp-ok-dalle-entrate-al-regime-agevolativo-con-trasferimento-in-italia/",
+      "source": "LavoroSì",
+      "published_at": "2026-11-20T08:11:20+00:00",
+      "category": "Famiglie e CAF",
       "status": "link_esterno_da_verificare"
     },
     {
@@ -274,6 +337,15 @@
       "status": "link_esterno_da_verificare"
     },
     {
+      "id": "d68e4a3865ec84744d",
+      "title": "Fondo antiusura: nuove somme a sostegno di PMI e famiglie in difficoltà",
+      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/20/fondo-antiusura-nuove-somme-sostegno-pmi-famiglie-difficolta",
+      "source": "IPSOA Impresa",
+      "published_at": "2026-11-19T19:00:00+00:00",
+      "category": "Famiglie e CAF",
+      "status": "link_esterno_da_verificare"
+    },
+    {
       "id": "52bb5bbb9172c9d293",
       "title": "Nuove procedure di infrazione UE contro l'Italia: energia, fisco e trasporti",
       "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/20/nuove-procedure-infrazione-ue-italia-energia-fisco-trasporti",
@@ -283,12 +355,12 @@
       "status": "link_esterno_da_verificare"
     },
     {
-      "id": "d68e4a3865ec84744d",
-      "title": "Fondo antiusura: nuove somme a sostegno di PMI e famiglie in difficoltà",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/20/fondo-antiusura-nuove-somme-sostegno-pmi-famiglie-difficolta",
-      "source": "IPSOA Impresa",
-      "published_at": "2026-11-19T19:00:00+00:00",
-      "category": "Famiglie e CAF",
+      "id": "ed8c98a2fba31b2552",
+      "title": "Welfare aziendale 2025 per familiari, recupero nella dichiarazione integrativa",
+      "url": "https://www.lavorosi.it/welfare-aziendale-2025-per-familiari-recupero-nella-dichiarazione-integrativa/",
+      "source": "LavoroSì",
+      "published_at": "2026-11-19T17:00:01+00:00",
+      "category": "Lavoro e paghe",
       "status": "link_esterno_da_verificare"
     },
     {
@@ -472,15 +544,6 @@
       "status": "link_esterno_da_verificare"
     },
     {
-      "id": "d5b6c2f472e1ee582e",
-      "title": "Il cambio di controllo indiretto nel riporto delle perdite fiscali: l’interpretazione autentica del decreto Omnibus",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/18/cambio-controllo-indiretto-riporto-perdite-fiscali-interpretazione-autentica-decreto-omnibus",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-18T05:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
       "id": "e1734536db7c326ec7",
       "title": "NIS2: adempimenti e scadenze 2027 per le imprese",
       "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/18/nis2-adempimenti-scadenze-2027-imprese",
@@ -496,6 +559,15 @@
       "source": "IPSOA Impresa",
       "published_at": "2026-11-18T05:00:00+00:00",
       "category": "Successioni e tributi locali",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "d5b6c2f472e1ee582e",
+      "title": "Il cambio di controllo indiretto nel riporto delle perdite fiscali: l’interpretazione autentica del decreto Omnibus",
+      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/18/cambio-controllo-indiretto-riporto-perdite-fiscali-interpretazione-autentica-decreto-omnibus",
+      "source": "IPSOA Fisco",
+      "published_at": "2026-11-18T05:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
       "status": "link_esterno_da_verificare"
     },
     {
@@ -535,21 +607,21 @@
       "status": "link_esterno_da_verificare"
     },
     {
-      "id": "700f681ce3010e2da6",
-      "title": "Deducibilità IRAP e IRES: cosa cambia nel 2027 per il settore finanziario ed energetico",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/17/deducibilita-irap-ires-cambia-2027-settore-finanziario-energetico",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-17T05:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
       "id": "b78cd2a93cc80fbcf9",
       "title": "Le scadenze di dicembre 2026: bonus mamme, sgravio contratti di solidarietà, adempimento collaborativo, saldo IMU",
       "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/17/scadenze-dicembre-2026-bonus-mamme-sgravio-contratti-solidarieta-adempimento-collaborativo-saldo-imu",
       "source": "IPSOA Impresa",
       "published_at": "2026-11-17T05:00:00+00:00",
       "category": "Successioni e tributi locali",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "700f681ce3010e2da6",
+      "title": "Deducibilità IRAP e IRES: cosa cambia nel 2027 per il settore finanziario ed energetico",
+      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/17/deducibilita-irap-ires-cambia-2027-settore-finanziario-energetico",
+      "source": "IPSOA Fisco",
+      "published_at": "2026-11-17T05:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
       "status": "link_esterno_da_verificare"
     },
     {
@@ -692,10 +764,13 @@
     "Fiscal Focus",
     "Fisco e Tasse",
     "Informazione Fiscale",
-    "IPSOA Fisco",
-    "IPSOA Impresa"
+    "IPSOA Impresa",
+    "LavoroSì",
+    "Eutekne"
   ],
-  "feeds_failed": [],
+  "feeds_failed": [
+    "IPSOA Fisco"
+  ],
   "other_sources": [
     {
       "name": "Euroconference News",
@@ -715,11 +790,6 @@
     {
       "name": "Redazione Fiscale",
       "url": "https://www.redazionefiscale.it/",
-      "mode": "monitoraggio_editoriale"
-    },
-    {
-      "name": "LavoroSì",
-      "url": "https://www.lavorosi.it/",
       "mode": "monitoraggio_editoriale"
     }
   ]
