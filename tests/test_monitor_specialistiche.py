@@ -28,7 +28,7 @@ class EditorialTests(unittest.TestCase):
         self.assertEqual(m.parse(sample(title="Selezione comparativa per consulenti fiscali"),FEED,NOW),[])
     def test_inaccessibilita_registrata(self):
         v=m.build(fetcher=lambda _: (_ for _ in ()).throw(OSError("offline")),now=NOW)
-        self.assertEqual(len(v['feeds_failed']),len(m.FEEDS))
+        self.assertEqual(len(v['feeds_failed']),len(m.FEEDS)+len(m.HTML_SOURCES))
         self.assertEqual(v['items'],[])
         self.assertEqual(v['publication_mode'],'link_esterni_per_categoria')
     def test_esclusione_send_indebiti(self):
@@ -47,6 +47,25 @@ class EditorialTests(unittest.TestCase):
         v=m.build(fetcher=lambda _: (_ for _ in ()).throw(OSError("offline")), now=NOW,previous=previous)
         self.assertEqual(len(v['items']),1)
         self.assertEqual(v['items'][0]['category'],'Successioni e tributi locali')
+    def test_html_redazione_fiscale(self):
+        from scripts import fonti_web_pubbliche as web
+        article = (b'<html><body><div>Notizie Flash 20/11/2026</div>'
+                   b'<h1>Saldo IMU 2026 sulle aree fabbricabili</h1></body></html>')
+        item = web.parse_public_article(article,
+            'https://www.redazionefiscale.it/c/notizie-flash/52407-test',
+            'Redazione Fiscale', NOW, m.classify, m.get_date)
+        self.assertIsNotNone(item)
+        self.assertEqual(item['category'], 'Successioni e tributi locali')
+    def test_html_euroconference_data(self):
+        from scripts import fonti_web_pubbliche as web
+        article = (b'<html><head><meta property="article:published_time" '
+                   b'content="2026-11-20T09:00:00+00:00"></head><body>'
+                   b'<h1>Fattura elettronica e novita IVA</h1></body></html>')
+        item = web.parse_public_article(article,
+            'https://www.ecnews.it/fiscale/fisco-e-patrimonio/iva/test/',
+            'Euroconference News', NOW, m.classify, m.get_date)
+        self.assertIsNotNone(item)
+        self.assertEqual(item['category'], 'Dichiarazioni e Fisco')
     def test_mai_feed_specialistici_nel_sito_pubblico(self):
         self.assertIn('fiscoetasse.com', {x[2] for x in m.FEEDS})
         self.assertIn('fiscal-focus.it', {x[2] for x in m.FEEDS})
