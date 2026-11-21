@@ -31,7 +31,10 @@ class EditorialTests(unittest.TestCase):
         self.assertEqual(v['items'],[])
         self.assertEqual(v['publication_mode'],'solo_revisione_editoriale_non_pubblicare_sul_sito')
     def test_mai_feed_specialistici_nel_sito_pubblico(self):
-        self.assertTrue(all(x[1].startswith('https://www.fiscal-focus.it/') for x in m.FEEDS))
+        self.assertIn('fiscoetasse.com', {x[2] for x in m.FEEDS})
+        self.assertIn('fiscal-focus.it', {x[2] for x in m.FEEDS})
+        self.assertIn('ipsoa.it', {x[2] for x in m.FEEDS})
+        self.assertTrue(all(x[1].startswith('https://') for x in m.FEEDS))
 
 if __name__=='__main__':
     unittest.main()
