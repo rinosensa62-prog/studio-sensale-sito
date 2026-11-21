@@ -41,6 +41,57 @@ KEYWORDS = re.compile(
     r'fattur|locazion|succession|partita|dichiarazion|scadenz|tribut|forfettari|'
     r'adempiment|finanziament|detrazion|cedolar|tari|imu)\w*', re.I)
 
+
+# L'argomento determina la sezione, mai la testata che pubblica la notizia.
+CATEGORIES = (
+    "Bandi e finanziamenti", "Aprire e gestire un’attività", "Lavoro e paghe",
+    "Famiglie e CAF", "Dichiarazioni e Fisco", "Locazioni e immobili",
+    "Successioni e tributi locali",
+)
+# Esclusione editoriale esplicita: notifiche SEND/indebiti INPS.
+EXCLUDED_NEWS = re.compile(
+    r'(?:indebit\w*.{0,80}(?:notific\w*|send)|(?:notific\w*|send).{0,80}indebit\w*)', re.I
+)
+CATEGORY_PATTERNS = (
+    ("Successioni e tributi locali",
+     r'\b(?:succession\w*|eredit\w*|eredi|volture ereditarie|imu|tari|tasi|'
+     r'imposta provinciale di trascrizione|tributi locali)\b'),
+    ("Locazioni e immobili",
+     r'\b(?:locazion\w*|affitt\w*|cedolare secca|immobil\w*|catast\w*|'
+     r'prima casa|ecobonus|ristrutturazion\w*|fabbricat\w*|tupini)\b'),
+    ("Famiglie e CAF",
+     r'\b(?:isee|dsu|730|bonus mamm\w*|assegno unico|assegno di inclusione|'
+     r'ape sociale|pension\w*|pensionat\w*|invalidit\w*|disabilit\w*|'
+     r'famigli\w*|sipp)\b'),
+    ("Lavoro e paghe",
+     r'\b(?:assunzion\w*|dipendent\w*|contributi|contributiv\w*|conged\w*|'
+     r'welfare aziendale|uniemens|fringe benefit|siisl|inail|inps|'
+     r'distacch\w*|retribuzion\w*|lavorator\w*|lavoro subordinato|'
+     r'cu \d{4}|fondo solidariet\w*)\b'),
+    ("Bandi e finanziamenti",
+     r'\b(?:band\w*|incentiv\w*|fondo perduto|finanziament\w*|voucher\w*|'
+     r'fotovoltaico|agevolazion\w*|credit\w* d.imposta|contributi fino|'
+     r'fondo di garanzia|fond\w* PMI)\b'),
+    ("Aprire e gestire un’attività",
+     r'\b(?:partita iva|regime forfettario|forfettari\w*|crisi d.impresa|'
+     r'liquidazione controllata|impres\w*|societ\w*|s\.n\.c\.?|'
+     r'scissione societaria|professionist\w*|costituzione societ\w*)\b'),
+    ("Dichiarazioni e Fisco",
+     r'\b(?:fisco|fiscal\w*|iva|irpef|ires|irap|impost\w*|fattur\w*|'
+     r'dichiarazion\w*|redditi|ritenut\w*|versament\w*|f24|'
+     r'rottamazion\w*|tributar\w*|detrazion\w*|rimborso iva|'
+     r'autotutela|compliance|crediti fiscali)\b'),
+)
+
+def classify(title):
+    """Una sola delle sette categorie; un titolo ambiguo rimane fuori dal sito."""
+    if not isinstance(title, str) or EXCLUDED_NEWS.search(title) or EXCLUDE.search(title):
+        return None
+    for category, pattern in CATEGORY_PATTERNS:
+        if re.search(pattern, title, re.I):
+            return category
+    return None
+
 def simple(tag):
     return tag.rsplit("}", 1)[-1].lower()
 
@@ -78,12 +129,13 @@ def parse(xml_bytes, source, now):
         if (not title or not url.startswith("https://") or
             host != source[2] and not host.endswith("." + source[2]) or
             not date or not timedelta(hours=-6) <= now-date <= timedelta(days=10) or
-            EXCLUDE.search(title) or not KEYWORDS.search(title)):
+            not classify(title)):
             continue
         found.append({"id": hashlib.sha256(url.encode()).hexdigest()[:18],
                       "title": title, "url": url, "source": source[0],
                       "published_at": date.isoformat(timespec="seconds"),
-                      "status": "spunto_da_verificare"})
+                      "category": classify(title),
+                      "status": "link_esterno_da_verificare"})
     return found
 
 def fetch(url):
@@ -95,7 +147,7 @@ def fetch(url):
         raise ValueError("feed troppo grande")
     return data
 
-def build(fetcher=fetch, now=None):
+def build(fetcher=fetch, now=None, previous=None):
     now = now or datetime.now(timezone.utc)
     entries, ok, failed = [], [], []
     for feed in FEEDS:
@@ -105,15 +157,53 @@ def build(fetcher=fetch, now=None):
             ok.append(feed[0])
         except Exception as exc:
             failed.append(feed[0])
-            print(f"Spunti RSS non disponibili {feed[0]}: {type(exc).__name__}", file=sys.stderr)
-    unique = {v["id"]:v for v in sorted(entries,key=lambda x:x["published_at"])}
-    return {"updated_at": now.isoformat(timespec="seconds"),
-            "publication_mode":"solo_revisione_editoriale_non_pubblicare_sul_sito",
-            "items":sorted(unique.values(),key=lambda x:x["published_at"],reverse=True)[:40],
-            "feeds_ok":ok,"feeds_failed":failed,
-            "other_sources":[{"name":n,"url":u,"mode":"monitoraggio_editoriale"} for n,u in OTHER_SOURCES]}
+            print(f"RSS specializzato non disponibile {feed[0]}: {type(exc).__name__}", file=sys.stderr)
+
+    # Archivio persistente: non cancellare notizie storiche quando scadono dal feed.
+    previous = previous or {}
+    allowed_sources = {feed[0]: feed[2] for feed in FEEDS}
+    for item in previous.get("items", []):
+        if not isinstance(item, dict) or item.get("source") not in allowed_sources:
+            continue
+        title = item.get("title")
+        category = classify(title)
+        url = item.get("url", "")
+        date = get_date(item.get("published_at", ""))
+        try:
+            host = (urlsplit(url).hostname or "").lower()
+        except (TypeError, ValueError):
+            continue
+        origin = allowed_sources[item["source"]]
+        if (not category or not date or not isinstance(url, str) or
+            not url.startswith("https://") or
+            not (host == origin or host.endswith("." + origin))):
+            continue
+        record = dict(item)
+        record["category"] = category
+        record["status"] = "link_esterno_da_verificare"
+        entries.append(record)
+    entries.sort(key=lambda x: x["published_at"], reverse=True)
+    archive, seen_urls, seen_titles, counts = [], set(), set(), {}
+    for item in entries:
+        source = item["source"]
+        title_key = re.sub(r'\W+', ' ', item["title"].casefold()).strip()
+        if (item["url"] in seen_urls or title_key in seen_titles or
+            counts.get(source, 0) >= 35):
+            continue
+        archive.append(item)
+        seen_urls.add(item["url"])
+        seen_titles.add(title_key)
+        counts[source] = counts.get(source, 0) + 1
+        if len(archive) >= 150:
+            break
+    return {"schema_version": 2, "updated_at": now.isoformat(timespec="seconds"),
+            "publication_mode": "link_esterni_per_categoria",
+            "items": archive, "feeds_ok": ok, "feeds_failed": failed,
+            "other_sources": [{"name":n,"url":u,"mode":"monitoraggio_editoriale"}
+                              for n,u in OTHER_SOURCES]}
 if __name__ == "__main__":
-    value = build()
+    old = json.loads(OUTPUT.read_text(encoding="utf-8")) if OUTPUT.exists() else {}
+    value = build(previous=old)
     if not value["feeds_ok"]:
         raise SystemExit("Nessun feed specialistico raggiungibile: preservo l'archivio precedente")
     if OUTPUT.exists():
@@ -122,4 +212,4 @@ if __name__ == "__main__":
             print("Spunti specialistici invariati")
             raise SystemExit(0)
     OUTPUT.write_text(json.dumps(value,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print(f"Spunti specialistici aggiornati: {len(value['items'])}")
+    print(f"Collegamenti esterni classificati: {len(value['items'])}")
