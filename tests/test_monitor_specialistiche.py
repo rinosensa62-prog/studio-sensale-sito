@@ -18,7 +18,8 @@ class EditorialTests(unittest.TestCase):
     def test_candidati_solo_editoriali(self):
         x=m.parse(sample(),FEED,NOW)
         self.assertEqual(len(x),1)
-        self.assertEqual(x[0]['status'],'spunto_da_verificare')
+        self.assertEqual(x[0]['status'],'link_esterno_da_verificare')
+        self.assertEqual(x[0]['category'],'Bandi e finanziamenti')
     def test_host_esterno_rifiutato(self):
         self.assertEqual(m.parse(sample(link="https://fiscal-focus.it.example.com/news"),FEED,NOW),[])
     def test_storie_vecchie_rifiutate(self):
@@ -29,7 +30,23 @@ class EditorialTests(unittest.TestCase):
         v=m.build(fetcher=lambda _: (_ for _ in ()).throw(OSError("offline")),now=NOW)
         self.assertEqual(len(v['feeds_failed']),len(m.FEEDS))
         self.assertEqual(v['items'],[])
-        self.assertEqual(v['publication_mode'],'solo_revisione_editoriale_non_pubblicare_sul_sito')
+        self.assertEqual(v['publication_mode'],'link_esterni_per_categoria')
+    def test_esclusione_send_indebiti(self):
+        self.assertIsNone(m.classify('Indebiti INPS dal 2027 notifiche online con SEND cosa cambia'))
+        self.assertEqual(m.parse(sample(title='Indebiti INPS dal 2027 notifiche online con SEND cosa cambia'),FEED,NOW),[])
+    def test_classificazione_tematica(self):
+        self.assertEqual(m.classify('IMU 2027: pagamento PagoPA'),'Successioni e tributi locali')
+        self.assertEqual(m.classify('Contratti di locazione, cedolare secca'),'Locazioni e immobili')
+        self.assertEqual(m.classify('Distacchi Italia-Turchia, contributi Uniemens'),'Lavoro e paghe')
+        self.assertEqual(m.classify('Fattura elettronica nuove specifiche 2027'),'Dichiarazioni e Fisco')
+    def test_archivio_persistente(self):
+        previous={'items':[{'title':'IMU 2027: pagamento PagoPA',
+                           'source':'Informazione Fiscale',
+                           'url':'https://www.informazionefiscale.it/imu-test',
+                           'published_at':'2026-11-19T09:00:00+00:00'}]}
+        v=m.build(fetcher=lambda _: (_ for _ in ()).throw(OSError("offline")), now=NOW,previous=previous)
+        self.assertEqual(len(v['items']),1)
+        self.assertEqual(v['items'][0]['category'],'Successioni e tributi locali')
     def test_mai_feed_specialistici_nel_sito_pubblico(self):
         self.assertIn('fiscoetasse.com', {x[2] for x in m.FEEDS})
         self.assertIn('fiscal-focus.it', {x[2] for x in m.FEEDS})
