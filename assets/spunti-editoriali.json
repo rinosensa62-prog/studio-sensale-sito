@@ -1,0 +1,128 @@
+{
+  "updated_at": "2026-11-21T13:48:34+00:00",
+  "publication_mode": "solo_revisione_editoriale_non_pubblicare_sul_sito",
+  "items": [
+    {
+      "id": "6fcda1eb31d06e0d79",
+      "title": "12.39 - Distacchi Italia-Turchia: l’INPS chiarisce contributi e compilazione dell’Uniemens",
+      "url": "https://www.fiscal-focus.it/news,190291",
+      "source": "Fiscal Focus - News24",
+      "published_at": "2026-11-19T23:00:00+00:00",
+      "status": "spunto_da_verificare"
+    },
+    {
+      "id": "800ab1717fe7ed453e",
+      "title": "Ore 11:22 - Welfare aziendale, CU 2026 senza obbligo di rettifica: recupero delle imposte con l’integrativa",
+      "url": "https://www.fiscal-focus.it/news,190284",
+      "source": "Fiscal Focus - News24",
+      "published_at": "2026-11-19T23:00:00+00:00",
+      "status": "spunto_da_verificare"
+    },
+    {
+      "id": "207b78d6769951cfe8",
+      "title": "Ore 10:26 - Testi Unici tributari, dal 2027 cambia la numerazione ma non le regole",
+      "url": "https://www.fiscal-focus.it/news,190282",
+      "source": "Fiscal Focus - News24",
+      "published_at": "2026-11-19T23:00:00+00:00",
+      "status": "spunto_da_verificare"
+    },
+    {
+      "id": "346166d5a6346469c6",
+      "title": "Ore 09:03 - Rottamazione cartelle, tre scadenze al 30 novembre: attenzione alle regole sulla decade",
+      "url": "https://www.fiscal-focus.it/news,190281",
+      "source": "Fiscal Focus - News24",
+      "published_at": "2026-11-19T23:00:00+00:00",
+      "status": "spunto_da_verificare"
+    },
+    {
+      "id": "d67862838b870d4729",
+      "title": "Ore 14.27 – Fondo solidarietà Bolzano, contributi ridotti del 40% anche nel 2027 per le piccole imprese",
+      "url": "https://www.fiscal-focus.it/news,190228",
+      "source": "Fiscal Focus - News24",
+      "published_at": "2026-11-18T23:00:00+00:00",
+      "status": "spunto_da_verificare"
+    },
+    {
+      "id": "e19bdfaa9071321496",
+      "title": "Ore 09.04 – Compensazioni fiscali indebite, l'amministratore risponde anche se gli F24 sono inviati dal commercialista",
+      "url": "https://www.fiscal-focus.it/news,190224",
+      "source": "Fiscal Focus - News24",
+      "published_at": "2026-11-18T23:00:00+00:00",
+      "status": "spunto_da_verificare"
+    },
+    {
+      "id": "65b318ae0e12e48215",
+      "title": "Ore 08.57 – Tirocinio commercialisti, il CNDCEC chiarisce la scadenza dei 18 mesi: conta il giorno della domanda",
+      "url": "https://www.fiscal-focus.it/news,190168",
+      "source": "Fiscal Focus - News24",
+      "published_at": "2026-11-17T23:00:00+00:00",
+      "status": "spunto_da_verificare"
+    },
+    {
+      "id": "98c3456f41b612baa3",
+      "title": "Ore 08.38 – Acconti IRES e IRAP, con l'esercizio abbreviato il secondo versamento potrebbe saltare",
+      "url": "https://www.fiscal-focus.it/news,190167",
+      "source": "Fiscal Focus - News24",
+      "published_at": "2026-11-17T23:00:00+00:00",
+      "status": "spunto_da_verificare"
+    },
+    {
+      "id": "23e7ac78200a14ae31",
+      "title": "Ore 08.01 – Regime forfettario, rimborsi spese esclusi dai compensi ma cresce il rischio di nuove imposte",
+      "url": "https://www.fiscal-focus.it/news,190165",
+      "source": "Fiscal Focus - News24",
+      "published_at": "2026-11-17T23:00:00+00:00",
+      "status": "spunto_da_verificare"
+    },
+    {
+      "id": "dcda0c75b90d3801b8",
+      "title": "Ore 17:40 - Regime impatriati: l’agevolazione spetta anche se si inizia a lavorare anni dopo il trasferimento in Italia",
+      "url": "https://www.fiscal-focus.it/news,190159",
+      "source": "Fiscal Focus - News24",
+      "published_at": "2026-11-16T23:00:00+00:00",
+      "status": "spunto_da_verificare"
+    }
+  ],
+  "feeds_ok": [
+    "Fiscal Focus - News24",
+    "Fiscal Focus - In primo piano"
+  ],
+  "feeds_failed": [],
+  "other_sources": [
+    {
+      "name": "Fisco e Tasse",
+      "url": "https://www.fiscoetasse.com/",
+      "mode": "monitoraggio_editoriale"
+    },
+    {
+      "name": "Informazione Fiscale",
+      "url": "https://www.informazionefiscale.it/",
+      "mode": "monitoraggio_editoriale"
+    },
+    {
+      "name": "Euroconference News",
+      "url": "https://www.ecnews.it/",
+      "mode": "monitoraggio_editoriale"
+    },
+    {
+      "name": "Eutekne",
+      "url": "https://www.eutekne.info/",
+      "mode": "monitoraggio_editoriale"
+    },
+    {
+      "name": "IPSOA",
+      "url": "https://www.ipsoa.it/",
+      "mode": "monitoraggio_editoriale"
+    },
+    {
+      "name": "Redazione Fiscale",
+      "url": "https://www.redazionefiscale.it/",
+      "mode": "monitoraggio_editoriale"
+    },
+    {
+      "name": "LavoroSì",
+      "url": "https://www.lavorosi.it/",
+      "mode": "monitoraggio_editoriale"
+    }
+  ]
+}
