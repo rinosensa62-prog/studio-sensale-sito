@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-20T22:43:27+00:00",
+  "updated_at": "2026-11-22T17:57:52+00:00",
   "items": [
     {
       "id": "fe3c94590473e79312",
@@ -75,14 +75,6 @@
       "published_at": "2026-11-18T00:00:00+00:00"
     },
     {
-      "id": "278f1489a6d07f3e90",
-      "title": "Tax credit fondazioni bancarie: fissata la percentuale 2026",
-      "url": "https://www.fiscooggi.it/portale/-/tax-credit-fondazioni-bancarie-fissata-la-percentuale-2026",
-      "source": "FiscoOggi Normativa",
-      "category": "Dichiarazioni e Fisco",
-      "published_at": "2026-11-17T19:24:00+00:00"
-    },
-    {
       "id": "e242f8f1f6e54193f1",
       "title": "Commissione sull’Anagrafe tributaria, conclusa l’indagine sul Fisco digitale",
       "url": "https://www.fiscooggi.it/portale/-/commissione-sull-anagrafe-tributaria-conclusa-l-indagine-sul-fisco-digitale",
@@ -139,11 +131,43 @@
       "published_at": "2026-11-13T00:00:00+00:00"
     },
     {
+      "id": "c30afa372c73847af6",
+      "title": "Avvio Campagna RED ordinaria 2026 e dichiarazioni di responsabilità",
+      "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.11.avvio-campagna-red-ordinaria-2026-e-dichiarazioni-di-responsabilit.html",
+      "source": "INPS Notizie",
+      "category": "Dichiarazioni e Fisco",
+      "published_at": "2026-11-13T00:00:00+00:00"
+    },
+    {
+      "id": "16d8688edbeb808bf9",
+      "title": "Contributi lavoratori domestici: chiarimenti pagamento",
+      "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.11.contributi-lavoratori-domestici-chiarimenti-pagamento.html",
+      "source": "INPS Notizie",
+      "category": "Lavoro e paghe",
+      "published_at": "2026-11-13T00:00:00+00:00"
+    },
+    {
+      "id": "be274e0f3b6bb3c1e7",
+      "title": "Assegno di Inclusione: arriva la video guida personalizzata",
+      "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.11.assegno-di-inclusione-arriva-la-video-guida-personalizzata.html",
+      "source": "INPS Notizie",
+      "category": "Famiglie e CAF",
+      "published_at": "2026-11-12T00:00:00+00:00"
+    },
+    {
       "id": "2b4a803152f1788750",
       "title": "Interpello: Agevolazioni disabili. Acquisto auto cointestata (risposta n. 211)",
       "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/10443592/Risposta+n.+211_2026/2f9937d4-fbce-5ed5-6f20-59703ec435db",
       "source": "Agenzia delle Entrate",
       "category": "Famiglie e CAF",
+      "published_at": "2026-11-11T00:00:00+00:00"
+    },
+    {
+      "id": "537d4b9c34e7638150",
+      "title": "Calcio professionistico e salute, al via lo studio di Inail e Aic sulle patologie articolari degli atleti",
+      "url": "https://www.inail.it/portale/it/inail-comunica/news/notizia.2026.11.calcio-professionistico-e-salute-al-via-lo-studio-di-inail-e-aic-sulle-patologie-articolari-degli-atleti.html",
+      "source": "INAIL Notizie",
+      "category": "Aprire e gestire un’attività",
       "published_at": "2026-11-11T00:00:00+00:00"
     },
     {
@@ -161,12 +185,17 @@
       "source": "Agenzia delle Entrate",
       "category": "Dichiarazioni e Fisco",
       "published_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "id": "0dc2cf3ac319c340fa",
+      "title": "SI.IN.PRE.SA, conclusa con successo la tappa calabrese del progetto itinerante dell’Inail nato per portare servizi e assistenza sul territorio",
+      "url": "https://www.inail.it/portale/it/inail-comunica/news/notizia.2026.11.si-in-pre-sa--conclusa-con-successo-la-tappa-calabrese-del-progetto-itinerante-dell-inail.html",
+      "source": "INAIL Notizie",
+      "category": "Lavoro e paghe",
+      "published_at": "2026-11-09T00:00:00+00:00"
     }
   ],
   "feeds_ok": [
-    "Agenzia delle Entrate",
-    "FiscoOggi Attualità",
-    "FiscoOggi Normativa",
     "INPS Notizie",
     "INPS Circolari",
     "INPS Messaggi",
@@ -175,6 +204,9 @@
     "Ministero del Lavoro"
   ],
   "feeds_failed": [
+    "Agenzia delle Entrate",
+    "FiscoOggi Attualità",
+    "FiscoOggi Normativa",
     "MIMIT Notizie"
   ],
   "note": "Archivio cumulativo di titoli e link istituzionali; non costituisce un parere dello Studio."
