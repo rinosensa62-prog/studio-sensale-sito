@@ -1,9 +1,8 @@
-name: Prepara pacchetto Netlify con notizie live
+name: Ripristina grafica originale Netlify
 on:
   workflow_dispatch:
   push:
     paths:
-      - 'frontend/studio-news-live.js'
       - 'scripts/prepara_pacchetto_netlify.py'
       - '.github/workflows/pacchetto-netlify-live.yml'
 permissions:
@@ -19,27 +18,27 @@ jobs:
           python-version: '3.12'
       - name: Controlla parser e integrita del repository
         run: python -m unittest discover -s tests -v
-      - name: Prepara mirror del sito e modulo notizie
+      - name: Prepara mirror del sito senza modulo duplicato
         run: python scripts/prepara_pacchetto_netlify.py
       - name: Verifica contenuto dello ZIP
         run: |
           python - <<'PY'
           from zipfile import ZipFile
-          with ZipFile('studio-sensale-notizie-live.zip') as z:
+          with ZipFile('studio-sensale-home-originale.zip') as z:
               names=set(z.namelist())
               assert 'index.html' in names
               assert 'notizie/index.html' in names
               assert 'argomenti/bandi-finanziamenti/index.html' in names
               assert 'argomenti/fisco-dichiarazioni/index.html' in names
-              assert 'assets/studio-news-live.js' in names
-              assert all(('<script src="/assets/studio-news-live.js" defer></script>' in
+              assert 'assets/studio-news-live.js' not in names
+              assert all(('<script src="/assets/studio-news-live.js" defer></script>' not in
                   z.read(k).decode('utf-8')) for k in
                   ['index.html','notizie/index.html','argomenti/bandi-finanziamenti/index.html'])
-              print("ZIP integrale e iniezione notizie verificati")
+              print("ZIP integrale e assenza modulo duplicato verificati")
           PY
       - name: Pubblica lo ZIP come artifact scaricabile
         uses: actions/upload-artifact@v4
         with:
-          name: studio-sensale-notizie-live-netlify
+          name: studio-sensale-home-originale-netlify
           path: studio-sensale-notizie-live.zip
           retention-days: 7
