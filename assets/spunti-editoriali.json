@@ -1,8 +1,17 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-21T19:31:44+00:00",
+  "updated_at": "2026-11-22T09:31:38+00:00",
   "publication_mode": "link_esterni_per_categoria",
   "items": [
+    {
+      "id": "ea1ba9552828074e48",
+      "title": "Taglio IRPEF e IRAP nella Manovra 2027 della Regione Lazio, verso l'uscita dal Piano di rientro",
+      "url": "https://www.informazionefiscale.it/taglio-irpef-irap-manovra-2027-lazio-piano-di-rientro",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-22T05:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
     {
       "id": "87afea9a9bf1b0a117",
       "title": "IMU, calcolo precompilato dal 2027. Per il pagamento debutta PagoPA",
@@ -40,21 +49,21 @@
       "status": "link_esterno_da_verificare"
     },
     {
-      "id": "9111379c8db0ed872b",
-      "title": "Società di nuova quotazione: quali clausole inserire nello statuto prima dell’IPO",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/21/societa-nuova-quotazione-clausole-inserire-statuto-prima-ipo",
-      "source": "IPSOA Impresa",
-      "published_at": "2026-11-21T05:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
-    },
-    {
       "id": "7862f1072ff7b9f762",
       "title": "Fabbricati Tupini e aliquote IVA: il nuovo Testo Unico cambia la numerazione, non i dubbi",
       "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/21/fabbricati-tupini-aliquote-iva-testo-unico-cambia-numerazione-non-dubbi",
       "source": "IPSOA Fisco",
       "published_at": "2026-11-21T05:00:00+00:00",
       "category": "Locazioni e immobili",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "9111379c8db0ed872b",
+      "title": "Società di nuova quotazione: quali clausole inserire nello statuto prima dell’IPO",
+      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/21/societa-nuova-quotazione-clausole-inserire-statuto-prima-ipo",
+      "source": "IPSOA Impresa",
+      "published_at": "2026-11-21T05:00:00+00:00",
+      "category": "Aprire e gestire un’attività",
       "status": "link_esterno_da_verificare"
     },
     {
@@ -544,6 +553,24 @@
       "status": "link_esterno_da_verificare"
     },
     {
+      "id": "28ab071bfb3a606625",
+      "title": "Fatture a cavallo d’anno: la prima chiusura con i nuovi termini di detrazione IVA",
+      "url": "https://www.ecnews.it/fiscale/in-pratica/guida-agli-adempimenti/fatture-a-cavallo-danno-la-prima-chiusura-con-i-nuovi-termini-di-detrazione-iva/",
+      "source": "Euroconference News",
+      "published_at": "2026-11-18T23:06:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "78e062ed97b76e53df",
+      "title": "Trasformazione eterogenea: le criticità del regime fiscale",
+      "url": "https://www.ecnews.it/fiscale/fisco-e-patrimonio/operazioni-straordinarie/trasformazione-eterogenea-le-criticita-del-regime-fiscale/",
+      "source": "Euroconference News",
+      "published_at": "2026-11-18T23:05:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
+    {
       "id": "883521a1f7beac7474",
       "title": "Retribuzioni IRCCS privati: chiarimenti sulla modalità di calcolo dei limiti per dipendenti e collaboratori",
       "url": "https://www.ecnews.it/lavoro/rapporto-di-lavoro/gestione-del-rapporto/retribuzioni-irccs-privati-chiarimenti-sulla-modalita-di-calcolo-dei-limiti-per-dipendenti-e-collaboratori/",
@@ -589,9 +616,9 @@
       "status": "link_esterno_da_verificare"
     },
     {
-      "id": "bc83a2531af5f5453e",
-      "title": "Riduzione dell'aliquota IRES agli ex IACP: agevolazione ancora applicabile",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/19/riduzione-aliquota-ires-ex-iacp-agevolazione-applicabile",
+      "id": "2f2aac2e12bd490e1a",
+      "title": "Esenzione dalle ritenute sugli interessi relativi a finanziamenti a medio–lungo termine: in quali casi?",
+      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/19/esenzione-ritenute-interessi-relativi-finanziamenti-medio-lungo-termine-casi",
       "source": "IPSOA Fisco",
       "published_at": "2026-11-18T20:00:00+00:00",
       "category": "Bandi e finanziamenti",
@@ -616,9 +643,9 @@
       "status": "link_esterno_da_verificare"
     },
     {
-      "id": "2f2aac2e12bd490e1a",
-      "title": "Esenzione dalle ritenute sugli interessi relativi a finanziamenti a medio–lungo termine: in quali casi?",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/19/esenzione-ritenute-interessi-relativi-finanziamenti-medio-lungo-termine-casi",
+      "id": "bc83a2531af5f5453e",
+      "title": "Riduzione dell'aliquota IRES agli ex IACP: agevolazione ancora applicabile",
+      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/19/riduzione-aliquota-ires-ex-iacp-agevolazione-applicabile",
       "source": "IPSOA Fisco",
       "published_at": "2026-11-18T20:00:00+00:00",
       "category": "Bandi e finanziamenti",
@@ -643,6 +670,15 @@
       "status": "link_esterno_da_verificare"
     },
     {
+      "id": "d5b6c2f472e1ee582e",
+      "title": "Il cambio di controllo indiretto nel riporto delle perdite fiscali: l’interpretazione autentica del decreto Omnibus",
+      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/18/cambio-controllo-indiretto-riporto-perdite-fiscali-interpretazione-autentica-decreto-omnibus",
+      "source": "IPSOA Fisco",
+      "published_at": "2026-11-18T05:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
+    {
       "id": "e1734536db7c326ec7",
       "title": "NIS2: adempimenti e scadenze 2027 per le imprese",
       "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/18/nis2-adempimenti-scadenze-2027-imprese",
@@ -658,15 +694,6 @@
       "source": "IPSOA Impresa",
       "published_at": "2026-11-18T05:00:00+00:00",
       "category": "Successioni e tributi locali",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "d5b6c2f472e1ee582e",
-      "title": "Il cambio di controllo indiretto nel riporto delle perdite fiscali: l’interpretazione autentica del decreto Omnibus",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/18/cambio-controllo-indiretto-riporto-perdite-fiscali-interpretazione-autentica-decreto-omnibus",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-18T05:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
       "status": "link_esterno_da_verificare"
     },
     {
@@ -742,21 +769,21 @@
       "status": "link_esterno_da_verificare"
     },
     {
-      "id": "b78cd2a93cc80fbcf9",
-      "title": "Le scadenze di dicembre 2026: bonus mamme, sgravio contratti di solidarietà, adempimento collaborativo, saldo IMU",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/17/scadenze-dicembre-2026-bonus-mamme-sgravio-contratti-solidarieta-adempimento-collaborativo-saldo-imu",
-      "source": "IPSOA Impresa",
-      "published_at": "2026-11-17T05:00:00+00:00",
-      "category": "Successioni e tributi locali",
-      "status": "link_esterno_da_verificare"
-    },
-    {
       "id": "700f681ce3010e2da6",
       "title": "Deducibilità IRAP e IRES: cosa cambia nel 2027 per il settore finanziario ed energetico",
       "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/17/deducibilita-irap-ires-cambia-2027-settore-finanziario-energetico",
       "source": "IPSOA Fisco",
       "published_at": "2026-11-17T05:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "b78cd2a93cc80fbcf9",
+      "title": "Le scadenze di dicembre 2026: bonus mamme, sgravio contratti di solidarietà, adempimento collaborativo, saldo IMU",
+      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/17/scadenze-dicembre-2026-bonus-mamme-sgravio-contratti-solidarieta-adempimento-collaborativo-saldo-imu",
+      "source": "IPSOA Impresa",
+      "published_at": "2026-11-17T05:00:00+00:00",
+      "category": "Successioni e tributi locali",
       "status": "link_esterno_da_verificare"
     },
     {
@@ -859,6 +886,15 @@
       "status": "link_esterno_da_verificare"
     },
     {
+      "id": "d04149af867df709f0",
+      "title": "Operazione MLBO e successiva fusione: il trattamento fiscale",
+      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/14/operazione-mlbo-successiva-fusione-trattamento-fiscale",
+      "source": "IPSOA Fisco",
+      "published_at": "2026-11-13T20:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
+    {
       "id": "139adb4fb3db8243bf",
       "title": "Campi Flegrei: versamenti tributari sospesi fino al 30 novembre 2026",
       "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/14/piano-campi-flegrei-sospesi-versamenti-tributari-30-novembre-2026",
@@ -917,14 +953,14 @@
     "Fiscal Focus",
     "Fisco e Tasse",
     "Informazione Fiscale",
-    "IPSOA Impresa",
+    "IPSOA Fisco",
     "LavoroSì",
     "Eutekne",
     "Euroconference News",
     "Redazione Fiscale"
   ],
   "feeds_failed": [
-    "IPSOA Fisco"
+    "IPSOA Impresa"
   ],
   "other_sources": [
     {
