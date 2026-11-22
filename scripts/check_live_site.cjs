@@ -60,6 +60,22 @@ const cases = [
       });
       console.log("NATIVE_DOM "+route+" "+JSON.stringify(native).slice(0,24000));
     }
+    if (route === "/argomenti/fisco-dichiarazioni/" || route === "/notizie/" || route === "/") {
+      const clean = await page.evaluate(() => {
+        const h3=[...document.querySelectorAll("main h3")].filter(x => !x.closest("#studio-news-live"));
+        return h3.slice(0,5).map(h => ({
+          text:h.textContent.trim().slice(0,100),
+          parentTag:h.parentElement?.tagName,
+          parentClass:h.parentElement?.className,
+          grandparentTag:h.parentElement?.parentElement?.tagName,
+          grandparentClass:h.parentElement?.parentElement?.className,
+          ggTag:h.parentElement?.parentElement?.parentElement?.tagName,
+          ggClass:h.parentElement?.parentElement?.parentElement?.className,
+          cardOuter:h.parentElement?.parentElement?.outerHTML.slice(0,1700)
+        }));
+      });
+      console.log("CARD_DOM "+route+" "+JSON.stringify(clean));
+    }
     console.log(JSON.stringify({route,category,script,cards,examples:snippets,errors}));
     page.off("pageerror",onError);
     page.off("console",onConsole);
