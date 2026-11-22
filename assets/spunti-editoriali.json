@@ -1,8 +1,17 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-22T09:31:38+00:00",
+  "updated_at": "2026-11-22T19:35:56+00:00",
   "publication_mode": "link_esterni_per_categoria",
   "items": [
+    {
+      "id": "94967758553aa02b1d",
+      "title": "Manovra 2027, verso il via all'esame degli emendamenti. Novità attese su pensioni e rottamazione",
+      "url": "https://www.informazionefiscale.it/manovra-2027-emendamenti-novita-pensioni-rottamazione",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-22T11:30:00+00:00",
+      "category": "Famiglie e CAF",
+      "status": "link_esterno_da_verificare"
+    },
     {
       "id": "ea1ba9552828074e48",
       "title": "Taglio IRPEF e IRAP nella Manovra 2027 della Regione Lazio, verso l'uscita dal Piano di rientro",
@@ -586,6 +595,24 @@
       "source": "Euroconference News",
       "published_at": "2026-11-18T23:03:00+00:00",
       "category": "Successioni e tributi locali",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "661e5f89f56f62be57",
+      "title": "Le esigenze di continuità aziendale non legittimano conservazione e consultazione della posta elettronica degli ex dipendenti",
+      "url": "https://www.ecnews.it/lavoro/rapporto-di-lavoro/gestione-del-rapporto/le-esigenze-di-continuita-aziendale-non-legittimano-conservazione-e-consultazione-della-posta-elettronica-degli-ex-dipendenti/",
+      "source": "Euroconference News",
+      "published_at": "2026-11-18T23:03:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "a2dc142a35d93d8469",
+      "title": "Il rappresentante fiscale IVA è un debitore d’imposta, ma a certe condizioni",
+      "url": "https://www.ecnews.it/fiscale/fisco-e-patrimonio/iva/il-rappresentante-fiscale-iva-e-un-debitore-dimposta-ma-a-certe-condizioni/",
+      "source": "Euroconference News",
+      "published_at": "2026-11-18T23:02:00+00:00",
+      "category": "Dichiarazioni e Fisco",
       "status": "link_esterno_da_verificare"
     },
     {
