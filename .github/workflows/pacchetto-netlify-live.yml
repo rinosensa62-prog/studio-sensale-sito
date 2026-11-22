@@ -1,0 +1,45 @@
+name: Prepara pacchetto Netlify con notizie live
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'frontend/studio-news-live.js'
+      - 'scripts/prepara_pacchetto_netlify.py'
+      - '.github/workflows/pacchetto-netlify-live.yml'
+permissions:
+  contents: read
+jobs:
+  pacchetto:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Controlla parser e integrita del repository
+        run: python -m unittest discover -s tests -v
+      - name: Prepara mirror del sito e modulo notizie
+        run: python scripts/prepara_pacchetto_netlify.py
+      - name: Verifica contenuto dello ZIP
+        run: |
+          python - <<'PY'
+          from zipfile import ZipFile
+          with ZipFile('studio-sensale-notizie-live.zip') as z:
+              names=set(z.namelist())
+              assert 'index.html' in names
+              assert 'notizie/index.html' in names
+              assert 'argomenti/bandi-finanziamenti/index.html' in names
+              assert 'argomenti/fisco-dichiarazioni/index.html' in names
+              assert 'assets/studio-news-live.js' in names
+              assert all(('<script src="/assets/studio-news-live.js" defer></script>' in
+                  z.read(k).decode('utf-8')) for k in
+                  ['index.html','notizie/index.html','argomenti/bandi-finanziamenti/index.html'])
+              print("ZIP integrale e iniezione notizie verificati")
+          PY
+      - name: Pubblica lo ZIP come artifact scaricabile
+        uses: actions/upload-artifact@v4
+        with:
+          name: studio-sensale-notizie-live-netlify
+          path: studio-sensale-notizie-live.zip
+          retention-days: 7
