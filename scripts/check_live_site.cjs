@@ -34,6 +34,19 @@ const cases = [
     if(text.join(" ").match(/indebit\w*.{0,50}(?:notific\w*|SEND)/i)){
       errors.push("Notizia esclusa SEND trovata"); failures++;
     }
+    if (route === "/" || route === "/notizie/" ||
+        route === "/argomenti/fisco-dichiarazioni/") {
+      const inspect = await page.evaluate(() => {
+        const hs = [...document.querySelectorAll("main h2,main h3")];
+        return hs.slice(0,12).map(h => ({
+          title: (h.textContent||"").trim().slice(0,110),
+          h: h.outerHTML.slice(0,330),
+          parent: h.parentElement?.outerHTML.slice(0,1250),
+          grandparent: h.parentElement?.parentElement?.outerHTML.slice(0,1500)
+        }));
+      });
+      console.log("DOM_STRUCTURE "+route+" "+JSON.stringify(inspect).slice(0,13000));
+    }
     console.log(JSON.stringify({route,category,script,cards,examples:snippets,errors}));
     page.off("pageerror",onError);
     page.off("console",onConsole);
