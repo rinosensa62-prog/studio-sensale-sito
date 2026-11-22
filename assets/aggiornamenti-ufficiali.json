@@ -1,7 +1,23 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-22T17:57:52+00:00",
+  "updated_at": "2026-11-22T21:09:37+00:00",
   "items": [
+    {
+      "id": "99699d594caf0fcb60",
+      "title": "CAMERA DI COMMERCIO, INDUSTRIA, ARTIGIANATO E AGRICOLTURA TOSCANA NORD-OVEST - COMUNICATO",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/21/26A06062/SG",
+      "source": "Gazzetta Ufficiale - Serie Generale",
+      "category": "Aprire e gestire un’attività",
+      "published_at": "2026-11-21T11:42:41+00:00"
+    },
+    {
+      "id": "8269fdb261fe259417",
+      "title": "MINISTERO DELLE IMPRESE E DEL MADE IN ITALY - DECRETO 23 luglio 2026",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/21/26A05995/SG",
+      "source": "Gazzetta Ufficiale - Serie Generale",
+      "category": "Aprire e gestire un’attività",
+      "published_at": "2026-11-21T11:42:39+00:00"
+    },
     {
       "id": "fe3c94590473e79312",
       "title": "Credito d’imposta Zes agricoltura, comunicazioni integrative al via",
@@ -25,6 +41,14 @@
       "source": "FiscoOggi Normativa",
       "category": "Dichiarazioni e Fisco",
       "published_at": "2026-11-19T15:40:00+00:00"
+    },
+    {
+      "id": "f992ee756ccc822c5f",
+      "title": "Prevenzione dell’usura: dal Fondo MEF 28 milioni di euro di garanzie statali a sostegno di prestiti per PMI e famiglie a rischio",
+      "url": "https://www.mef.gov.it/ufficio-stampa/comunicati/2026/Prevenzione-dellusura-dal-Fondo-MEF-28-milioni-di-euro-di-garanzie-statali-a-sostegno-di-prestiti-per-PMI-e-famiglie-a-rischio/",
+      "source": "MEF Comunicati Stampa",
+      "category": "Famiglie e CAF",
+      "published_at": "2026-11-19T10:02:04+00:00"
     },
     {
       "id": "83e6df56c9a872bb5f",
@@ -75,6 +99,14 @@
       "published_at": "2026-11-18T00:00:00+00:00"
     },
     {
+      "id": "278f1489a6d07f3e90",
+      "title": "Tax credit fondazioni bancarie: fissata la percentuale 2026",
+      "url": "https://www.fiscooggi.it/portale/-/tax-credit-fondazioni-bancarie-fissata-la-percentuale-2026",
+      "source": "FiscoOggi Normativa",
+      "category": "Dichiarazioni e Fisco",
+      "published_at": "2026-11-17T19:24:00+00:00"
+    },
+    {
       "id": "e242f8f1f6e54193f1",
       "title": "Commissione sull’Anagrafe tributaria, conclusa l’indagine sul Fisco digitale",
       "url": "https://www.fiscooggi.it/portale/-/commissione-sull-anagrafe-tributaria-conclusa-l-indagine-sul-fisco-digitale",
@@ -103,14 +135,6 @@
       "title": "UNIEMENS: nuove istruzioni per i congedi di maternità e paternità",
       "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.11.uniemens-nuove-istruzioni-per-i-congedi-di-maternit-e-paternit.html",
       "source": "INPS Notizie",
-      "category": "Famiglie e CAF",
-      "published_at": "2026-11-16T00:00:00+00:00"
-    },
-    {
-      "id": "7f08067dd6ba8b40eb",
-      "title": "Piano sportivo individualizzato, un progetto su misura per i percorsi di inclusione e benessere",
-      "url": "https://www.inail.it/portale/it/inail-comunica/news/notizia.2026.11.piano-sportivo-individualizzato--un-progetto-su-misura-nei-percorsi-di-inclusione-e-benessere.html",
-      "source": "INAIL Notizie",
       "category": "Famiglie e CAF",
       "published_at": "2026-11-16T00:00:00+00:00"
     },
@@ -185,28 +209,22 @@
       "source": "Agenzia delle Entrate",
       "category": "Dichiarazioni e Fisco",
       "published_at": "2026-11-10T00:00:00+00:00"
-    },
-    {
-      "id": "0dc2cf3ac319c340fa",
-      "title": "SI.IN.PRE.SA, conclusa con successo la tappa calabrese del progetto itinerante dell’Inail nato per portare servizi e assistenza sul territorio",
-      "url": "https://www.inail.it/portale/it/inail-comunica/news/notizia.2026.11.si-in-pre-sa--conclusa-con-successo-la-tappa-calabrese-del-progetto-itinerante-dell-inail.html",
-      "source": "INAIL Notizie",
-      "category": "Lavoro e paghe",
-      "published_at": "2026-11-09T00:00:00+00:00"
     }
   ],
   "feeds_ok": [
+    "Agenzia delle Entrate",
+    "FiscoOggi Attualità",
+    "FiscoOggi Normativa",
     "INPS Notizie",
     "INPS Circolari",
     "INPS Messaggi",
     "INAIL Notizie",
     "INAIL Avvisi",
-    "Ministero del Lavoro"
+    "Ministero del Lavoro",
+    "Gazzetta Ufficiale - Serie Generale",
+    "MEF Comunicati Stampa"
   ],
   "feeds_failed": [
-    "Agenzia delle Entrate",
-    "FiscoOggi Attualità",
-    "FiscoOggi Normativa",
     "MIMIT Notizie"
   ],
   "note": "Archivio cumulativo di titoli e link istituzionali; non costituisce un parere dello Studio."
