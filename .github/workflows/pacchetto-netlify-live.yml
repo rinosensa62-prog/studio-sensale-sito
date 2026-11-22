@@ -40,5 +40,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: studio-sensale-home-originale-netlify
-          path: studio-sensale-notizie-live.zip
+          path: studio-sensale-home-originale.zip
           retention-days: 7
