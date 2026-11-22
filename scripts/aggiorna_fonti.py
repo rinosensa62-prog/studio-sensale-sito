@@ -25,6 +25,8 @@ FEEDS = [
     ('INAIL Avvisi', 'https://www.inail.it/portale/it.rss.avvisi.xml', 'inail.it'),
     ('Ministero del Lavoro', 'https://lavoro.gov.it/_layouts/15/Lavoro.Web/AppPages/RSS', 'lavoro.gov.it'),
     ('MIMIT Notizie', 'https://www.mimit.gov.it/index.php/it/notizie-stampa?format=feed&type=rss', 'mimit.gov.it'),
+    ('Gazzetta Ufficiale - Serie Generale', 'https://www.gazzettaufficiale.it/rss/SG', 'gazzettaufficiale.it'),
+    ('MEF Comunicati Stampa', 'https://www.mef.gov.it/rss/rss.asp?t=4&c=200', 'mef.gov.it'),
 ]
 CATEGORIES = [
     ('Bandi e finanziamenti', r'\b(band[oi]|finanziament[oi] agevolat|finanziament[oi] a fondo perduto|voucher|incentiv|agevolazion|fondo perduto|bonus assunzion|credito (?:d.imposta|di imposta)|autoimpiego|start.up)\w*'),
@@ -143,10 +145,17 @@ def parse(xml_bytes, source, now):
         title = re.sub(r'\s+', ' ', title).strip()[:190]
         date = pub_date(child_text(node, ('pubdate', 'published', 'updated', 'date', 'created')))
         url = official_url(link_of(node), source[2])
+        # La Gazzetta Ufficiale usa titoli generici (es. "DECRETO 23 luglio")
+        # e descrizioni ufficiali esplicative; per la scheda preferiamo la
+        # descrizione originale, non una sintesi automatica inventata.
         # Se il titolo e' generico, usa la descrizione RSS solo per la categoria.
         # La scheda mostra comunque il titolo originale e un link istituzionale.
         description = html.unescape(re.sub('<[^>]*>', ' ', child_text(node, ('description', 'summary'))))
         description = re.sub(r'\s+', ' ', description).strip()[:650]
+        if source[0].startswith('Gazzetta Ufficiale') and description:
+            # Titolo = sommario ufficiale dell'atto; mantenere l'URL
+            # permanente specifico all'atto (e non solo al fascicolo).
+            title = description[:190]
         # Escludi selezioni di personale e titoli privi di contesto anche con sommario pertinente.
         if re.search(REJECT, title, re.I) or GENERIC_INPS.match(title):
             continue
