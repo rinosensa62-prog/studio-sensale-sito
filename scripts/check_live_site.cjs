@@ -13,74 +13,48 @@ const cases = [
   ["/argomenti/successioni-tributi-locali/", "Successioni e tributi locali"],
 ];
 (async () => {
-  const browser = await chromium.launch({ headless:true, args:["--no-sandbox"] });
-  const page = await browser.newPage({viewport:{width:1440,height:900}});
-  let failures = 0;
-  for(const [route,category] of cases){
-    const errors = [];
-    const onError = e => errors.push(String(e.message || e));
-    const onConsole = msg => {if(msg.type()==="error") errors.push(msg.text());};
-    page.on("pageerror",onError);
-    page.on("console",onConsole);
-    await page.goto(BASE + route, {waitUntil:"domcontentloaded", timeout:25000});
-    try { await page.locator("#studio-news-live").waitFor({state:"attached",timeout:14000}); }
-    catch(e){ errors.push("Modulo news live non trovato"); failures++; }
-    const cards = await page.locator("#studio-news-live article.studio-news-item").count();
-    const snippets = (await page.locator("#studio-news-live article.studio-news-item h3")
-       .allTextContents()).slice(0,3);
-    const script = await page.locator('script[src*="studio-news-live.js"]').count();
-    if(!cards) failures++;
-    const text = await page.locator("#studio-news-live").allTextContents();
-    if(text.join(" ").match(/indebit\w*.{0,50}(?:notific\w*|SEND)/i)){
-      errors.push("Notizia esclusa SEND trovata"); failures++;
+  const browser = await chromium.launch({headless:true,args:["--no-sandbox"]});
+  const page=await browser.newPage({viewport:{width:1440,height:900}});
+  let failures=0, hasAutomaticContent=false;
+  for (const [route, category] of cases) {
+    await page.goto(BASE+route,{waitUntil:"domcontentloaded",timeout:28000});
+    const container = route === "/" ? "#home-news-items" :
+      route === "/notizie/" ? "#news-items" : ".editorial-grid[data-category-archive]";
+    await page.locator(container).first().waitFor({state:"visible",timeout:18000});
+    try {
+      await page.locator(container+" a.external-archive-card").first()
+        .waitFor({state:"attached",timeout:11000});
+    } catch(e) {
+      // Alcune categorie potrebbero non avere ancora segnalazioni pertinenti.
     }
-    if (route === "/" || route === "/notizie/" ||
-        route === "/argomenti/fisco-dichiarazioni/") {
-      const inspect = await page.evaluate(() => {
-        const hs = [...document.querySelectorAll("main h2,main h3")];
-        return hs.slice(0,12).map(h => ({
-          title: (h.textContent||"").trim().slice(0,110),
-          h: h.outerHTML.slice(0,330),
-          parent: h.parentElement?.outerHTML.slice(0,1250),
-          grandparent: h.parentElement?.parentElement?.outerHTML.slice(0,1500)
-        }));
-      });
-      console.log("DOM_STRUCTURE "+route+" "+JSON.stringify(inspect).slice(0,13000));
-    }
-    if (route === "/argomenti/fisco-dichiarazioni/" || route === "/notizie/" || route === "/") {
-      const native = await page.evaluate(() => {
-        const ignore = n => !!n.closest("#studio-news-live");
-        const hs = [...document.querySelectorAll("main h2,main h3")].filter(n => !ignore(n));
-        return hs.slice(0,16).map(h => ({
-          title: (h.textContent || "").trim().slice(0,100),
-          parent: h.parentElement?.outerHTML.slice(0,2200),
-          grandparent: h.parentElement?.parentElement?.outerHTML.slice(0,2400),
-          greatGrandparent: h.parentElement?.parentElement?.parentElement?.outerHTML.slice(0,2200)
-        }));
-      });
-      console.log("NATIVE_DOM "+route+" "+JSON.stringify(native).slice(0,24000));
-    }
-    if (route === "/argomenti/fisco-dichiarazioni/" || route === "/notizie/" || route === "/") {
-      const clean = await page.evaluate(() => {
-        const h3=[...document.querySelectorAll("main h3")].filter(x => !x.closest("#studio-news-live"));
-        return h3.slice(0,5).map(h => ({
-          text:h.textContent.trim().slice(0,100),
-          parentTag:h.parentElement?.tagName,
-          parentClass:h.parentElement?.className,
-          grandparentTag:h.parentElement?.parentElement?.tagName,
-          grandparentClass:h.parentElement?.parentElement?.className,
-          ggTag:h.parentElement?.parentElement?.parentElement?.tagName,
-          ggClass:h.parentElement?.parentElement?.parentElement?.className,
-          cardOuter:h.parentElement?.parentElement?.outerHTML.slice(0,1700)
-        }));
-      });
-      console.log("CARD_DOM "+route+" "+JSON.stringify(clean));
-    }
-    console.log(JSON.stringify({route,category,script,cards,examples:snippets,errors}));
-    page.off("pageerror",onError);
-    page.off("console",onConsole);
+    const result = await page.evaluate(({container,category})=>{
+      const grid=document.querySelector(container);
+      const cards=grid? [...grid.querySelectorAll("a.editorial-card")]:[];
+      const external=cards.filter(x=>x.matches(".external-archive-card"));
+      const wrong=category?external.filter(x=>x.dataset.category!==category):[];
+      const duplicates= new Set();
+      let dupeCount=0;
+      for(const card of cards) {
+        const url=card.href;
+        if(duplicates.has(url))dupeCount++;else duplicates.add(url);
+      }
+      return {
+        extraBlock:!!document.querySelector("#studio-news-live"),
+        injectedScript:!!document.querySelector('script[src*="studio-news-live.js"]'),
+        cards:cards.length, external:external.length, wrongCategory:wrong.length,
+        duplicateUrls:dupeCount,
+        excludedSend:cards.some(x=>/(?:indebit.{0,60}send|send.{0,60}indebit)/i.test(x.textContent)),
+        latest:external.slice(0,3).map(x=>({title:x.querySelector("h3")?.textContent,
+          category:x.dataset.category,date:x.querySelector("time")?.dateTime})),
+        homeFeature: document.querySelector("a.home-feature")?.querySelector("h2")?.textContent||null
+      };
+    },{container,category});
+    if(result.extraBlock||result.injectedScript||!result.cards||result.wrongCategory||result.excludedSend||result.duplicateUrls)failures++;
+    if(result.external)hasAutomaticContent=true;
+    console.log(JSON.stringify({route,...result}));
   }
   await browser.close();
-  if(failures) {console.error("ERRORI TOTALI:", failures);process.exit(1);}
-  console.log("OK: tutte le sezioni caricano le notizie live.");
+  if(!hasAutomaticContent)failures++;
+  if(failures) {console.error("Controlli non superati: "+failures);process.exit(1);}
+  console.log("OK: grafica originale, nessun blocco extra, notizie nelle griglie esistenti.");
 })().catch(e=>{console.error(e.stack);process.exit(1);});
