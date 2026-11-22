@@ -22,8 +22,7 @@ ROOT = "https://studiosensale.it/"
 HOST = "studiosensale.it"
 BASE = Path(__file__).resolve().parent.parent
 OUTPUT = BASE / "dist-studio-sensale"
-ZIPFILE = BASE / "studio-sensale-notizie-live.zip"
-JS = BASE / "frontend" / "studio-news-live.js"
+ZIPFILE = BASE / "studio-sensale-home-originale.zip"
 HOOK = '<script src="/assets/studio-news-live.js" defer></script>'
 MAX_FILE = 6_000_000
 
@@ -72,18 +71,15 @@ def write(url, content, *, inject=False):
     dest = OUTPUT / rel
     dest.parent.mkdir(parents=True, exist_ok=True)
     if inject:
+        # Rimuovi esclusivamente il modulo aggiunto per errore,
+        # preservando scripts, griglie e collegamenti nativi del sito.
         markup = content.decode("utf-8")
-        if HOOK not in markup:
-            if "</body>" not in markup.lower():
-                raise ValueError("HTML senza body: " + url)
-            markup = re.sub(r"</body>", HOOK + "\n</body>", markup, count=1, flags=re.I)
+        markup = markup.replace(HOOK, "")
         content = markup.encode("utf-8")
     dest.write_bytes(content)
     return dest
 
 def run():
-    if not JS.exists():
-        raise FileNotFoundError(JS)
     if OUTPUT.exists():
         shutil.rmtree(OUTPUT)
     OUTPUT.mkdir(parents=True)
@@ -122,9 +118,8 @@ def run():
         except Exception as exc:
             # Asset essenziale non presente: non si procede con un deploy potenzialmente rotto.
             raise RuntimeError("Asset non scaricabile " + url + ": " + str(exc))
-    target = OUTPUT / "assets/studio-news-live.js"
-    target.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(JS, target)
+    # Il modulo duplicato non viene incluso nella versione ripristinata.
+    (OUTPUT / "assets/studio-news-live.js").unlink(missing_ok=True)
     if len(list(OUTPUT.rglob("index.html"))) < 45:
         raise RuntimeError("Mirror incompleto, ZIP non creato")
     if not (OUTPUT / "assets/style.css").exists():
@@ -143,7 +138,7 @@ def run():
         "assets": asset_count,
         "zip": ZIPFILE.name,
         "bytes": ZIPFILE.stat().st_size,
-        "live_news_script": "assets/studio-news-live.js",
+        "removed_duplicate_module": True,
         "site_unchanged": True
     }, indent=2))
 
