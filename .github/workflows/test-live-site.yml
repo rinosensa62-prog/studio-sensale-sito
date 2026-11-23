@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'scripts/check_live_site.cjs'
+      - 'scripts/diagnosi_feed_live.cjs'
       - '.github/workflows/test-live-site.yml'
 permissions:
   contents: read
@@ -18,5 +19,7 @@ jobs:
           node-version: '22'
       - run: npm install --no-save playwright
       - run: npx playwright install chromium --with-deps
+      - name: Diagnostica alimentazione notizie
+        run: node scripts/diagnosi_feed_live.cjs
       - name: Testa homepage e tutte le sette categorie in produzione
         run: node scripts/check_live_site.cjs
