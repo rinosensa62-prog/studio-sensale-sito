@@ -30,7 +30,7 @@ class EditorialTests(unittest.TestCase):
         v=m.build(fetcher=lambda _: (_ for _ in ()).throw(OSError("offline")),now=NOW,verify=lambda *args: False)
         self.assertEqual(len(v['feeds_failed']),len(m.FEEDS)+len(m.HTML_SOURCES))
         self.assertEqual(v['items'],[])
-        self.assertEqual(v['publication_mode'],'solo_articoli_integrali_gratuiti')
+        self.assertEqual(v['publication_mode'],'link_esterni_per_categoria')
     def test_esclusione_send_indebiti(self):
         self.assertIsNone(m.classify('Indebiti INPS dal 2027 notifiche online con SEND cosa cambia'))
         self.assertEqual(m.parse(sample(title='Indebiti INPS dal 2027 notifiche online con SEND cosa cambia'),FEED,NOW),[])
