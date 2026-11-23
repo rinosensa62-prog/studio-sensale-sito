@@ -27,10 +27,10 @@ class EditorialTests(unittest.TestCase):
     def test_selezione_esclusa(self):
         self.assertEqual(m.parse(sample(title="Selezione comparativa per consulenti fiscali"),FEED,NOW),[])
     def test_inaccessibilita_registrata(self):
-        v=m.build(fetcher=lambda _: (_ for _ in ()).throw(OSError("offline")),now=NOW)
+        v=m.build(fetcher=lambda _: (_ for _ in ()).throw(OSError("offline")),now=NOW,verify=lambda *args: False)
         self.assertEqual(len(v['feeds_failed']),len(m.FEEDS)+len(m.HTML_SOURCES))
         self.assertEqual(v['items'],[])
-        self.assertEqual(v['publication_mode'],'link_esterni_per_categoria')
+        self.assertEqual(v['publication_mode'],'solo_articoli_integrali_gratuiti')
     def test_esclusione_send_indebiti(self):
         self.assertIsNone(m.classify('Indebiti INPS dal 2027 notifiche online con SEND cosa cambia'))
         self.assertEqual(m.parse(sample(title='Indebiti INPS dal 2027 notifiche online con SEND cosa cambia'),FEED,NOW),[])
@@ -44,8 +44,9 @@ class EditorialTests(unittest.TestCase):
                            'source':'Informazione Fiscale',
                            'url':'https://www.informazionefiscale.it/imu-test',
                            'published_at':'2026-11-19T09:00:00+00:00'}]}
-        v=m.build(fetcher=lambda _: (_ for _ in ()).throw(OSError("offline")), now=NOW,previous=previous)
+        v=m.build(fetcher=lambda _: (_ for _ in ()).throw(OSError("offline")), now=NOW,previous=previous,verify=lambda *args: True)
         self.assertEqual(len(v['items']),1)
+        self.assertEqual(v['items'][0]['status'],'accesso_gratuito_verificato')
         self.assertEqual(v['items'][0]['category'],'Successioni e tributi locali')
     def test_html_redazione_fiscale(self):
         from scripts import fonti_web_pubbliche as web
@@ -66,6 +67,24 @@ class EditorialTests(unittest.TestCase):
             'Euroconference News', NOW, m.classify, m.get_date)
         self.assertIsNotNone(item)
         self.assertEqual(item['category'], 'Dichiarazioni e Fisco')
+    def test_link_con_accesso_riservato_escluso(self):
+        from scripts.verifica_accesso_gratuito import validate_html
+        article = '<html><h1>CPB con acconti imposta variabili</h1>' + (
+            '<p>Questo paragrafo mostra una descrizione preliminare delle norme applicabili.</p>'*12
+        ) + '<p>CONTENUTO RISERVATO AGLI ABBONATI</p></html>'
+        self.assertFalse(validate_html(article, 'Eutekne',
+            'CPB con acconti imposta variabili','https://www.eutekne.info/Sezioni/Articolo.aspx?ID=123'))
+        self.assertFalse(validate_html(article,'Fisco e Tasse',
+            'CPB con acconti imposta variabili','https://www.fiscoetasse.com/news/123'))
+        self.assertFalse(validate_html('<html><h1>Novita fiscali</h1><p>Breve anteprima</p></html>',
+            'Fisco e Tasse','Novita fiscali','https://www.fiscoetasse.com/news/123'))
+    def test_link_gratuito_accettato(self):
+        from scripts.verifica_accesso_gratuito import validate_html
+        article = '<html><h1>Fattura elettronica 2027 novita tecniche</h1>' + (
+            '<p>Le specifiche tecniche prevedono adempimenti, verifiche, date di decorrenza e regole operative da applicare correttamente agli invii.</p>'*20
+        ) + '</html>'
+        self.assertTrue(validate_html(article,'Euroconference News',
+            'Fattura elettronica 2027 novita tecniche','https://www.ecnews.it/fiscale/test'))
     def test_mai_feed_specialistici_nel_sito_pubblico(self):
         self.assertIn('fiscoetasse.com', {x[2] for x in m.FEEDS})
         self.assertIn('fiscal-focus.it', {x[2] for x in m.FEEDS})
