@@ -1,0 +1,22 @@
+name: Verifica completa accesso anonimo notizie pubblicate
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/audit_accesso_completo.cjs'
+      - '.github/workflows/audit-accesso-completo.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save playwright
+      - run: npx playwright install chromium --with-deps
+      - name: Apri in anonimo ogni collegamento del sito pubblico e analizza il contenuto visibile
+        run: node scripts/audit_accesso_completo.cjs
