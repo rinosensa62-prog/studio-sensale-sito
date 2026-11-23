@@ -1,12 +1,13 @@
 name: Monitoraggio spunti dalle testate specialistiche
 on:
   schedule:
-    # Mattina e sera: raccoglie proposte editoriali NON pubblicate nel sito.
+    # Mattina e sera: ammette nel sito solo pagine complete gratuite.
     - cron: '45 8,18 * * *'
   workflow_dispatch:
   push:
     paths:
       - 'scripts/monitor_fonti_specialistiche.py'
+      - 'scripts/verifica_accesso_gratuito.py'
       - 'tests/test_monitor_specialistiche.py'
       - '.github/workflows/monitor-fonti-specialistiche.yml'
 permissions:
@@ -17,7 +18,7 @@ concurrency:
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
         with:
@@ -27,7 +28,7 @@ jobs:
           python-version: '3.12'
       - name: Testa parser e sicurezza
         run: python -m unittest discover -s tests -p 'test_monitor_specialistiche.py' -v
-      - name: Raccogli spunti editoriali specialistici
+      - name: Raccogli e verifica testo gratuito delle notizie
         run: python scripts/monitor_fonti_specialistiche.py
       - name: Salva solo le variazioni
         shell: bash
