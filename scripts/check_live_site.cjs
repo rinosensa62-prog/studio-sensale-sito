@@ -16,6 +16,7 @@ const cases = [
   const browser = await chromium.launch({headless:true,args:["--no-sandbox"]});
   const page=await browser.newPage({viewport:{width:1440,height:900}});
   let failures=0, hasAutomaticContent=false;
+  let archiveTodayTitles = [], archiveRecentCount = 0;
   for (const [route, category] of cases) {
     await page.goto(BASE+route,{waitUntil:"domcontentloaded",timeout:28000});
     const container = route === "/" ? "#home-news-items" :
@@ -39,6 +40,8 @@ const cases = [
         if(duplicates.has(url))dupeCount++;else duplicates.add(url);
       }
       return {
+        recentExternal: external.filter(x=>{ const t=x.querySelector("time")?.dateTime; return t && new Date(t).toDateString()===new Date().toDateString(); }).length,
+        externalTitles: external.map(x=>x.querySelector("h3")?.textContent?.trim()).filter(Boolean),
         extraBlock:!!document.querySelector("#studio-news-live"),
         injectedScript:!!document.querySelector('script[src*="studio-news-live.js"]'),
         cards:cards.length, external:external.length, wrongCategory:wrong.length,
@@ -49,9 +52,34 @@ const cases = [
         homeFeature: document.querySelector("a.home-feature")?.querySelector("h2")?.textContent||null
       };
     },{container,category});
+    if(route === "/notizie/") {
+      archiveTodayTitles = result.externalTitles;
+      archiveRecentCount = result.recentExternal;
+    }
     if(result.extraBlock||result.injectedScript||!result.cards||result.wrongCategory||result.excludedSend||result.duplicateUrls)failures++;
     if(result.external)hasAutomaticContent=true;
     console.log(JSON.stringify({route,...result}));
+  }
+  // Diagnostica di pubblicazione: il sito deve presentare almeno una parte delle
+  // segnalazioni più recenti effettivamente presenti nell'archivio GitHub.
+  const today = new Date().toISOString().slice(0,10);
+  const rawUrl = "https://raw.githubusercontent.com/rinosensa62-prog/studio-sensale-sito/main/assets/spunti-editoriali.json";
+  const request = await page.request.get(rawUrl+"?ts="+Date.now(),{timeout:20000});
+  if(!request.ok()) {
+    console.error("Archivio editoriale GitHub non accessibile:",request.status());
+    failures++;
+  } else {
+    const data=await request.json();
+    const current=(data.items||[]).filter(x=>String(x.published_at||"").startsWith(today))
+      .filter(x=>!/indebit.*(?:send|notific)|(?:send|notific).*indebit/i.test(x.title||""));
+    const found=current.filter(x=>archiveTodayTitles.includes(x.title));
+    console.log(JSON.stringify({checked_at:new Date().toISOString(),latest_feed_date:data.updated_at,
+      specialist_items_today:current.length,site_external_cards_today:archiveRecentCount,
+      today_titles_also_in_site:found.length,sample_from_feed:current.slice(0,4).map(x=>x.title)}));
+    if(current.length>0 && found.length===0){
+      console.error("CRITICO: le segnalazioni specialistiche di oggi sono nel feed ma non appaiono nell'archivio pubblico");
+      failures++;
+    }
   }
   await browser.close();
   if(!hasAutomaticContent)failures++;
