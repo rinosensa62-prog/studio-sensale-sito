@@ -85,6 +85,23 @@ class EditorialTests(unittest.TestCase):
         ) + '</html>'
         self.assertTrue(validate_html(article,'Euroconference News',
             'Fattura elettronica 2027 novita tecniche','https://www.ecnews.it/fiscale/test'))
+    def test_euroconference_non_pubblicabile_senza_garanzia_no_login(self):
+        from scripts.verifica_accesso_gratuito import validate_html, articolo_gratuito
+        url = "https://www.ecnews.it/fiscale/fisco-e-patrimonio/imposte-indirette/affitto-di-azienda-alternativita-iva-e-registro/"
+        title = "Affitto di azienda: alternativita IVA e registro"
+        sample = ("<html><h1>"+title+"</h1>" +
+                  "<p>Testo informativo pubblico piuttosto lungo ma non garanzia di visione anonima.</p>"*35 +
+                  "</html>")
+        self.assertFalse(validate_html(sample, "Euroconference News", title, url))
+        self.assertFalse(articolo_gratuito(url, "Euroconference News", title))
+    def test_esclusi_articoli_promozionali_non_informativi(self):
+        from scripts.verifica_accesso_gratuito import validate_html
+        url = "https://www.informazionefiscale.it/tutte-le-novita-fiscali-legge-di-bilancio-2027-formazione-academy"
+        title = "Tutte le novita fiscali della Legge di Bilancio 2027"
+        sample = ("<html><h1>"+title+"</h1>" +
+                  "<p>La formazione Academy contiene informazioni e corsi promozionali.</p>"*35 +
+                  "</html>")
+        self.assertFalse(validate_html(sample, "Informazione Fiscale", title, url))
     def test_mai_feed_specialistici_nel_sito_pubblico(self):
         self.assertIn('fiscoetasse.com', {x[2] for x in m.FEEDS})
         self.assertIn('fiscal-focus.it', {x[2] for x in m.FEEDS})
