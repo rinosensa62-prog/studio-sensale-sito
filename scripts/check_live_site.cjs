@@ -92,7 +92,7 @@ const cases = [
     unverified:unverified.length,restricted_sources:forbidden.length,
     mode:archiveJson.publication_mode}));
   if(unverified.length||forbidden.length||
-     archiveJson.publication_mode!=="solo_articoli_integrali_gratuiti")failures++;
+     archiveJson.publication_mode!=="link_esterni_per_categoria")failures++;
   await browser.close();
   if(!hasAutomaticContent)failures++;
   if(failures) {console.error("Controlli non superati: "+failures);process.exit(1);}
