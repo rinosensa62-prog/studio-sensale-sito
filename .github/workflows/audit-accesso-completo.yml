@@ -1,9 +1,13 @@
 name: Verifica completa accesso anonimo notizie pubblicate
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '30 19 * * *'
   push:
     paths:
       - 'scripts/audit_accesso_completo.cjs'
+      - 'assets/spunti-editoriali.json'
+      - 'assets/aggiornamenti-ufficiali.json'
       - '.github/workflows/audit-accesso-completo.yml'
 permissions:
   contents: read
