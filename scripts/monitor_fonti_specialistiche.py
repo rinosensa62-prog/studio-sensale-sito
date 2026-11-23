@@ -242,7 +242,7 @@ def build(fetcher=fetch, now=None, previous=None, verify=articolo_gratuito):
         if len(archive) >= 150:
             break
     return {"schema_version": 2, "updated_at": now.isoformat(timespec="seconds"),
-            "publication_mode": "solo_articoli_integrali_gratuiti",
+            "publication_mode": "link_esterni_per_categoria",
             "items": archive, "feeds_ok": ok, "feeds_failed": failed,
             "other_sources": [{"name":n,"url":u,"mode":"monitoraggio_editoriale"}
                               for n,u in OTHER_SOURCES]}
