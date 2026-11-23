@@ -1,8 +1,71 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-23T09:58:14+00:00",
-  "publication_mode": "link_esterni_per_categoria",
+  "updated_at": "2026-11-23T17:00:10+00:00",
+  "publication_mode": "solo_articoli_integrali_gratuiti",
   "items": [
+    {
+      "id": "79d0e3ad2808cdea1c",
+      "title": "Credito d'imposta Zes agricoltura: comunicazione integrativa entro il 2 dicembre",
+      "url": "https://www.informazionefiscale.it/credito-imposta-Zes-agricoltura-comunicazione-integrativa-scadenza-istruzioni",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-23T16:16:52+00:00",
+      "category": "Bandi e finanziamenti",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "8ffc12e98e83df5122",
+      "title": "Bonus in busta paga fino a 2.000 euro: si punta a regole strutturali per i fringe benefit",
+      "url": "https://www.informazionefiscale.it/bonus-busta-paga-fringe-benefit-manovra-2027-soglie-strutturali-emendamenti",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-23T14:30:07+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "e152397e32ce947817",
+      "title": "Bonus mamme 2026: quando arriva il pagamento?",
+      "url": "https://www.informazionefiscale.it/bonus-mamme-inps-2026-quando-arriva-pagamento",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-23T14:20:00+00:00",
+      "category": "Famiglie e CAF",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "4146625f2c288df247",
+      "title": "SIISL: stop al portale per manutenzione, dal 1° dicembre il debutto delle novità",
+      "url": "https://www.informazionefiscale.it/siisl-non-funziona-manutenzione-novita-bonus-assunzione",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-23T12:20:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "fa2126c88921bf14c4",
+      "title": "Dal modello F24 al gettito IRPEF: l'attuazione della riforma fiscale si ferma sotto i due terzi",
+      "url": "https://www.informazionefiscale.it/modello-f24-irpef-novita-riforma-fiscale-decreti-monitoraggio",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-23T11:45:45+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "4e27cef4fbb9f29607",
+      "title": "SIISL: nessun obbligo di pubblicazione per l'apprendistato",
+      "url": "https://www.informazionefiscale.it/siisl-pubblicazione-offerta-lavoro-apprendistato",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-23T10:50:35+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "b3568ec2868b4cb107",
+      "title": "Rottamazione e non solo: tutte le sanatorie negli emendamenti alla Manovra 2027",
+      "url": "https://www.informazionefiscale.it/rottamazione-cartelle-novita-sanatorie-emendamenti-manovra-2027",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-23T10:34:52+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "accesso_gratuito_verificato"
+    },
     {
       "id": "95fee3f25420d51a37",
       "title": "Tutte le novità fiscali della Legge di Bilancio 2027",
@@ -10,7 +73,7 @@
       "source": "Informazione Fiscale",
       "published_at": "2026-11-23T09:02:43+00:00",
       "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "6f397c4fd5d94a85d3",
@@ -19,16 +82,25 @@
       "source": "Informazione Fiscale",
       "published_at": "2026-11-23T07:30:00+00:00",
       "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "270d0a568d5018f7fa",
-      "title": "Esenzione IMU prima casa residenza e dimora necessarie anche durante i lavori",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4833-esenzione-imu-prima-casa-residenza-e-dimora-necessarie-anche-durante-i-lavori.html",
+      "id": "b946c5195d9bcb4f9f",
+      "title": "IMU precompilata dal 2027 dove trovarla SOGEI annuncia la piattaforma",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4838-imu-precompilata-dal-2027-dove-trovarla-sogei-annuncia-la-piattaforma.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-23T00:00:00+00:00",
       "category": "Successioni e tributi locali",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "41714bdc44638d3e66",
+      "title": "Architetto in pensione che lavora ancora ecco quando versa a Inarcassa",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4843-architetto-pensionato-inps-124mila-euro-a-inarcassa-per-mancata-iscrizione.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "category": "Famiglie e CAF",
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "523f5c79bc1b4ec56f",
@@ -37,7 +109,16 @@
       "source": "Fisco e Tasse",
       "published_at": "2026-11-23T00:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "270d0a568d5018f7fa",
+      "title": "Esenzione IMU prima casa residenza e dimora necessarie anche durante i lavori",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4833-esenzione-imu-prima-casa-residenza-e-dimora-necessarie-anche-durante-i-lavori.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "category": "Successioni e tributi locali",
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "f77a25834e368a3a95",
@@ -46,88 +127,7 @@
       "source": "Fisco e Tasse",
       "published_at": "2026-11-23T00:00:00+00:00",
       "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "74cfe6d24e963adfa3",
-      "title": "CPB con acconti d’imposta variabili",
-      "url": "https://www.eutekne.info/Sezioni/Articolo.aspx?ID=1132395",
-      "source": "Eutekne",
-      "published_at": "2026-11-23T00:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "e1cf952503a30a6cff",
-      "title": "Comunicazione del canone di locazione rinegoziato nel modello RLI",
-      "url": "https://www.eutekne.info/Sezioni/Articolo.aspx?ID=1131588",
-      "source": "Eutekne",
-      "published_at": "2026-11-23T00:00:00+00:00",
-      "category": "Locazioni e immobili",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "197550ceed15268c5b",
-      "title": "Entro il 16 dicembre il versamento del saldo IMU per il 2026",
-      "url": "https://www.eutekne.info/Sezioni/Articolo.aspx?ID=1122108",
-      "source": "Eutekne",
-      "published_at": "2026-11-23T00:00:00+00:00",
-      "category": "Successioni e tributi locali",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "0f0e358b5f2233796d",
-      "title": "Contribuenti forfettari - Rimborsi analitici esclusi dal reddito",
-      "url": "https://www.redazionefiscale.it/c/info-flash-fiscali/52438-contribuenti-forfettari---rimborsi-analitici-esclusi-dal-reddito",
-      "source": "Redazione Fiscale",
-      "published_at": "2026-11-23T00:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "69155edbf6115d2c31",
-      "title": "Fattura elettronica - Dal 2027 le specifiche tecniche adeguati ai nuovi TU normativi",
-      "url": "https://www.redazionefiscale.it/c/fisco-passo-passo/52434-fattura-elettronica---dal-2027-le-specifiche-tecniche-adeguati-ai-nuovi-tu-normativi",
-      "source": "Redazione Fiscale",
-      "published_at": "2026-11-23T00:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "66131fb5a6d8236504",
-      "title": "Il rebus della cedolare commerciale: quando le ragioni di cassa tradiscono la riforma fiscale",
-      "url": "https://www.redazionefiscale.it/c/fisco-passo-passo/52429-il-rebus-della-cedolare-commerciale-quando-le-ragioni-di-cassa-tradiscono-la-riforma-fiscale",
-      "source": "Redazione Fiscale",
-      "published_at": "2026-11-23T00:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "1291be61dba615abe7",
-      "title": "Soci di Srl e iscrizione INPS: come blindare utili e compensi",
-      "url": "https://www.redazionefiscale.it/c/fisco-passo-passo/52282-soci-di-srl-e-iscrizione-inps-come-blindare-utili-e-compensi",
-      "source": "Redazione Fiscale",
-      "published_at": "2026-11-23T00:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "c045d30bf40d31eea1",
-      "title": "Notifiche societarie e amministratori di fatto: il confine tra ricezione dell'atto e legittimazione al ricorso",
-      "url": "https://www.redazionefiscale.it/c/fisco-passo-passo/52405-notifiche-societarie-e-amministratori-di-fatto-il-confine-tra-ricezione-dellatto-e-legittimazione-al-ricorso",
-      "source": "Redazione Fiscale",
-      "published_at": "2026-11-23T00:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "5eb586bd930fa2e587",
-      "title": "Start-up innovative: detrazione al 65% e credito per l’eccedenza",
-      "url": "https://www.redazionefiscale.it/c/fisco-passo-passo/52430-start-up-innovative-detrazione-al-65-e-credito-per-leccedenza",
-      "source": "Redazione Fiscale",
-      "published_at": "2026-11-23T00:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "1e59ed3b5a39a12030",
@@ -136,7 +136,7 @@
       "source": "Euroconference News",
       "published_at": "2026-11-22T23:06:00+00:00",
       "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "bad05930e0e021f771",
@@ -145,7 +145,7 @@
       "source": "Euroconference News",
       "published_at": "2026-11-22T23:05:00+00:00",
       "category": "Locazioni e immobili",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "3d55a6947a8d14b846",
@@ -154,7 +154,7 @@
       "source": "Euroconference News",
       "published_at": "2026-11-22T23:05:00+00:00",
       "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "05626f8a2dc24895c0",
@@ -163,7 +163,7 @@
       "source": "Euroconference News",
       "published_at": "2026-11-22T23:04:00+00:00",
       "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "4feb5f5549dcc8c423",
@@ -172,7 +172,7 @@
       "source": "Euroconference News",
       "published_at": "2026-11-22T23:03:00+00:00",
       "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "d69b400817a577c3bc",
@@ -181,7 +181,7 @@
       "source": "Euroconference News",
       "published_at": "2026-11-22T23:02:00+00:00",
       "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "94967758553aa02b1d",
@@ -190,7 +190,7 @@
       "source": "Informazione Fiscale",
       "published_at": "2026-11-22T11:30:00+00:00",
       "category": "Famiglie e CAF",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "ea1ba9552828074e48",
@@ -199,7 +199,7 @@
       "source": "Informazione Fiscale",
       "published_at": "2026-11-22T05:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "62fee2f46ba0a9b1ce",
@@ -208,7 +208,7 @@
       "source": "Fisco e Tasse",
       "published_at": "2026-11-22T00:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "87afea9a9bf1b0a117",
@@ -217,7 +217,7 @@
       "source": "Informazione Fiscale",
       "published_at": "2026-11-21T10:25:59+00:00",
       "category": "Successioni e tributi locali",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "cbf8562eddce77dc1c",
@@ -226,7 +226,7 @@
       "source": "Informazione Fiscale",
       "published_at": "2026-11-21T09:02:08+00:00",
       "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "4a5cb815b221d28165",
@@ -235,97 +235,7 @@
       "source": "Informazione Fiscale",
       "published_at": "2026-11-21T08:37:23+00:00",
       "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "90b7354ed65c3c58f9",
-      "title": "La fiscalità nella traiettoria della sostenibilità: il controllo pubblico quale leva di responsabilità",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/21/fiscalita-traiettoria-sostenibilita-controllo-pubblico-leva-responsabilita",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-21T07:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "7862f1072ff7b9f762",
-      "title": "Fabbricati Tupini e aliquote IVA: il nuovo Testo Unico cambia la numerazione, non i dubbi",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/21/fabbricati-tupini-aliquote-iva-testo-unico-cambia-numerazione-non-dubbi",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-21T05:00:00+00:00",
-      "category": "Locazioni e immobili",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "9111379c8db0ed872b",
-      "title": "Società di nuova quotazione: quali clausole inserire nello statuto prima dell’IPO",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/21/societa-nuova-quotazione-clausole-inserire-statuto-prima-ipo",
-      "source": "IPSOA Impresa",
-      "published_at": "2026-11-21T05:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "d7c0705f0f40e98d81",
-      "title": "Il mancato ricorso contro l’annullamento dello sconto in fattura complica la difesa",
-      "url": "https://www.eutekne.info/Sezioni/Articolo.aspx?ID=1131360",
-      "source": "Eutekne",
-      "published_at": "2026-11-21T00:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "28c9d55d732a10926e",
-      "title": "Nuove specifiche tecniche della fattura elettronica adeguate al Testo unico IVA",
-      "url": "https://www.eutekne.info/Sezioni/Articolo.aspx?ID=1132482",
-      "source": "Eutekne",
-      "published_at": "2026-11-21T00:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "8346c8f07d43a6ec71",
-      "title": "Cambio di regime IVA in agricoltura da ponderare con attenzione",
-      "url": "https://www.eutekne.info/Sezioni/Articolo.aspx?ID=1131905",
-      "source": "Eutekne",
-      "published_at": "2026-11-21T00:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "62cb04b497a4f79496",
-      "title": "Emolumenti versati dall'UE agli interpreti free lance: il trattamento fiscale",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/21/emolumenti-versati-ue-interpreti-free-lance-trattamento-fiscale",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-20T20:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "f6b36cb3a7f16fb515",
-      "title": "Fiscalità Europea: le proposte di Assonime per rafforzare il Mercato Unico",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/21/fiscalita-europea-proposte-assonime-rafforzare-mercato-unico",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-20T20:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "0c0539b6099a3f7273",
-      "title": "Rendita vitalizia per il personale a contratto MAECI: le istruzioni INPS",
-      "url": "https://www.lavorosi.it/rendita-vitalizia-per-il-personale-a-contratto-maeci-le-istruzioni-inps/",
-      "source": "LavoroSì",
-      "published_at": "2026-11-20T16:14:08+00:00",
-      "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "1be037e3c98604983c",
-      "title": "Fondo di solidarietà bilaterale di Bolzano: confermata per il 2027 la riduzione del 40% dell’aliquota INPS",
-      "url": "https://www.lavorosi.it/fondo-di-solidarieta-bilaterale-di-bolzano-confermata-per-il-2027-la-riduzione-del-40-dellaliquota-inps/",
-      "source": "LavoroSì",
-      "published_at": "2026-11-20T15:20:16+00:00",
-      "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "1934b18f574d1839bc",
@@ -334,7 +244,7 @@
       "source": "Informazione Fiscale",
       "published_at": "2026-11-20T14:42:00+00:00",
       "category": "Famiglie e CAF",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "6f419105f7b3f1a080",
@@ -343,7 +253,7 @@
       "source": "Informazione Fiscale",
       "published_at": "2026-11-20T14:03:00+00:00",
       "category": "Famiglie e CAF",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "90ff97a26803f2fad0",
@@ -352,7 +262,7 @@
       "source": "Informazione Fiscale",
       "published_at": "2026-11-20T12:30:42+00:00",
       "category": "Famiglie e CAF",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "9a554ef4bae1586b31",
@@ -361,7 +271,7 @@
       "source": "Informazione Fiscale",
       "published_at": "2026-11-20T11:53:21+00:00",
       "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "2b76e22e8bee747cab",
@@ -370,7 +280,7 @@
       "source": "Informazione Fiscale",
       "published_at": "2026-11-20T10:23:44+00:00",
       "category": "Famiglie e CAF",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "a71f1dc5c670415d03",
@@ -379,43 +289,7 @@
       "source": "Informazione Fiscale",
       "published_at": "2026-11-20T10:02:35+00:00",
       "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "361c460fba0e1df1b6",
-      "title": "Cassazione: quali somme risarcitorie corrisposte al lavoratore sono assoggettate a contribuzione?",
-      "url": "https://www.lavorosi.it/cassazione-quali-somme-risarcitorie-corrisposte-al-lavoratore-sono-assoggettate-a-contribuzione/",
-      "source": "LavoroSì",
-      "published_at": "2026-11-20T09:26:23+00:00",
-      "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "2b14dff112c16feaac",
-      "title": "Pensione britannica SIPP. Ok dalle Entrate al regime agevolativo con trasferimento in Italia",
-      "url": "https://www.lavorosi.it/pensione-britannica-sipp-ok-dalle-entrate-al-regime-agevolativo-con-trasferimento-in-italia/",
-      "source": "LavoroSì",
-      "published_at": "2026-11-20T08:11:20+00:00",
-      "category": "Famiglie e CAF",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "837e48f10d3e609989",
-      "title": "IPT per le società di noleggio: come individuare la provincia destinataria del gettito",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/20/itp-societa-noleggio-individuare-provincia-destinataria-gettito",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-20T07:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "8753506e29c444be3f",
-      "title": "Cedolare secca e società semplici: un'esclusione difficile da giustificare",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/20/cedolare-secca-societa-semplici-esclusione-difficile-giustificare",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-20T05:00:00+00:00",
-      "category": "Locazioni e immobili",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "151c13785b0d39ecf0",
@@ -424,16 +298,7 @@
       "source": "Fisco e Tasse",
       "published_at": "2026-11-20T00:00:00+00:00",
       "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "50d5f3b5c822ef8bb4",
-      "title": "Ecobonus 2027 emendamento per salvaguardare i tetti di spesa dei lavori gi iniziati",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4825-ecobonus-2027-emendamento-per-salvaguardare-i-tetti-di-spesa-dei-lavori-gia-iniziati.html",
-      "source": "Fisco e Tasse",
-      "published_at": "2026-11-20T00:00:00+00:00",
-      "category": "Locazioni e immobili",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "38b2c28ea169031f3c",
@@ -442,16 +307,16 @@
       "source": "Fisco e Tasse",
       "published_at": "2026-11-20T00:00:00+00:00",
       "category": "Famiglie e CAF",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "f9d08deb5f4682f3b6",
-      "title": "Fotovoltaico sui tetti contributi fino all80 per adeguare le coperture degli edifici",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4822-fotovoltaico-sui-tetti-contributi-fino-all80-per-adeguare-le-coperture-degli-edifici.html",
+      "id": "50d5f3b5c822ef8bb4",
+      "title": "Ecobonus 2027 emendamento per salvaguardare i tetti di spesa dei lavori gi iniziati",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4825-ecobonus-2027-emendamento-per-salvaguardare-i-tetti-di-spesa-dei-lavori-gia-iniziati.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-20T00:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
+      "category": "Locazioni e immobili",
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "0e417be4bf4b269d73",
@@ -460,52 +325,16 @@
       "source": "Fisco e Tasse",
       "published_at": "2026-11-20T00:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "55d2895a89ed8194ad",
-      "title": "STP in forma di S.r.l. con due terzi dei voti ai professionisti",
-      "url": "https://www.redazionefiscale.it/c/fisco-passo-passo/52417-stp-in-forma-di-srl-con-due-terzi-dei-voti-ai-professionisti",
-      "source": "Redazione Fiscale",
-      "published_at": "2026-11-20T00:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "2641fb8dfc3bf4c084",
-      "title": "Saldo IMU 2026 sulle aree fabbricabili",
-      "url": "https://www.redazionefiscale.it/c/notizie-flash/52407-saldo-imu-2026-sulle-aree-fabbricabili",
-      "source": "Redazione Fiscale",
-      "published_at": "2026-11-20T00:00:00+00:00",
-      "category": "Successioni e tributi locali",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "f4c3e67d89b3f610b4",
-      "title": "Bollo sulle fatture elettroniche del terzo trimestre 2026",
-      "url": "https://www.redazionefiscale.it/c/notizie-flash/52410-bollo-sulle-fatture-elettroniche-del-terzo-trimestre-2026",
-      "source": "Redazione Fiscale",
-      "published_at": "2026-11-20T00:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "0313e1fa2e66130808",
-      "title": "Recesso del socio e valore dell’avviamento nella liquidazione della società",
-      "url": "https://www.redazionefiscale.it/c/evoluzione-giurisprudenza/52416-recesso-del-socio-e-valore-dellavviamento-nella-liquidazione-della-societ",
-      "source": "Redazione Fiscale",
-      "published_at": "2026-11-20T00:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "d486946021006d00cf",
-      "title": "Contributi Enasarco del terzo trimestre 2026 entro il 20 novembre",
-      "url": "https://www.redazionefiscale.it/c/notizie-flash/52412-contributi-enasarco-del-terzo-trimestre-2026-entro-il-20-novembre",
-      "source": "Redazione Fiscale",
+      "id": "f9d08deb5f4682f3b6",
+      "title": "Fotovoltaico sui tetti contributi fino all80 per adeguare le coperture degli edifici",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4822-fotovoltaico-sui-tetti-contributi-fino-all80-per-adeguare-le-coperture-degli-edifici.html",
+      "source": "Fisco e Tasse",
       "published_at": "2026-11-20T00:00:00+00:00",
       "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "a7e9243769591091b5",
@@ -514,7 +343,7 @@
       "source": "Euroconference News",
       "published_at": "2026-11-19T23:05:00+00:00",
       "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "856d94cacd35ecbe28",
@@ -523,52 +352,7 @@
       "source": "Euroconference News",
       "published_at": "2026-11-19T23:04:00+00:00",
       "category": "Famiglie e CAF",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "2928b0078cc7fe4bad",
-      "title": "Ore 13.33 - Cessione di quote di s.n.c.: i poteri di controllo del socio non amministratore non escludono il dolo",
-      "url": "https://www.fiscal-focus.it/news,190292",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-19T23:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "6fcda1eb31d06e0d79",
-      "title": "12.39 - Distacchi Italia-Turchia: l’INPS chiarisce contributi e compilazione dell’Uniemens",
-      "url": "https://www.fiscal-focus.it/news,190291",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-19T23:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "6c0209ef716c34c9cb",
-      "title": "Ore 12:34 - IPT, per le società di noleggio conta la sede di gestione ordinaria e non quella legale",
-      "url": "https://www.fiscal-focus.it/news,190286",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-19T23:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "800ab1717fe7ed453e",
-      "title": "Ore 11:22 - Welfare aziendale, CU 2026 senza obbligo di rettifica: recupero delle imposte con l’integrativa",
-      "url": "https://www.fiscal-focus.it/news,190284",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-19T23:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "207b78d6769951cfe8",
-      "title": "Ore 10:26 - Testi Unici tributari, dal 2027 cambia la numerazione ma non le regole",
-      "url": "https://www.fiscal-focus.it/news,190282",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-19T23:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "346166d5a6346469c6",
@@ -577,52 +361,52 @@
       "source": "Fiscal Focus",
       "published_at": "2026-11-19T23:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "973a73efdbbe199be4",
-      "title": "Autotutela tributaria obbligatoria: i nuovi chiarimenti della giurisprudenza",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/20/autotutela-tributaria-obbligatoria-chiarimenti-giurisprudenza",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-19T20:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
+      "id": "2928b0078cc7fe4bad",
+      "title": "Ore 13.33 - Cessione di quote di s.n.c.: i poteri di controllo del socio non amministratore non escludono il dolo",
+      "url": "https://www.fiscal-focus.it/news,190292",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-19T23:00:00+00:00",
+      "category": "Aprire e gestire un’attività",
+      "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "2e9f6c2cf4a6244bf5",
-      "title": "Imposta provinciale di trascrizione: le istruzioni del MEF",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/20/imposta-provinciale-trascrizione-istruzioni-mef",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-19T20:00:00+00:00",
-      "category": "Successioni e tributi locali",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "d68e4a3865ec84744d",
-      "title": "Fondo antiusura: nuove somme a sostegno di PMI e famiglie in difficoltà",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/20/fondo-antiusura-nuove-somme-sostegno-pmi-famiglie-difficolta",
-      "source": "IPSOA Impresa",
-      "published_at": "2026-11-19T19:00:00+00:00",
-      "category": "Famiglie e CAF",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "52bb5bbb9172c9d293",
-      "title": "Nuove procedure di infrazione UE contro l'Italia: energia, fisco e trasporti",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/20/nuove-procedure-infrazione-ue-italia-energia-fisco-trasporti",
-      "source": "IPSOA Impresa",
-      "published_at": "2026-11-19T19:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "ed8c98a2fba31b2552",
-      "title": "Welfare aziendale 2025 per familiari, recupero nella dichiarazione integrativa",
-      "url": "https://www.lavorosi.it/welfare-aziendale-2025-per-familiari-recupero-nella-dichiarazione-integrativa/",
-      "source": "LavoroSì",
-      "published_at": "2026-11-19T17:00:01+00:00",
+      "id": "800ab1717fe7ed453e",
+      "title": "Ore 11:22 - Welfare aziendale, CU 2026 senza obbligo di rettifica: recupero delle imposte con l’integrativa",
+      "url": "https://www.fiscal-focus.it/news,190284",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-19T23:00:00+00:00",
       "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "207b78d6769951cfe8",
+      "title": "Ore 10:26 - Testi Unici tributari, dal 2027 cambia la numerazione ma non le regole",
+      "url": "https://www.fiscal-focus.it/news,190282",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-19T23:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "6c0209ef716c34c9cb",
+      "title": "Ore 12:34 - IPT, per le società di noleggio conta la sede di gestione ordinaria e non quella legale",
+      "url": "https://www.fiscal-focus.it/news,190286",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-19T23:00:00+00:00",
+      "category": "Aprire e gestire un’attività",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "6fcda1eb31d06e0d79",
+      "title": "12.39 - Distacchi Italia-Turchia: l’INPS chiarisce contributi e compilazione dell’Uniemens",
+      "url": "https://www.fiscal-focus.it/news,190291",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-19T23:00:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "f8422afe565e7208ed",
@@ -631,7 +415,7 @@
       "source": "Informazione Fiscale",
       "published_at": "2026-11-19T15:18:00+00:00",
       "category": "Famiglie e CAF",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "c2b32da4f0e5c4e022",
@@ -640,7 +424,7 @@
       "source": "Informazione Fiscale",
       "published_at": "2026-11-19T13:25:31+00:00",
       "category": "Locazioni e immobili",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "fd56811130b5cd8ff2",
@@ -649,7 +433,7 @@
       "source": "Informazione Fiscale",
       "published_at": "2026-11-19T10:19:33+00:00",
       "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "3280515e63a5b43aa7",
@@ -658,7 +442,7 @@
       "source": "Informazione Fiscale",
       "published_at": "2026-11-19T09:30:00+00:00",
       "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "7abfe82e4ab74da683",
@@ -667,43 +451,7 @@
       "source": "Informazione Fiscale",
       "published_at": "2026-11-19T08:30:00+00:00",
       "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "1182a53f07904f79bc",
-      "title": "Caso Revolut: quando le carenze antiriciclaggio diventano agevolazione colposa",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/19/revolut-carenze-antiriciclaggio-diventano-agevolazione-colposa",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-19T05:00:00+00:00",
-      "category": "Bandi e finanziamenti",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "1ab6704e46387c3454",
-      "title": "Il TCF nel nuovo rapporto tra fisco e impresa: l’ambiente di controllo",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/19/tcf-rapporto-fisco-impresa-ambiente-controllo",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-19T05:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "1b0752bc4de8a0b1f1",
-      "title": "Detrazione IVA in due anni: e il costo, in semplificata, quando si deduce?",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/19/detrazione-iva-due-anni-costo-semplificata-deduce",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-19T05:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "9af000d44071be3735",
-      "title": "Distacco ItaliaTurchia le regole dellAccordo e le novit Uniemens",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4823-distacco-italia-turchia-tutte-le-regole-e-novita-uniemens.html",
-      "source": "Fisco e Tasse",
-      "published_at": "2026-11-19T00:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "fab5d14d809cd8af83",
@@ -712,25 +460,7 @@
       "source": "Fisco e Tasse",
       "published_at": "2026-11-19T00:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "736a2930c5cb54b8a2",
-      "title": "Locazioni a canone concordato – Requisiti, cedolare secca e sanzioni",
-      "url": "https://www.redazionefiscale.it/c/circolari-fiscali/52419-locazioni-a-canone-concordato--requisiti-cedolare-secca-e-sanzioni",
-      "source": "Redazione Fiscale",
-      "published_at": "2026-11-19T00:00:00+00:00",
-      "category": "Locazioni e immobili",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "4d87278c51aa44cfa1",
-      "title": "Ecobonus - Calcoli di convenienza in vista di fine anno",
-      "url": "https://www.redazionefiscale.it/c/info-flash-fiscali/52403-ecobonus---calcoli-di-convenienza-in-vista-di-fine-anno",
-      "source": "Redazione Fiscale",
-      "published_at": "2026-11-19T00:00:00+00:00",
-      "category": "Locazioni e immobili",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "b644b025c703ffaf4f",
@@ -739,7 +469,16 @@
       "source": "Fisco e Tasse",
       "published_at": "2026-11-19T00:00:00+00:00",
       "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "9af000d44071be3735",
+      "title": "Distacco ItaliaTurchia le regole dellAccordo e le novit Uniemens",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4823-distacco-italia-turchia-tutte-le-regole-e-novita-uniemens.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-19T00:00:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "28ab071bfb3a606625",
@@ -748,7 +487,7 @@
       "source": "Euroconference News",
       "published_at": "2026-11-18T23:06:00+00:00",
       "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "78e062ed97b76e53df",
@@ -757,7 +496,7 @@
       "source": "Euroconference News",
       "published_at": "2026-11-18T23:05:00+00:00",
       "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "883521a1f7beac7474",
@@ -766,7 +505,7 @@
       "source": "Euroconference News",
       "published_at": "2026-11-18T23:04:00+00:00",
       "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "72e06a634661613d62",
@@ -775,7 +514,7 @@
       "source": "Euroconference News",
       "published_at": "2026-11-18T23:03:00+00:00",
       "category": "Successioni e tributi locali",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "661e5f89f56f62be57",
@@ -784,7 +523,7 @@
       "source": "Euroconference News",
       "published_at": "2026-11-18T23:03:00+00:00",
       "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "a2dc142a35d93d8469",
@@ -793,16 +532,7 @@
       "source": "Euroconference News",
       "published_at": "2026-11-18T23:02:00+00:00",
       "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "d67862838b870d4729",
-      "title": "Ore 14.27 – Fondo solidarietà Bolzano, contributi ridotti del 40% anche nel 2027 per le piccole imprese",
-      "url": "https://www.fiscal-focus.it/news,190228",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-18T23:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "fbb4b08f9d3a2689ff",
@@ -811,7 +541,7 @@
       "source": "Fiscal Focus",
       "published_at": "2026-11-18T23:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "e19bdfaa9071321496",
@@ -820,43 +550,16 @@
       "source": "Fiscal Focus",
       "published_at": "2026-11-18T23:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "2f2aac2e12bd490e1a",
-      "title": "Esenzione dalle ritenute sugli interessi relativi a finanziamenti a medio–lungo termine: in quali casi?",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/19/esenzione-ritenute-interessi-relativi-finanziamenti-medio-lungo-termine-casi",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-18T20:00:00+00:00",
-      "category": "Bandi e finanziamenti",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "b64304826f7ede9b58",
-      "title": "Flat tax pensionati esteri anche in caso di prestazioni erogate dal SIPP",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/19/flat-tax-pensionati-esteri-prestazioni-erogate-sipp",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-18T20:00:00+00:00",
-      "category": "Famiglie e CAF",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "d917749e28bcf1ef99",
-      "title": "Esperti TAIEX: il trattamento fiscale",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/19/esperti-taiex-trattamento-fiscale",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-18T20:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "bc83a2531af5f5453e",
-      "title": "Riduzione dell'aliquota IRES agli ex IACP: agevolazione ancora applicabile",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/19/riduzione-aliquota-ires-ex-iacp-agevolazione-applicabile",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-18T20:00:00+00:00",
-      "category": "Bandi e finanziamenti",
-      "status": "link_esterno_da_verificare"
+      "id": "d67862838b870d4729",
+      "title": "Ore 14.27 – Fondo solidarietà Bolzano, contributi ridotti del 40% anche nel 2027 per le piccole imprese",
+      "url": "https://www.fiscal-focus.it/news,190228",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-18T23:00:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "59fcf32c51345bc36a",
@@ -865,7 +568,7 @@
       "source": "Informazione Fiscale",
       "published_at": "2026-11-18T16:12:00+00:00",
       "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "f0a68a02067a99e357",
@@ -874,52 +577,7 @@
       "source": "Informazione Fiscale",
       "published_at": "2026-11-18T14:46:43+00:00",
       "category": "Bandi e finanziamenti",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "d5b6c2f472e1ee582e",
-      "title": "Il cambio di controllo indiretto nel riporto delle perdite fiscali: l’interpretazione autentica del decreto Omnibus",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/18/cambio-controllo-indiretto-riporto-perdite-fiscali-interpretazione-autentica-decreto-omnibus",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-18T05:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "e1734536db7c326ec7",
-      "title": "NIS2: adempimenti e scadenze 2027 per le imprese",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/18/nis2-adempimenti-scadenze-2027-imprese",
-      "source": "IPSOA Impresa",
-      "published_at": "2026-11-18T05:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "6a954b7a6ec2fa1b29",
-      "title": "Eredità ETS: quando servono garanzia, sigilli e inventario",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/18/eredita-ets-servono-garanzia-sigilli-inventario",
-      "source": "IPSOA Impresa",
-      "published_at": "2026-11-18T05:00:00+00:00",
-      "category": "Successioni e tributi locali",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "dd3ed724cc280bbbc1",
-      "title": "Saldo IMU 2026 entro il 16 dicembre - Le aliquote da applicare",
-      "url": "https://www.redazionefiscale.it/c/circolari-fiscali/52390-saldo-imu-2026-entro-il-16-dicembre---le-aliquote-da-applicare",
-      "source": "Redazione Fiscale",
-      "published_at": "2026-11-18T00:00:00+00:00",
-      "category": "Successioni e tributi locali",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "5a87a843ddebfbe4e0",
-      "title": "Differenziali sui bonus edilizi per i professionisti – I codici tributo",
-      "url": "https://www.redazionefiscale.it/c/info-flash-fiscali/52388-differenziali-sui-bonus-edilizi-per-i-professionisti--i-codici-tributo",
-      "source": "Redazione Fiscale",
-      "published_at": "2026-11-18T00:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "49ff823a85a7bd4bc7",
@@ -928,25 +586,7 @@
       "source": "Euroconference News",
       "published_at": "2026-11-17T23:04:00+00:00",
       "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "98c3456f41b612baa3",
-      "title": "Ore 08.38 – Acconti IRES e IRAP, con l'esercizio abbreviato il secondo versamento potrebbe saltare",
-      "url": "https://www.fiscal-focus.it/news,190167",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-17T23:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "133c2505ff0b57c5d0",
-      "title": "Ore 08.19 – Manovra 2027, per i giovani dipendenti arriva l'ipotesi di una tassa all'1% sugli aumenti di reddito",
-      "url": "https://www.fiscal-focus.it/news,190166",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-17T23:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "23e7ac78200a14ae31",
@@ -955,7 +595,25 @@
       "source": "Fiscal Focus",
       "published_at": "2026-11-17T23:00:00+00:00",
       "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "98c3456f41b612baa3",
+      "title": "Ore 08.38 – Acconti IRES e IRAP, con l'esercizio abbreviato il secondo versamento potrebbe saltare",
+      "url": "https://www.fiscal-focus.it/news,190167",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-17T23:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "133c2505ff0b57c5d0",
+      "title": "Ore 08.19 – Manovra 2027, per i giovani dipendenti arriva l'ipotesi di una tassa all'1% sugli aumenti di reddito",
+      "url": "https://www.fiscal-focus.it/news,190166",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-17T23:00:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "f312fd3bc17fda0fb0",
@@ -964,34 +622,7 @@
       "source": "Euroconference News",
       "published_at": "2026-11-17T22:55:00+00:00",
       "category": "Successioni e tributi locali",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "4cdaae13f39abf155a",
-      "title": "Ritenuta sui dividendi percepiti da una società non residente: il calcolo del risultato",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/18/ritenuta-dividendi-percepiti-societa-non-residente-calcolo-risultato",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-17T20:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "700f681ce3010e2da6",
-      "title": "Deducibilità IRAP e IRES: cosa cambia nel 2027 per il settore finanziario ed energetico",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/17/deducibilita-irap-ires-cambia-2027-settore-finanziario-energetico",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-17T05:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "b78cd2a93cc80fbcf9",
-      "title": "Le scadenze di dicembre 2026: bonus mamme, sgravio contratti di solidarietà, adempimento collaborativo, saldo IMU",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/17/scadenze-dicembre-2026-bonus-mamme-sgravio-contratti-solidarieta-adempimento-collaborativo-saldo-imu",
-      "source": "IPSOA Impresa",
-      "published_at": "2026-11-17T05:00:00+00:00",
-      "category": "Successioni e tributi locali",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "78d99c77b81f289514",
@@ -1000,7 +631,7 @@
       "source": "Euroconference News",
       "published_at": "2026-11-16T23:05:00+00:00",
       "category": "Bandi e finanziamenti",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "dcda0c75b90d3801b8",
@@ -1009,7 +640,7 @@
       "source": "Fiscal Focus",
       "published_at": "2026-11-16T23:00:00+00:00",
       "category": "Bandi e finanziamenti",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "4c1240125dbed8e526",
@@ -1018,7 +649,7 @@
       "source": "Fiscal Focus",
       "published_at": "2026-11-16T23:00:00+00:00",
       "category": "Locazioni e immobili",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "15d5408cb264458851",
@@ -1027,115 +658,7 @@
       "source": "Fiscal Focus",
       "published_at": "2026-11-16T23:00:00+00:00",
       "category": "Locazioni e immobili",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "5352d088f24602f68a",
-      "title": "Neutralità fiscale per le scissioni parziali tra società infragruppo",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/17/neutralita-fiscale-scissioni-parziali-societa-infragruppo",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-16T20:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "c52e7feb0d61aedcec",
-      "title": "Obbligo SIISL dal 1° dicembre per assunzioni: le richieste dei Commercialisti",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/17/obbligo-siisl-1-dicembre-assunzioni-richieste-commercialisti",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-16T20:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "bd27b5542f2f87249e",
-      "title": "Società tra professionisti e mancata comunicazione del domicilio digitale: cosa fare?",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/17/societa-professionisti-mancata-comunicazione-domicilio-digitale-fare",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-16T20:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "85e1e468ff2404a44f",
-      "title": "Manovra 2027: più spazio ai forfetari, meno liquidità alle imprese",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/16/manovra-2027-spazio-forfetari-liquidita-imprese",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-16T07:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "6a1a696d6a7fe2f2c2",
-      "title": "Regime forfetario e lavoro dipendente: la soglia di 35.000 euro salva il 2027 ma lascia il 2028 senza certezze",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/14/regime-forfetario-lavoro-dipendente-soglia-35-000-euro-salva-2027-lascia-2028-senza-certezze",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-14T07:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "443f363f7b5e917188",
-      "title": "Distribuzione di utili extracontabili nelle società a ristretta base: problemi applicativi dopo il decreto Omnibus",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/14/distribuzione-utili-extracontabili-societa-ristretta-base-problemi-applicativi-decreto-omnibus",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-14T05:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "9d0422681027952f2c",
-      "title": "Credito Ecobonus 110%: le proposte dell’ADC",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/14/credito-ecobonus-110-proposte-adc",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-13T20:00:00+00:00",
-      "category": "Locazioni e immobili",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "d04149af867df709f0",
-      "title": "Operazione MLBO e successiva fusione: il trattamento fiscale",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/14/operazione-mlbo-successiva-fusione-trattamento-fiscale",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-13T20:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "139adb4fb3db8243bf",
-      "title": "Campi Flegrei: versamenti tributari sospesi fino al 30 novembre 2026",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/14/piano-campi-flegrei-sospesi-versamenti-tributari-30-novembre-2026",
-      "source": "IPSOA Fisco",
-      "published_at": "2026-11-13T20:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "d4bda23634fc64e06e",
-      "title": "Legge di bilancio 2027: criticità fiscali e dubbi sull’efficacia degli incentivi",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/14/legge-bilancio-2027-criticita-fiscali-dubbi-efficacia-incentivi",
-      "source": "IPSOA Impresa",
-      "published_at": "2026-11-13T19:00:00+00:00",
-      "category": "Bandi e finanziamenti",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "e32ed8ef0a64559b5a",
-      "title": "Legge di Bilancio 2027: per Confprofessioni servono più equità fiscale e incentivi ai professionisti",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/14/legge-bilancio-2027-confprofessioni-servono-equita-fiscale-incentivi-professionisti",
-      "source": "IPSOA Impresa",
-      "published_at": "2026-11-13T19:00:00+00:00",
-      "category": "Bandi e finanziamenti",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "7aad2bc2cd5fbd359e",
-      "title": "Assemblee delle società quotate: checklist delle verifiche prima della convocazione",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/13/assemblee-societa-quotate-checklist-verifiche-prima-convocazione",
-      "source": "IPSOA Impresa",
-      "published_at": "2026-11-13T05:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     },
     {
       "id": "0ccb9db7ba0829843d",
@@ -1144,16 +667,7 @@
       "source": "Euroconference News",
       "published_at": "2026-11-12T23:04:00+00:00",
       "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "99218eb2a42423cc10",
-      "title": "Garanzia per i debiti ereditari: criteri ed esoneri per ETS ed enti non profit",
-      "url": "https://www.ipsoa.it/documents/quotidiano/2026/11/13/garanzia-debiti-ereditari-criteri-esoneri-ets-enti-non-profit",
-      "source": "IPSOA Impresa",
-      "published_at": "2026-11-12T19:00:00+00:00",
-      "category": "Successioni e tributi locali",
-      "status": "link_esterno_da_verificare"
+      "status": "accesso_gratuito_verificato"
     }
   ],
   "feeds_ok": [
@@ -1161,14 +675,13 @@
     "Fisco e Tasse",
     "Informazione Fiscale",
     "IPSOA Fisco",
+    "IPSOA Impresa",
     "LavoroSì",
     "Eutekne",
     "Euroconference News",
     "Redazione Fiscale"
   ],
-  "feeds_failed": [
-    "IPSOA Impresa"
-  ],
+  "feeds_failed": [],
   "other_sources": [
     {
       "name": "IPSOA - aree ulteriori",
