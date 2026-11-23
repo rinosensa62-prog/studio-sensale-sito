@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-23T17:23:20+00:00",
+  "updated_at": "2026-11-23T18:16:35+00:00",
   "publication_mode": "link_esterni_per_categoria",
   "items": [
     {
@@ -118,6 +118,51 @@
       "source": "Fisco e Tasse",
       "published_at": "2026-11-23T00:00:00+00:00",
       "category": "Aprire e gestire un’attività",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "0f9baeaecb5cf07b8e",
+      "title": "Ore 14:33 - ZES agricola 2026: comunicazione integrativa entro il 2 dicembre per non perdere il credito d’imposta",
+      "url": "https://www.fiscal-focus.it/news,190353",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-22T23:00:00+00:00",
+      "category": "Bandi e finanziamenti",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "db74758d7d457db16e",
+      "title": "Ore 16:02 - Imposta di registro: nullo l’avviso di rettifica senza gli atti di comparazione",
+      "url": "https://www.fiscal-focus.it/news,190354",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-22T23:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "b4a1860f5be0eaac5a",
+      "title": "Ore 12:56 - SIISL e incentivi contributivi: come associare la vacancy all’UNILAV regionale",
+      "url": "https://www.fiscal-focus.it/news,190352",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-22T23:00:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "8ede367f9cf23dccc2",
+      "title": "Ore 10:25 - IVA sotto i 100 euro: avvisi bonari errati, come ottenere l’annullamento",
+      "url": "https://www.fiscal-focus.it/news,190350",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-22T23:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "ce0391963b35dc45a9",
+      "title": "Ore 09:06 - Fattura elettronica 2027: debutta il codice RF21 per il Terzo settore",
+      "url": "https://www.fiscal-focus.it/news,190349",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-22T23:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -274,18 +319,18 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "800ab1717fe7ed453e",
-      "title": "Ore 11:22 - Welfare aziendale, CU 2026 senza obbligo di rettifica: recupero delle imposte con l’integrativa",
-      "url": "https://www.fiscal-focus.it/news,190284",
+      "id": "6c0209ef716c34c9cb",
+      "title": "Ore 12:34 - IPT, per le società di noleggio conta la sede di gestione ordinaria e non quella legale",
+      "url": "https://www.fiscal-focus.it/news,190286",
       "source": "Fiscal Focus",
       "published_at": "2026-11-19T23:00:00+00:00",
-      "category": "Lavoro e paghe",
+      "category": "Aprire e gestire un’attività",
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "207b78d6769951cfe8",
-      "title": "Ore 10:26 - Testi Unici tributari, dal 2027 cambia la numerazione ma non le regole",
-      "url": "https://www.fiscal-focus.it/news,190282",
+      "id": "346166d5a6346469c6",
+      "title": "Ore 09:03 - Rottamazione cartelle, tre scadenze al 30 novembre: attenzione alle regole sulla decade",
+      "url": "https://www.fiscal-focus.it/news,190281",
       "source": "Fiscal Focus",
       "published_at": "2026-11-19T23:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
@@ -310,21 +355,21 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "346166d5a6346469c6",
-      "title": "Ore 09:03 - Rottamazione cartelle, tre scadenze al 30 novembre: attenzione alle regole sulla decade",
-      "url": "https://www.fiscal-focus.it/news,190281",
+      "id": "800ab1717fe7ed453e",
+      "title": "Ore 11:22 - Welfare aziendale, CU 2026 senza obbligo di rettifica: recupero delle imposte con l’integrativa",
+      "url": "https://www.fiscal-focus.it/news,190284",
       "source": "Fiscal Focus",
       "published_at": "2026-11-19T23:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
+      "category": "Lavoro e paghe",
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "6c0209ef716c34c9cb",
-      "title": "Ore 12:34 - IPT, per le società di noleggio conta la sede di gestione ordinaria e non quella legale",
-      "url": "https://www.fiscal-focus.it/news,190286",
+      "id": "207b78d6769951cfe8",
+      "title": "Ore 10:26 - Testi Unici tributari, dal 2027 cambia la numerazione ma non le regole",
+      "url": "https://www.fiscal-focus.it/news,190282",
       "source": "Fiscal Focus",
       "published_at": "2026-11-19T23:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
+      "category": "Dichiarazioni e Fisco",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -400,12 +445,12 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "e19bdfaa9071321496",
-      "title": "Ore 09.04 – Compensazioni fiscali indebite, l'amministratore risponde anche se gli F24 sono inviati dal commercialista",
-      "url": "https://www.fiscal-focus.it/news,190224",
+      "id": "d67862838b870d4729",
+      "title": "Ore 14.27 – Fondo solidarietà Bolzano, contributi ridotti del 40% anche nel 2027 per le piccole imprese",
+      "url": "https://www.fiscal-focus.it/news,190228",
       "source": "Fiscal Focus",
       "published_at": "2026-11-18T23:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
+      "category": "Lavoro e paghe",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -418,12 +463,12 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "d67862838b870d4729",
-      "title": "Ore 14.27 – Fondo solidarietà Bolzano, contributi ridotti del 40% anche nel 2027 per le piccole imprese",
-      "url": "https://www.fiscal-focus.it/news,190228",
+      "id": "e19bdfaa9071321496",
+      "title": "Ore 09.04 – Compensazioni fiscali indebite, l'amministratore risponde anche se gli F24 sono inviati dal commercialista",
+      "url": "https://www.fiscal-focus.it/news,190224",
       "source": "Fiscal Focus",
       "published_at": "2026-11-18T23:00:00+00:00",
-      "category": "Lavoro e paghe",
+      "category": "Dichiarazioni e Fisco",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -445,12 +490,12 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "23e7ac78200a14ae31",
-      "title": "Ore 08.01 – Regime forfettario, rimborsi spese esclusi dai compensi ma cresce il rischio di nuove imposte",
-      "url": "https://www.fiscal-focus.it/news,190165",
+      "id": "133c2505ff0b57c5d0",
+      "title": "Ore 08.19 – Manovra 2027, per i giovani dipendenti arriva l'ipotesi di una tassa all'1% sugli aumenti di reddito",
+      "url": "https://www.fiscal-focus.it/news,190166",
       "source": "Fiscal Focus",
       "published_at": "2026-11-17T23:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
+      "category": "Lavoro e paghe",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -463,12 +508,12 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "133c2505ff0b57c5d0",
-      "title": "Ore 08.19 – Manovra 2027, per i giovani dipendenti arriva l'ipotesi di una tassa all'1% sugli aumenti di reddito",
-      "url": "https://www.fiscal-focus.it/news,190166",
+      "id": "23e7ac78200a14ae31",
+      "title": "Ore 08.01 – Regime forfettario, rimborsi spese esclusi dai compensi ma cresce il rischio di nuove imposte",
+      "url": "https://www.fiscal-focus.it/news,190165",
       "source": "Fiscal Focus",
       "published_at": "2026-11-17T23:00:00+00:00",
-      "category": "Lavoro e paghe",
+      "category": "Aprire e gestire un’attività",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -481,18 +526,18 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "4c1240125dbed8e526",
-      "title": "Ore 16:55 - Catasto e ipoteche online: visure gratis anche sugli immobili di altri, la nuova guida delle Entrate",
-      "url": "https://www.fiscal-focus.it/news,190158",
+      "id": "15d5408cb264458851",
+      "title": "Ore 15:48 - Scissioni immobiliari reciproche: per l’Agenzia nessun abuso del diritto se c’è un vero riassetto organizzativo",
+      "url": "https://www.fiscal-focus.it/news,190157",
       "source": "Fiscal Focus",
       "published_at": "2026-11-16T23:00:00+00:00",
       "category": "Locazioni e immobili",
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "15d5408cb264458851",
-      "title": "Ore 15:48 - Scissioni immobiliari reciproche: per l’Agenzia nessun abuso del diritto se c’è un vero riassetto organizzativo",
-      "url": "https://www.fiscal-focus.it/news,190157",
+      "id": "4c1240125dbed8e526",
+      "title": "Ore 16:55 - Catasto e ipoteche online: visure gratis anche sugli immobili di altri, la nuova guida delle Entrate",
+      "url": "https://www.fiscal-focus.it/news,190158",
       "source": "Fiscal Focus",
       "published_at": "2026-11-16T23:00:00+00:00",
       "category": "Locazioni e immobili",
@@ -503,14 +548,15 @@
     "Fiscal Focus",
     "Fisco e Tasse",
     "Informazione Fiscale",
-    "IPSOA Fisco",
     "IPSOA Impresa",
     "LavoroSì",
     "Eutekne",
     "Euroconference News",
     "Redazione Fiscale"
   ],
-  "feeds_failed": [],
+  "feeds_failed": [
+    "IPSOA Fisco"
+  ],
   "other_sources": [
     {
       "name": "IPSOA - aree ulteriori",
