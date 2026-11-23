@@ -45,6 +45,7 @@ const cases = [
         extraBlock:!!document.querySelector("#studio-news-live"),
         injectedScript:!!document.querySelector('script[src*="studio-news-live.js"]'),
         cards:cards.length, external:external.length, wrongCategory:wrong.length,
+        paywallSources:external.filter(x=>/(?:eutekne\.info|redazionefiscale\.it)/i.test(x.href)).map(x=>x.href),
         duplicateUrls:dupeCount,
         excludedSend:cards.some(x=>/(?:indebit.{0,60}send|send.{0,60}indebit)/i.test(x.textContent)),
         latest:external.slice(0,3).map(x=>({title:x.querySelector("h3")?.textContent,
@@ -56,7 +57,7 @@ const cases = [
       archiveTodayTitles = result.externalTitles;
       archiveRecentCount = result.recentExternal;
     }
-    if(result.extraBlock||result.injectedScript||!result.cards||result.wrongCategory||result.excludedSend||result.duplicateUrls)failures++;
+    if(result.extraBlock||result.injectedScript||!result.cards||result.wrongCategory||result.excludedSend||result.duplicateUrls||result.paywallSources.length)failures++;
     if(result.external)hasAutomaticContent=true;
     console.log(JSON.stringify({route,...result}));
   }
@@ -81,6 +82,17 @@ const cases = [
       failures++;
     }
   }
+  const archiveResponse = await page.request.get(
+    "https://raw.githubusercontent.com/rinosensa62-prog/studio-sensale-sito/main/assets/spunti-editoriali.json?t="+Date.now()
+  );
+  const archiveJson = await archiveResponse.json();
+  const unverified = (archiveJson.items||[]).filter(x=>x.status!=="accesso_gratuito_verificato");
+  const forbidden = (archiveJson.items||[]).filter(x=>["Eutekne","Redazione Fiscale"].includes(x.source));
+  console.log(JSON.stringify({audit:"free_full_text",kept:archiveJson.items.length,
+    unverified:unverified.length,restricted_sources:forbidden.length,
+    mode:archiveJson.publication_mode}));
+  if(unverified.length||forbidden.length||
+     archiveJson.publication_mode!=="solo_articoli_integrali_gratuiti")failures++;
   await browser.close();
   if(!hasAutomaticContent)failures++;
   if(failures) {console.error("Controlli non superati: "+failures);process.exit(1);}
