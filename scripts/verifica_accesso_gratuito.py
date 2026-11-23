@@ -12,7 +12,10 @@ import unicodedata
 # Queste testate presentano spesso l'articolo come anteprima acquistabile.
 # Finche non esiste una verifica positiva affidabile del singolo articolo,
 # i relativi link non vengono pubblicati.
-SORGENTI_NON_AMMESSE = {"Eutekne", "Redazione Fiscale"}
+# EC News mostra ad alcuni visitatori una richiesta di login per proseguire
+# anche quando l'HTML acquisito dal robot contiene testo esteso. Falliamo
+# chiusi per TUTTA la fonte, fino a una verifica affidabile da browser anonimo.
+SORGENTI_NON_AMMESSE = {"Eutekne", "Redazione Fiscale", "Euroconference News"}
 
 BLOCCO = re.compile(
     r"(?:contenut[oi]\s+riservat[oi](?:\s+agli?\s+abbonat[oi])?|"
@@ -21,7 +24,12 @@ BLOCCO = re.compile(
     r"per\s+leggere\s+(?:l.articolo|il\s+contenuto)\s+completo|"
     r"continua\s+a\s+leggere\s+con\s+(?:l.abbonamento|premium)|"
     r"(?:questo|l.)\s*articolo\s+(?:e|è)\s+riservato\s+agli\s+abbonati|"
-    r"solo\s+(?:per\s+)?(?:gli\s+)?abbonati\s+possono\s+leggere)",
+    r"solo\\s+(?:per\\s+)?(?:gli\\s+)?abbonati\\s+possono\\s+leggere|"
+    r"(?:effettua|esegui)\\s+(?:il\\s+)?login\\s+per\\s+(?:continuare|leggere)|"
+    r"(?:accedi|registrati)\\s+per\\s+(?:continuare|leggere|visualizzare)|"
+    r"per\\s+continuare\\s+(?:a\\s+)?leggere.{0,80}(?:accedi|registrati|login)|"
+    r"(?:registrazione|accesso)\\s+(?:gratuita?\\s+)?(?:obbligatoria|necessaria)\\s+per\\s+(?:leggere|accedere)|"
+    r"\b(?:accedi|registrati)\\s+per\\s+sbloccare\\s+(?:il\\s+)?contenuto)",
     re.I,
 )
 MARKUP_PAYWALL = re.compile(
@@ -103,6 +111,11 @@ def simplify(x):
 def validate_html(content, source, title, url):
     """Controllo prudente, non un attestato assoluto contro paywall JS."""
     if source in SORGENTI_NON_AMMESSE or source not in MIN_WORDS:
+        return False
+    path = urlsplit(url).path.lower()
+    # Non scambiare promozioni, webinar o corsi acquistabili per notizie.
+    if ("/academy" in path or "formazione-academy" in path or
+        re.search(r"(?:webinar|corso[/-]online|formazione[/-]a[/-]pagamento)", path)):
         return False
     if source == "Fiscal Focus" and "/news," not in urlsplit(url).path:
         return False
