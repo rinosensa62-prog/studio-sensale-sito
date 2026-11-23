@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-23T17:06:27+00:00",
-  "publication_mode": "solo_articoli_integrali_gratuiti",
+  "updated_at": "2026-11-23T17:23:20+00:00",
+  "publication_mode": "link_esterni_per_categoria",
   "items": [
     {
       "id": "79d0e3ad2808cdea1c",
@@ -85,21 +85,21 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "523f5c79bc1b4ec56f",
-      "title": "Fattura elettronica 2027 nuove specifiche tecniche 110",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4831-fattura-elettronica-2027-nuove-specifiche-tecniche-110.html",
-      "source": "Fisco e Tasse",
-      "published_at": "2026-11-23T00:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
       "id": "41714bdc44638d3e66",
       "title": "Architetto in pensione che lavora ancora ecco quando versa a Inarcassa",
       "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4843-architetto-pensionato-inps-124mila-euro-a-inarcassa-per-mancata-iscrizione.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-23T00:00:00+00:00",
       "category": "Famiglie e CAF",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "b946c5195d9bcb4f9f",
+      "title": "IMU precompilata dal 2027 dove trovarla SOGEI annuncia la piattaforma",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4838-imu-precompilata-dal-2027-dove-trovarla-sogei-annuncia-la-piattaforma.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "category": "Successioni e tributi locali",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -112,12 +112,12 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "b946c5195d9bcb4f9f",
-      "title": "IMU precompilata dal 2027 dove trovarla SOGEI annuncia la piattaforma",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4838-imu-precompilata-dal-2027-dove-trovarla-sogei-annuncia-la-piattaforma.html",
+      "id": "523f5c79bc1b4ec56f",
+      "title": "Fattura elettronica 2027 nuove specifiche tecniche 110",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4831-fattura-elettronica-2027-nuove-specifiche-tecniche-110.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-23T00:00:00+00:00",
-      "category": "Successioni e tributi locali",
+      "category": "Dichiarazioni e Fisco",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -310,21 +310,21 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "38b2c28ea169031f3c",
-      "title": "Pensionati esteri bonus fiscale del 7 anche con il fondo SIPP",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4824-pensionati-esteri-bonus-fiscale-del-7-anche-con-il-fondo-sipp.html",
-      "source": "Fisco e Tasse",
-      "published_at": "2026-11-20T00:00:00+00:00",
-      "category": "Famiglie e CAF",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
       "id": "f9d08deb5f4682f3b6",
       "title": "Fotovoltaico sui tetti contributi fino all80 per adeguare le coperture degli edifici",
       "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4822-fotovoltaico-sui-tetti-contributi-fino-all80-per-adeguare-le-coperture-degli-edifici.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-20T00:00:00+00:00",
       "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "38b2c28ea169031f3c",
+      "title": "Pensionati esteri bonus fiscale del 7 anche con il fondo SIPP",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4824-pensionati-esteri-bonus-fiscale-del-7-anche-con-il-fondo-sipp.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "category": "Famiglie e CAF",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -355,30 +355,21 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "207b78d6769951cfe8",
-      "title": "Ore 10:26 - Testi Unici tributari, dal 2027 cambia la numerazione ma non le regole",
-      "url": "https://www.fiscal-focus.it/news,190282",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-19T23:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "6c0209ef716c34c9cb",
-      "title": "Ore 12:34 - IPT, per le società di noleggio conta la sede di gestione ordinaria e non quella legale",
-      "url": "https://www.fiscal-focus.it/news,190286",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-19T23:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
       "id": "800ab1717fe7ed453e",
       "title": "Ore 11:22 - Welfare aziendale, CU 2026 senza obbligo di rettifica: recupero delle imposte con l’integrativa",
       "url": "https://www.fiscal-focus.it/news,190284",
       "source": "Fiscal Focus",
       "published_at": "2026-11-19T23:00:00+00:00",
       "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "207b78d6769951cfe8",
+      "title": "Ore 10:26 - Testi Unici tributari, dal 2027 cambia la numerazione ma non le regole",
+      "url": "https://www.fiscal-focus.it/news,190282",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-19T23:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -391,6 +382,15 @@
       "status": "accesso_gratuito_verificato"
     },
     {
+      "id": "6fcda1eb31d06e0d79",
+      "title": "12.39 - Distacchi Italia-Turchia: l’INPS chiarisce contributi e compilazione dell’Uniemens",
+      "url": "https://www.fiscal-focus.it/news,190291",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-19T23:00:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
       "id": "346166d5a6346469c6",
       "title": "Ore 09:03 - Rottamazione cartelle, tre scadenze al 30 novembre: attenzione alle regole sulla decade",
       "url": "https://www.fiscal-focus.it/news,190281",
@@ -400,12 +400,12 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "6fcda1eb31d06e0d79",
-      "title": "12.39 - Distacchi Italia-Turchia: l’INPS chiarisce contributi e compilazione dell’Uniemens",
-      "url": "https://www.fiscal-focus.it/news,190291",
+      "id": "6c0209ef716c34c9cb",
+      "title": "Ore 12:34 - IPT, per le società di noleggio conta la sede di gestione ordinaria e non quella legale",
+      "url": "https://www.fiscal-focus.it/news,190286",
       "source": "Fiscal Focus",
       "published_at": "2026-11-19T23:00:00+00:00",
-      "category": "Lavoro e paghe",
+      "category": "Aprire e gestire un’attività",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -463,18 +463,18 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "b644b025c703ffaf4f",
-      "title": "Crisi dimpresa il lavoratore conserva lauto nella liquidazione controllata",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4818-crisi-dimpresa-il-lavoratore-conserva-lauto-nella-liquidazione-controllata.html",
+      "id": "9af000d44071be3735",
+      "title": "Distacco ItaliaTurchia le regole dellAccordo e le novit Uniemens",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4823-distacco-italia-turchia-tutte-le-regole-e-novita-uniemens.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-19T00:00:00+00:00",
       "category": "Lavoro e paghe",
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "9af000d44071be3735",
-      "title": "Distacco ItaliaTurchia le regole dellAccordo e le novit Uniemens",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4823-distacco-italia-turchia-tutte-le-regole-e-novita-uniemens.html",
+      "id": "b644b025c703ffaf4f",
+      "title": "Crisi dimpresa il lavoratore conserva lauto nella liquidazione controllata",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4818-crisi-dimpresa-il-lavoratore-conserva-lauto-nella-liquidazione-controllata.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-19T00:00:00+00:00",
       "category": "Lavoro e paghe",
@@ -544,21 +544,21 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "d67862838b870d4729",
-      "title": "Ore 14.27 – Fondo solidarietà Bolzano, contributi ridotti del 40% anche nel 2027 per le piccole imprese",
-      "url": "https://www.fiscal-focus.it/news,190228",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-18T23:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
       "id": "fbb4b08f9d3a2689ff",
       "title": "Ore 12.18 – Prestiti dall'estero, ritenute sugli interessi: esenzione per Singapore e aliquota del 12% per la banca spagnola",
       "url": "https://www.fiscal-focus.it/news,190227",
       "source": "Fiscal Focus",
       "published_at": "2026-11-18T23:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "d67862838b870d4729",
+      "title": "Ore 14.27 – Fondo solidarietà Bolzano, contributi ridotti del 40% anche nel 2027 per le piccole imprese",
+      "url": "https://www.fiscal-focus.it/news,190228",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-18T23:00:00+00:00",
+      "category": "Lavoro e paghe",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -598,6 +598,15 @@
       "status": "accesso_gratuito_verificato"
     },
     {
+      "id": "23e7ac78200a14ae31",
+      "title": "Ore 08.01 – Regime forfettario, rimborsi spese esclusi dai compensi ma cresce il rischio di nuove imposte",
+      "url": "https://www.fiscal-focus.it/news,190165",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-17T23:00:00+00:00",
+      "category": "Aprire e gestire un’attività",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
       "id": "98c3456f41b612baa3",
       "title": "Ore 08.38 – Acconti IRES e IRAP, con l'esercizio abbreviato il secondo versamento potrebbe saltare",
       "url": "https://www.fiscal-focus.it/news,190167",
@@ -613,15 +622,6 @@
       "source": "Fiscal Focus",
       "published_at": "2026-11-17T23:00:00+00:00",
       "category": "Lavoro e paghe",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "23e7ac78200a14ae31",
-      "title": "Ore 08.01 – Regime forfettario, rimborsi spese esclusi dai compensi ma cresce il rischio di nuove imposte",
-      "url": "https://www.fiscal-focus.it/news,190165",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-17T23:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -652,18 +652,18 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "15d5408cb264458851",
-      "title": "Ore 15:48 - Scissioni immobiliari reciproche: per l’Agenzia nessun abuso del diritto se c’è un vero riassetto organizzativo",
-      "url": "https://www.fiscal-focus.it/news,190157",
+      "id": "4c1240125dbed8e526",
+      "title": "Ore 16:55 - Catasto e ipoteche online: visure gratis anche sugli immobili di altri, la nuova guida delle Entrate",
+      "url": "https://www.fiscal-focus.it/news,190158",
       "source": "Fiscal Focus",
       "published_at": "2026-11-16T23:00:00+00:00",
       "category": "Locazioni e immobili",
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "4c1240125dbed8e526",
-      "title": "Ore 16:55 - Catasto e ipoteche online: visure gratis anche sugli immobili di altri, la nuova guida delle Entrate",
-      "url": "https://www.fiscal-focus.it/news,190158",
+      "id": "15d5408cb264458851",
+      "title": "Ore 15:48 - Scissioni immobiliari reciproche: per l’Agenzia nessun abuso del diritto se c’è un vero riassetto organizzativo",
+      "url": "https://www.fiscal-focus.it/news,190157",
       "source": "Fiscal Focus",
       "published_at": "2026-11-16T23:00:00+00:00",
       "category": "Locazioni e immobili",
