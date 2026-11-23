@@ -1,8 +1,188 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-22T19:35:56+00:00",
+  "updated_at": "2026-11-23T09:58:14+00:00",
   "publication_mode": "link_esterni_per_categoria",
   "items": [
+    {
+      "id": "95fee3f25420d51a37",
+      "title": "Tutte le novità fiscali della Legge di Bilancio 2027",
+      "url": "https://www.informazionefiscale.it/tutte-le-novita-fiscali-legge-di-bilancio-2027-formazione-academy",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-23T09:02:43+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "6f397c4fd5d94a85d3",
+      "title": "GreenItaly 2026, gli eco-investimenti premiano le imprese: più export, ricavi e lavoro",
+      "url": "https://www.informazionefiscale.it/investimenti-imprese-green-italy-2026-export-ricavi-lavoro",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-23T07:30:00+00:00",
+      "category": "Aprire e gestire un’attività",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "270d0a568d5018f7fa",
+      "title": "Esenzione IMU prima casa residenza e dimora necessarie anche durante i lavori",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4833-esenzione-imu-prima-casa-residenza-e-dimora-necessarie-anche-durante-i-lavori.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "category": "Successioni e tributi locali",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "523f5c79bc1b4ec56f",
+      "title": "Fattura elettronica 2027 nuove specifiche tecniche 110",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4831-fattura-elettronica-2027-nuove-specifiche-tecniche-110.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "f77a25834e368a3a95",
+      "title": "Addizionale sui bonus dei manager anche per le societ di consulenza",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4820-addizionale-sui-bonus-dei-manager-anche-per-le-societa-di-consulenza.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "category": "Aprire e gestire un’attività",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "74cfe6d24e963adfa3",
+      "title": "CPB con acconti d’imposta variabili",
+      "url": "https://www.eutekne.info/Sezioni/Articolo.aspx?ID=1132395",
+      "source": "Eutekne",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "e1cf952503a30a6cff",
+      "title": "Comunicazione del canone di locazione rinegoziato nel modello RLI",
+      "url": "https://www.eutekne.info/Sezioni/Articolo.aspx?ID=1131588",
+      "source": "Eutekne",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "category": "Locazioni e immobili",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "197550ceed15268c5b",
+      "title": "Entro il 16 dicembre il versamento del saldo IMU per il 2026",
+      "url": "https://www.eutekne.info/Sezioni/Articolo.aspx?ID=1122108",
+      "source": "Eutekne",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "category": "Successioni e tributi locali",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "0f0e358b5f2233796d",
+      "title": "Contribuenti forfettari - Rimborsi analitici esclusi dal reddito",
+      "url": "https://www.redazionefiscale.it/c/info-flash-fiscali/52438-contribuenti-forfettari---rimborsi-analitici-esclusi-dal-reddito",
+      "source": "Redazione Fiscale",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "category": "Aprire e gestire un’attività",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "69155edbf6115d2c31",
+      "title": "Fattura elettronica - Dal 2027 le specifiche tecniche adeguati ai nuovi TU normativi",
+      "url": "https://www.redazionefiscale.it/c/fisco-passo-passo/52434-fattura-elettronica---dal-2027-le-specifiche-tecniche-adeguati-ai-nuovi-tu-normativi",
+      "source": "Redazione Fiscale",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "66131fb5a6d8236504",
+      "title": "Il rebus della cedolare commerciale: quando le ragioni di cassa tradiscono la riforma fiscale",
+      "url": "https://www.redazionefiscale.it/c/fisco-passo-passo/52429-il-rebus-della-cedolare-commerciale-quando-le-ragioni-di-cassa-tradiscono-la-riforma-fiscale",
+      "source": "Redazione Fiscale",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "1291be61dba615abe7",
+      "title": "Soci di Srl e iscrizione INPS: come blindare utili e compensi",
+      "url": "https://www.redazionefiscale.it/c/fisco-passo-passo/52282-soci-di-srl-e-iscrizione-inps-come-blindare-utili-e-compensi",
+      "source": "Redazione Fiscale",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "c045d30bf40d31eea1",
+      "title": "Notifiche societarie e amministratori di fatto: il confine tra ricezione dell'atto e legittimazione al ricorso",
+      "url": "https://www.redazionefiscale.it/c/fisco-passo-passo/52405-notifiche-societarie-e-amministratori-di-fatto-il-confine-tra-ricezione-dellatto-e-legittimazione-al-ricorso",
+      "source": "Redazione Fiscale",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "category": "Aprire e gestire un’attività",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "5eb586bd930fa2e587",
+      "title": "Start-up innovative: detrazione al 65% e credito per l’eccedenza",
+      "url": "https://www.redazionefiscale.it/c/fisco-passo-passo/52430-start-up-innovative-detrazione-al-65-e-credito-per-leccedenza",
+      "source": "Redazione Fiscale",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "1e59ed3b5a39a12030",
+      "title": "Regime forfetario: soglie e lavoro dipendente nel DDL bilancio 2027",
+      "url": "https://www.ecnews.it/fiscale/fisco-e-patrimonio/imposte-sul-reddito/regime-forfetario-soglie-e-lavoro-dipendente-nel-ddl-bilancio-2027/",
+      "source": "Euroconference News",
+      "published_at": "2026-11-22T23:06:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "bad05930e0e021f771",
+      "title": "Affitto di azienda: alternatività IVA e registro",
+      "url": "https://www.ecnews.it/fiscale/fisco-e-patrimonio/imposte-indirette/affitto-di-azienda-alternativita-iva-e-registro/",
+      "source": "Euroconference News",
+      "published_at": "2026-11-22T23:05:00+00:00",
+      "category": "Locazioni e immobili",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "3d55a6947a8d14b846",
+      "title": "Licenziamento illegittimo: la Corte Costituzionale, con la sentenza n. 174/2026, rafforza la tutela indennitaria dei lavoratori delle piccole imprese",
+      "url": "https://www.ecnews.it/lavoro/rapporto-di-lavoro/cessazione-del-rapporto/licenziamento-illegittimo-la-corte-costituzionale-con-la-sentenza-n-174-2026-rafforza-la-tutela-indennitaria-dei-lavoratori-delle-piccole-imprese/",
+      "source": "Euroconference News",
+      "published_at": "2026-11-22T23:05:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "05626f8a2dc24895c0",
+      "title": "Trasformazione e nuovo TUIR: permangono le incongruenze tra utili fiscali e riserve",
+      "url": "https://www.ecnews.it/fiscale/fisco-e-patrimonio/operazioni-straordinarie/trasformazione-e-nuovo-tuir-permangono-le-incongruenze-tra-utili-fiscali-e-riserve/",
+      "source": "Euroconference News",
+      "published_at": "2026-11-22T23:04:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "4feb5f5549dcc8c423",
+      "title": "Indennità per missioni all’estero: chiarimenti sul regime fiscale degli esperti TAIEX",
+      "url": "https://www.ecnews.it/lavoro/imposte-contributi-e-premi/tassazione-e-redditi-di-lavoro/indennita-per-missioni-allestero-chiarimenti-sul-regime-fiscale-degli-esperti-taiex/",
+      "source": "Euroconference News",
+      "published_at": "2026-11-22T23:03:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "d69b400817a577c3bc",
+      "title": "Fondo di solidarietà bilaterale Bolzano-Alto Adige: aliquota contributiva ridotta anche nel 2027",
+      "url": "https://www.ecnews.it/lavoro/prestazioni-assistenziali-e-previdenziali/ammortizzatori-sociali/fondo-di-solidarieta-bilaterale-bolzano-alto-adige-aliquota-contributiva-ridotta-anche-nel-2027/",
+      "source": "Euroconference News",
+      "published_at": "2026-11-22T23:02:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "link_esterno_da_verificare"
+    },
     {
       "id": "94967758553aa02b1d",
       "title": "Manovra 2027, verso il via all'esame degli emendamenti. Novità attese su pensioni e rottamazione",
@@ -18,6 +198,15 @@
       "url": "https://www.informazionefiscale.it/taglio-irpef-irap-manovra-2027-lazio-piano-di-rientro",
       "source": "Informazione Fiscale",
       "published_at": "2026-11-22T05:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "62fee2f46ba0a9b1ce",
+      "title": "Concordato minore e Fisco silenzio dissenso motivato e cram down",
+      "url": "https://www.fiscoetasse.com/approfondimenti/17541-concordato-minore-e-fisco-silenzio-dissenso-motivato-e-cram-down.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-22T00:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
       "status": "link_esterno_da_verificare"
     },
@@ -73,15 +262,6 @@
       "source": "IPSOA Impresa",
       "published_at": "2026-11-21T05:00:00+00:00",
       "category": "Aprire e gestire un’attività",
-      "status": "link_esterno_da_verificare"
-    },
-    {
-      "id": "523f5c79bc1b4ec56f",
-      "title": "Fattura elettronica 2027 nuove specifiche tecniche 110",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4831-fattura-elettronica-2027-nuove-specifiche-tecniche-110.html",
-      "source": "Fisco e Tasse",
-      "published_at": "2026-11-21T00:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
       "status": "link_esterno_da_verificare"
     },
     {
@@ -535,15 +715,6 @@
       "status": "link_esterno_da_verificare"
     },
     {
-      "id": "b644b025c703ffaf4f",
-      "title": "Crisi dimpresa il lavoratore conserva lauto nella liquidazione controllata",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4818-crisi-dimpresa-il-lavoratore-conserva-lauto-nella-liquidazione-controllata.html",
-      "source": "Fisco e Tasse",
-      "published_at": "2026-11-19T00:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "link_esterno_da_verificare"
-    },
-    {
       "id": "736a2930c5cb54b8a2",
       "title": "Locazioni a canone concordato – Requisiti, cedolare secca e sanzioni",
       "url": "https://www.redazionefiscale.it/c/circolari-fiscali/52419-locazioni-a-canone-concordato--requisiti-cedolare-secca-e-sanzioni",
@@ -559,6 +730,15 @@
       "source": "Redazione Fiscale",
       "published_at": "2026-11-19T00:00:00+00:00",
       "category": "Locazioni e immobili",
+      "status": "link_esterno_da_verificare"
+    },
+    {
+      "id": "b644b025c703ffaf4f",
+      "title": "Crisi dimpresa il lavoratore conserva lauto nella liquidazione controllata",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4818-crisi-dimpresa-il-lavoratore-conserva-lauto-nella-liquidazione-controllata.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-19T00:00:00+00:00",
+      "category": "Lavoro e paghe",
       "status": "link_esterno_da_verificare"
     },
     {
