@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-23T17:00:10+00:00",
+  "updated_at": "2026-11-23T17:06:27+00:00",
   "publication_mode": "solo_articoli_integrali_gratuiti",
   "items": [
     {
@@ -85,12 +85,12 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "b946c5195d9bcb4f9f",
-      "title": "IMU precompilata dal 2027 dove trovarla SOGEI annuncia la piattaforma",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4838-imu-precompilata-dal-2027-dove-trovarla-sogei-annuncia-la-piattaforma.html",
+      "id": "523f5c79bc1b4ec56f",
+      "title": "Fattura elettronica 2027 nuove specifiche tecniche 110",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4831-fattura-elettronica-2027-nuove-specifiche-tecniche-110.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-23T00:00:00+00:00",
-      "category": "Successioni e tributi locali",
+      "category": "Dichiarazioni e Fisco",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -103,18 +103,18 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "523f5c79bc1b4ec56f",
-      "title": "Fattura elettronica 2027 nuove specifiche tecniche 110",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4831-fattura-elettronica-2027-nuove-specifiche-tecniche-110.html",
-      "source": "Fisco e Tasse",
-      "published_at": "2026-11-23T00:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
       "id": "270d0a568d5018f7fa",
       "title": "Esenzione IMU prima casa residenza e dimora necessarie anche durante i lavori",
       "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4833-esenzione-imu-prima-casa-residenza-e-dimora-necessarie-anche-durante-i-lavori.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "category": "Successioni e tributi locali",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "b946c5195d9bcb4f9f",
+      "title": "IMU precompilata dal 2027 dove trovarla SOGEI annuncia la piattaforma",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4838-imu-precompilata-dal-2027-dove-trovarla-sogei-annuncia-la-piattaforma.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-23T00:00:00+00:00",
       "category": "Successioni e tributi locali",
@@ -139,21 +139,21 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "bad05930e0e021f771",
-      "title": "Affitto di azienda: alternatività IVA e registro",
-      "url": "https://www.ecnews.it/fiscale/fisco-e-patrimonio/imposte-indirette/affitto-di-azienda-alternativita-iva-e-registro/",
-      "source": "Euroconference News",
-      "published_at": "2026-11-22T23:05:00+00:00",
-      "category": "Locazioni e immobili",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
       "id": "3d55a6947a8d14b846",
       "title": "Licenziamento illegittimo: la Corte Costituzionale, con la sentenza n. 174/2026, rafforza la tutela indennitaria dei lavoratori delle piccole imprese",
       "url": "https://www.ecnews.it/lavoro/rapporto-di-lavoro/cessazione-del-rapporto/licenziamento-illegittimo-la-corte-costituzionale-con-la-sentenza-n-174-2026-rafforza-la-tutela-indennitaria-dei-lavoratori-delle-piccole-imprese/",
       "source": "Euroconference News",
       "published_at": "2026-11-22T23:05:00+00:00",
       "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "bad05930e0e021f771",
+      "title": "Affitto di azienda: alternatività IVA e registro",
+      "url": "https://www.ecnews.it/fiscale/fisco-e-patrimonio/imposte-indirette/affitto-di-azienda-alternativita-iva-e-registro/",
+      "source": "Euroconference News",
+      "published_at": "2026-11-22T23:05:00+00:00",
+      "category": "Locazioni e immobili",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -301,24 +301,6 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "38b2c28ea169031f3c",
-      "title": "Pensionati esteri bonus fiscale del 7 anche con il fondo SIPP",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4824-pensionati-esteri-bonus-fiscale-del-7-anche-con-il-fondo-sipp.html",
-      "source": "Fisco e Tasse",
-      "published_at": "2026-11-20T00:00:00+00:00",
-      "category": "Famiglie e CAF",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "50d5f3b5c822ef8bb4",
-      "title": "Ecobonus 2027 emendamento per salvaguardare i tetti di spesa dei lavori gi iniziati",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4825-ecobonus-2027-emendamento-per-salvaguardare-i-tetti-di-spesa-dei-lavori-gia-iniziati.html",
-      "source": "Fisco e Tasse",
-      "published_at": "2026-11-20T00:00:00+00:00",
-      "category": "Locazioni e immobili",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
       "id": "0e417be4bf4b269d73",
       "title": "Rimborso IVA allimpresa spetta anche il costo della fideiussione",
       "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4819-rimborso-iva-allimpresa-spetta-anche-il-costo-della-fideiussione.html",
@@ -328,12 +310,30 @@
       "status": "accesso_gratuito_verificato"
     },
     {
+      "id": "38b2c28ea169031f3c",
+      "title": "Pensionati esteri bonus fiscale del 7 anche con il fondo SIPP",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4824-pensionati-esteri-bonus-fiscale-del-7-anche-con-il-fondo-sipp.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "category": "Famiglie e CAF",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
       "id": "f9d08deb5f4682f3b6",
       "title": "Fotovoltaico sui tetti contributi fino all80 per adeguare le coperture degli edifici",
       "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4822-fotovoltaico-sui-tetti-contributi-fino-all80-per-adeguare-le-coperture-degli-edifici.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-20T00:00:00+00:00",
       "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "50d5f3b5c822ef8bb4",
+      "title": "Ecobonus 2027 emendamento per salvaguardare i tetti di spesa dei lavori gi iniziati",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4825-ecobonus-2027-emendamento-per-salvaguardare-i-tetti-di-spesa-dei-lavori-gia-iniziati.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "category": "Locazioni e immobili",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -355,33 +355,6 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "346166d5a6346469c6",
-      "title": "Ore 09:03 - Rottamazione cartelle, tre scadenze al 30 novembre: attenzione alle regole sulla decade",
-      "url": "https://www.fiscal-focus.it/news,190281",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-19T23:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "2928b0078cc7fe4bad",
-      "title": "Ore 13.33 - Cessione di quote di s.n.c.: i poteri di controllo del socio non amministratore non escludono il dolo",
-      "url": "https://www.fiscal-focus.it/news,190292",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-19T23:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "800ab1717fe7ed453e",
-      "title": "Ore 11:22 - Welfare aziendale, CU 2026 senza obbligo di rettifica: recupero delle imposte con l’integrativa",
-      "url": "https://www.fiscal-focus.it/news,190284",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-19T23:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
       "id": "207b78d6769951cfe8",
       "title": "Ore 10:26 - Testi Unici tributari, dal 2027 cambia la numerazione ma non le regole",
       "url": "https://www.fiscal-focus.it/news,190282",
@@ -397,6 +370,33 @@
       "source": "Fiscal Focus",
       "published_at": "2026-11-19T23:00:00+00:00",
       "category": "Aprire e gestire un’attività",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "800ab1717fe7ed453e",
+      "title": "Ore 11:22 - Welfare aziendale, CU 2026 senza obbligo di rettifica: recupero delle imposte con l’integrativa",
+      "url": "https://www.fiscal-focus.it/news,190284",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-19T23:00:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "2928b0078cc7fe4bad",
+      "title": "Ore 13.33 - Cessione di quote di s.n.c.: i poteri di controllo del socio non amministratore non escludono il dolo",
+      "url": "https://www.fiscal-focus.it/news,190292",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-19T23:00:00+00:00",
+      "category": "Aprire e gestire un’attività",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "346166d5a6346469c6",
+      "title": "Ore 09:03 - Rottamazione cartelle, tre scadenze al 30 novembre: attenzione alle regole sulla decade",
+      "url": "https://www.fiscal-focus.it/news,190281",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-19T23:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -508,15 +508,6 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "72e06a634661613d62",
-      "title": "Cause ereditarie su quote: i limiti informativi del Registro delle Imprese",
-      "url": "https://www.ecnews.it/fiscale/societa-e-bilancio/penale-tributario-fisco-lavoro/cause-ereditarie-su-quote-i-limiti-informativi-del-registro-delle-imprese/",
-      "source": "Euroconference News",
-      "published_at": "2026-11-18T23:03:00+00:00",
-      "category": "Successioni e tributi locali",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
       "id": "661e5f89f56f62be57",
       "title": "Le esigenze di continuità aziendale non legittimano conservazione e consultazione della posta elettronica degli ex dipendenti",
       "url": "https://www.ecnews.it/lavoro/rapporto-di-lavoro/gestione-del-rapporto/le-esigenze-di-continuita-aziendale-non-legittimano-conservazione-e-consultazione-della-posta-elettronica-degli-ex-dipendenti/",
@@ -526,20 +517,20 @@
       "status": "accesso_gratuito_verificato"
     },
     {
+      "id": "72e06a634661613d62",
+      "title": "Cause ereditarie su quote: i limiti informativi del Registro delle Imprese",
+      "url": "https://www.ecnews.it/fiscale/societa-e-bilancio/penale-tributario-fisco-lavoro/cause-ereditarie-su-quote-i-limiti-informativi-del-registro-delle-imprese/",
+      "source": "Euroconference News",
+      "published_at": "2026-11-18T23:03:00+00:00",
+      "category": "Successioni e tributi locali",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
       "id": "a2dc142a35d93d8469",
       "title": "Il rappresentante fiscale IVA è un debitore d’imposta, ma a certe condizioni",
       "url": "https://www.ecnews.it/fiscale/fisco-e-patrimonio/iva/il-rappresentante-fiscale-iva-e-un-debitore-dimposta-ma-a-certe-condizioni/",
       "source": "Euroconference News",
       "published_at": "2026-11-18T23:02:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "fbb4b08f9d3a2689ff",
-      "title": "Ore 12.18 – Prestiti dall'estero, ritenute sugli interessi: esenzione per Singapore e aliquota del 12% per la banca spagnola",
-      "url": "https://www.fiscal-focus.it/news,190227",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-18T23:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
       "status": "accesso_gratuito_verificato"
     },
@@ -562,6 +553,15 @@
       "status": "accesso_gratuito_verificato"
     },
     {
+      "id": "fbb4b08f9d3a2689ff",
+      "title": "Ore 12.18 – Prestiti dall'estero, ritenute sugli interessi: esenzione per Singapore e aliquota del 12% per la banca spagnola",
+      "url": "https://www.fiscal-focus.it/news,190227",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-18T23:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
       "id": "59fcf32c51345bc36a",
       "title": "Collaboratore domestico: mansioni e retribuzione",
       "url": "https://www.informazionefiscale.it/collaboratore-domestico-mansioni-retribuzione-colf-badante",
@@ -580,21 +580,21 @@
       "status": "accesso_gratuito_verificato"
     },
     {
+      "id": "d09fb0e3d0a6dc5498",
+      "title": "Prima casa: nel DDL bilancio 2027 termini estesi a due anni",
+      "url": "https://www.ecnews.it/fiscale/fisco-e-patrimonio/imposte-indirette/prima-casa-nel-ddl-bilancio-2027-termini-estesi-a-due-anni/",
+      "source": "Euroconference News",
+      "published_at": "2026-11-17T23:06:00+00:00",
+      "category": "Locazioni e immobili",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
       "id": "49ff823a85a7bd4bc7",
       "title": "Concordato minore, dal voto all’omologa: il ruolo del Fisco",
       "url": "https://www.ecnews.it/fiscale/societa-e-bilancio/crisi-impresa/concordato-minore-dal-voto-allomologa-il-ruolo-del-fisco/",
       "source": "Euroconference News",
       "published_at": "2026-11-17T23:04:00+00:00",
       "category": "Dichiarazioni e Fisco",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "23e7ac78200a14ae31",
-      "title": "Ore 08.01 – Regime forfettario, rimborsi spese esclusi dai compensi ma cresce il rischio di nuove imposte",
-      "url": "https://www.fiscal-focus.it/news,190165",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-17T23:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -613,6 +613,15 @@
       "source": "Fiscal Focus",
       "published_at": "2026-11-17T23:00:00+00:00",
       "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "23e7ac78200a14ae31",
+      "title": "Ore 08.01 – Regime forfettario, rimborsi spese esclusi dai compensi ma cresce il rischio di nuove imposte",
+      "url": "https://www.fiscal-focus.it/news,190165",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-17T23:00:00+00:00",
+      "category": "Aprire e gestire un’attività",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -643,18 +652,18 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "4c1240125dbed8e526",
-      "title": "Ore 16:55 - Catasto e ipoteche online: visure gratis anche sugli immobili di altri, la nuova guida delle Entrate",
-      "url": "https://www.fiscal-focus.it/news,190158",
+      "id": "15d5408cb264458851",
+      "title": "Ore 15:48 - Scissioni immobiliari reciproche: per l’Agenzia nessun abuso del diritto se c’è un vero riassetto organizzativo",
+      "url": "https://www.fiscal-focus.it/news,190157",
       "source": "Fiscal Focus",
       "published_at": "2026-11-16T23:00:00+00:00",
       "category": "Locazioni e immobili",
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "15d5408cb264458851",
-      "title": "Ore 15:48 - Scissioni immobiliari reciproche: per l’Agenzia nessun abuso del diritto se c’è un vero riassetto organizzativo",
-      "url": "https://www.fiscal-focus.it/news,190157",
+      "id": "4c1240125dbed8e526",
+      "title": "Ore 16:55 - Catasto e ipoteche online: visure gratis anche sugli immobili di altri, la nuova guida delle Entrate",
+      "url": "https://www.fiscal-focus.it/news,190158",
       "source": "Fiscal Focus",
       "published_at": "2026-11-16T23:00:00+00:00",
       "category": "Locazioni e immobili",
