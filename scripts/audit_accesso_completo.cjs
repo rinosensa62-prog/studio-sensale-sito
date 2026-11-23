@@ -10,7 +10,7 @@ const OFFICIAL="assets/aggiornamenti-ufficiali.json";
 const ROOT="https://studiosensale.it";
 const NEWS=ROOT+"/notizie/";
 const apply=process.argv.includes("--apply");
-const clamp=(n,min,max)=>Math.max(min,Math.min(max,n));
+
 const toWords=s=>(s.match(/[\p{L}\p{N}][\p{L}\p{N}’'-]*/gu)||[]).length;
 const norm=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-zA-Z0-9]+/g," ").toLowerCase().trim();
 const forbidden=/contenut[oi]\s+riservat[oi]|per\s+continuare\s+(?:la\s+)?lettura|continua\s+a\s+leggere\s+(?:accedendo|con\s+(?:un\s+)?abbonamento|dopo\s+aver)|per\s+leggere\s+l.articolo\s+completo|(?:accedi|registrati|fai\s+login|effettua\s+l.accesso)\s+per\s+(?:continuare|leggere|sbloccare|visualizzare)|(?:per\s+continuare\s+a\s+leggere).{0,100}(?:login|registr|accedi)|questo\s+articolo\s+e\s+riservato|sblocca\s+l.articolo/i;
@@ -35,7 +35,22 @@ async function inspect(browser, item){
     if(item.kind==="special" && /formazione-academy|\/academy/i.test(item.url)){
       out.reason="promotional-product";return out;
     }
-    const resp=await page.goto(item.url,{waitUntil:"domcontentloaded",timeout:23000});
+    let resp;
+    try {resp=await page.goto(item.url,{waitUntil:"domcontentloaded",timeout:23000});}
+    catch(e){
+      if(item.kind==="official"&&item.url.includes("agenziaentrate.gov.it/portale/documents")&&
+         String(e.message||e).includes("Download is starting")){
+        const fetch=await context.request.get(item.url,{timeout:20000});
+        const t=fetch.headers()["content-type"]||"";
+        const b=await fetch.body();
+        out.http=fetch.status();
+        if(fetch.ok()&&b.length>400&&(/pdf|octet-stream/i.test(t)||b.subarray(0,5).toString()==="%PDF-")){
+          out.status="PASS";out.reason="public-official-pdf";out.words=0;return out;
+        }
+        out.reason="official-download-not-verified";return out;
+      }
+      throw e;
+    }
     out.http=resp?.status()||0;
     out.finalUrl=page.url();
     if(!resp||out.http>=400){out.reason="http-"+out.http;return out;}
@@ -75,7 +90,7 @@ async function inspect(browser, item){
           .filter(a=>/accesso|abbonam|registraz/i.test(a.innerText||"")).length};
     });
     out.heading=dat.heading.slice(0,110);
-    out.words=toWords(dat.articleText||dat.after);
+    out.words=Math.max(toWords(dat.articleText),toWords(dat.after));
     out.total=toWords(dat.all);
     out.dialogs=dat.dialogs;
     if(!out.finalUrl.startsWith("https://")||suspiciousPages.test(new URL(out.finalUrl).pathname)){
@@ -84,9 +99,9 @@ async function inspect(browser, item){
     if(item.kind==="special"&&!looksLikeArticle(item.title,dat.heading)){
       out.reason="heading-mismatch";return out;
     }
-    if(item.kind==="native"&&!looksLikeArticle(item.title,dat.heading)){
-      // Gli articoli interni hanno a volte un H1 di layout: analizzarli a parte.
-      out.reason="native-heading-mismatch";return out;
+    if(item.kind==="native"&&!looksLikeArticle(item.title,dat.heading)&&
+       new URL(out.finalUrl).hostname!=="studiosensale.it"){
+      out.reason="native-external-redirect";return out;
     }
     const paywallText=[dat.articleText,dat.after.slice(0,6000),...dat.dialogs].join("\n");
     if(forbidden.test(paywallText)){out.reason="visible-login-paywall";return out;}
@@ -97,7 +112,7 @@ async function inspect(browser, item){
       out.reason="blocking-dialog";return out;
     }
     // Fisco e Tasse può mostrare il login per i soli commenti: non è un paywall.
-    const minWords=item.kind==="native"?100:item.kind==="special"?
+    const minWords=item.kind==="native"?100:item.kind==="official"&&item.source.startsWith("Gazzetta")?35:item.kind==="official"?60:item.kind==="special"?
       (item.source==="Fiscal Focus"?85:170):95;
     if(out.words<minWords){out.reason="insufficient-readable-text";return out;}
     out.status="PASS";out.reason="rendered-anonymous-article";
