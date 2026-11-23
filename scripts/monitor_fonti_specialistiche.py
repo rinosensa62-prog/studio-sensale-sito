@@ -11,13 +11,16 @@ import sys
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urlsplit
 from urllib.request import Request, urlopen
 from xml.etree import ElementTree as ET
 try:
     from fonti_web_pubbliche import collect_public_site
+    from verifica_accesso_gratuito import articolo_gratuito
 except ImportError:
     from scripts.fonti_web_pubbliche import collect_public_site
+    from scripts.verifica_accesso_gratuito import articolo_gratuito
 
 OUTPUT = Path(__file__).resolve().parent.parent / "assets" / "spunti-editoriali.json"
 # Feed RSS reperiti dalla pagina RSS pubblica di Fiscal Focus.
@@ -159,7 +162,7 @@ def fetch(url):
         raise ValueError("feed troppo grande")
     return data
 
-def build(fetcher=fetch, now=None, previous=None):
+def build(fetcher=fetch, now=None, previous=None, verify=articolo_gratuito):
     now = now or datetime.now(timezone.utc)
     entries, ok, failed = [], [], []
     for feed in FEEDS:
@@ -202,8 +205,28 @@ def build(fetcher=fetch, now=None, previous=None):
             continue
         record = dict(item)
         record["category"] = category
-        record["status"] = "link_esterno_da_verificare"
+        record["status"] = "in_attesa_verifica_gratuita"
         entries.append(record)
+    # Non basta che la fonte esponga un RSS: ogni link va aperto da anonimo.
+    # Il filtro e' applicato anche alle notizie precedentemente archiviate.
+    unique_urls = {item["url"]: item for item in entries}
+    verified = []
+    with ThreadPoolExecutor(max_workers=12) as pool:
+        checks = {pool.submit(verify, item["url"], item["source"], item["title"]): item
+                  for item in unique_urls.values()}
+        for future in as_completed(checks):
+            item = checks[future]
+            try:
+                allowed = future.result()
+            except Exception as exc:
+                print(f"Controllo accessibilita' fallito: {type(exc).__name__}", file=sys.stderr)
+                allowed = False
+            if allowed:
+                record = dict(item)
+                record["status"] = "accesso_gratuito_verificato"
+                verified.append(record)
+    print(f"Verifica gratuiti: {len(verified)}/{len(unique_urls)}", file=sys.stderr)
+    entries = verified
     entries.sort(key=lambda x: x["published_at"], reverse=True)
     archive, seen_urls, seen_titles, counts = [], set(), set(), {}
     for item in entries:
@@ -219,7 +242,7 @@ def build(fetcher=fetch, now=None, previous=None):
         if len(archive) >= 150:
             break
     return {"schema_version": 2, "updated_at": now.isoformat(timespec="seconds"),
-            "publication_mode": "link_esterni_per_categoria",
+            "publication_mode": "solo_articoli_integrali_gratuiti",
             "items": archive, "feeds_ok": ok, "feeds_failed": failed,
             "other_sources": [{"name":n,"url":u,"mode":"monitoraggio_editoriale"}
                               for n,u in OTHER_SOURCES]}
