@@ -83,8 +83,8 @@ class EditorialTests(unittest.TestCase):
         article = '<html><h1>Fattura elettronica 2027 novita tecniche</h1>' + (
             '<p>Le specifiche tecniche prevedono adempimenti, verifiche, date di decorrenza e regole operative da applicare correttamente agli invii.</p>'*20
         ) + '</html>'
-        self.assertTrue(validate_html(article,'Euroconference News',
-            'Fattura elettronica 2027 novita tecniche','https://www.ecnews.it/fiscale/test'))
+        self.assertTrue(validate_html(article,'Fisco e Tasse',
+            'Fattura elettronica 2027 novita tecniche','https://www.fiscoetasse.com/new-rassegna-stampa/test.html'))
     def test_euroconference_non_pubblicabile_senza_garanzia_no_login(self):
         from scripts.verifica_accesso_gratuito import validate_html, articolo_gratuito
         url = "https://www.ecnews.it/fiscale/fisco-e-patrimonio/imposte-indirette/affitto-di-azienda-alternativita-iva-e-registro/"
