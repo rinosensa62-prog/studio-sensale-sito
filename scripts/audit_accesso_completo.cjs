@@ -172,4 +172,8 @@ async function pool(items,limit,fn){
  if(failed.some(r=>r.kind==="native"||r.kind==="official")){
    console.error("AUDIT_REQUIRES_REVIEW internal/official failures; no automatic site modifications");
  }
+ if(failed.length){
+   console.error("AUDIT_BLOCKED: "+failed.length+" collegamenti non verificati; intervento necessario");
+   process.exitCode=1;
+ }
 })().catch(e=>{console.error("AUDIT_FATAL",e.stack||e);process.exit(1)});
