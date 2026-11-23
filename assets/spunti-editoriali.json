@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-23T18:16:35+00:00",
+  "updated_at": "2026-11-23T19:48:03+00:00",
   "publication_mode": "link_esterni_per_categoria",
   "items": [
     {
@@ -76,21 +76,21 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "41714bdc44638d3e66",
-      "title": "Architetto in pensione che lavora ancora ecco quando versa a Inarcassa",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4843-architetto-pensionato-inps-124mila-euro-a-inarcassa-per-mancata-iscrizione.html",
-      "source": "Fisco e Tasse",
-      "published_at": "2026-11-23T00:00:00+00:00",
-      "category": "Famiglie e CAF",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
       "id": "b946c5195d9bcb4f9f",
       "title": "IMU precompilata dal 2027 dove trovarla SOGEI annuncia la piattaforma",
       "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4838-imu-precompilata-dal-2027-dove-trovarla-sogei-annuncia-la-piattaforma.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-23T00:00:00+00:00",
       "category": "Successioni e tributi locali",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "41714bdc44638d3e66",
+      "title": "Architetto in pensione che lavora ancora ecco quando versa a Inarcassa",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4843-architetto-pensionato-inps-124mila-euro-a-inarcassa-per-mancata-iscrizione.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "category": "Famiglie e CAF",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -121,18 +121,9 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "0f9baeaecb5cf07b8e",
-      "title": "Ore 14:33 - ZES agricola 2026: comunicazione integrativa entro il 2 dicembre per non perdere il credito d’imposta",
-      "url": "https://www.fiscal-focus.it/news,190353",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-22T23:00:00+00:00",
-      "category": "Bandi e finanziamenti",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "db74758d7d457db16e",
-      "title": "Ore 16:02 - Imposta di registro: nullo l’avviso di rettifica senza gli atti di comparazione",
-      "url": "https://www.fiscal-focus.it/news,190354",
+      "id": "ce0391963b35dc45a9",
+      "title": "Ore 09:06 - Fattura elettronica 2027: debutta il codice RF21 per il Terzo settore",
+      "url": "https://www.fiscal-focus.it/news,190349",
       "source": "Fiscal Focus",
       "published_at": "2026-11-22T23:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
@@ -157,9 +148,18 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "ce0391963b35dc45a9",
-      "title": "Ore 09:06 - Fattura elettronica 2027: debutta il codice RF21 per il Terzo settore",
-      "url": "https://www.fiscal-focus.it/news,190349",
+      "id": "0f9baeaecb5cf07b8e",
+      "title": "Ore 14:33 - ZES agricola 2026: comunicazione integrativa entro il 2 dicembre per non perdere il credito d’imposta",
+      "url": "https://www.fiscal-focus.it/news,190353",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-22T23:00:00+00:00",
+      "category": "Bandi e finanziamenti",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "db74758d7d457db16e",
+      "title": "Ore 16:02 - Imposta di registro: nullo l’avviso di rettifica senza gli atti di comparazione",
+      "url": "https://www.fiscal-focus.it/news,190354",
       "source": "Fiscal Focus",
       "published_at": "2026-11-22T23:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
@@ -283,30 +283,21 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "0e417be4bf4b269d73",
-      "title": "Rimborso IVA allimpresa spetta anche il costo della fideiussione",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4819-rimborso-iva-allimpresa-spetta-anche-il-costo-della-fideiussione.html",
-      "source": "Fisco e Tasse",
-      "published_at": "2026-11-20T00:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "f9d08deb5f4682f3b6",
-      "title": "Fotovoltaico sui tetti contributi fino all80 per adeguare le coperture degli edifici",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4822-fotovoltaico-sui-tetti-contributi-fino-all80-per-adeguare-le-coperture-degli-edifici.html",
-      "source": "Fisco e Tasse",
-      "published_at": "2026-11-20T00:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
       "id": "38b2c28ea169031f3c",
       "title": "Pensionati esteri bonus fiscale del 7 anche con il fondo SIPP",
       "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4824-pensionati-esteri-bonus-fiscale-del-7-anche-con-il-fondo-sipp.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-20T00:00:00+00:00",
       "category": "Famiglie e CAF",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "0e417be4bf4b269d73",
+      "title": "Rimborso IVA allimpresa spetta anche il costo della fideiussione",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4819-rimborso-iva-allimpresa-spetta-anche-il-costo-della-fideiussione.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -319,12 +310,48 @@
       "status": "accesso_gratuito_verificato"
     },
     {
+      "id": "f9d08deb5f4682f3b6",
+      "title": "Fotovoltaico sui tetti contributi fino all80 per adeguare le coperture degli edifici",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4822-fotovoltaico-sui-tetti-contributi-fino-all80-per-adeguare-le-coperture-degli-edifici.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "207b78d6769951cfe8",
+      "title": "Ore 10:26 - Testi Unici tributari, dal 2027 cambia la numerazione ma non le regole",
+      "url": "https://www.fiscal-focus.it/news,190282",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-19T23:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "800ab1717fe7ed453e",
+      "title": "Ore 11:22 - Welfare aziendale, CU 2026 senza obbligo di rettifica: recupero delle imposte con l’integrativa",
+      "url": "https://www.fiscal-focus.it/news,190284",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-19T23:00:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
       "id": "6c0209ef716c34c9cb",
       "title": "Ore 12:34 - IPT, per le società di noleggio conta la sede di gestione ordinaria e non quella legale",
       "url": "https://www.fiscal-focus.it/news,190286",
       "source": "Fiscal Focus",
       "published_at": "2026-11-19T23:00:00+00:00",
       "category": "Aprire e gestire un’attività",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "6fcda1eb31d06e0d79",
+      "title": "12.39 - Distacchi Italia-Turchia: l’INPS chiarisce contributi e compilazione dell’Uniemens",
+      "url": "https://www.fiscal-focus.it/news,190291",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-19T23:00:00+00:00",
+      "category": "Lavoro e paghe",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -343,33 +370,6 @@
       "source": "Fiscal Focus",
       "published_at": "2026-11-19T23:00:00+00:00",
       "category": "Aprire e gestire un’attività",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "6fcda1eb31d06e0d79",
-      "title": "12.39 - Distacchi Italia-Turchia: l’INPS chiarisce contributi e compilazione dell’Uniemens",
-      "url": "https://www.fiscal-focus.it/news,190291",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-19T23:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "800ab1717fe7ed453e",
-      "title": "Ore 11:22 - Welfare aziendale, CU 2026 senza obbligo di rettifica: recupero delle imposte con l’integrativa",
-      "url": "https://www.fiscal-focus.it/news,190284",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-19T23:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "207b78d6769951cfe8",
-      "title": "Ore 10:26 - Testi Unici tributari, dal 2027 cambia la numerazione ma non le regole",
-      "url": "https://www.fiscal-focus.it/news,190282",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-19T23:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -418,12 +418,12 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "fab5d14d809cd8af83",
-      "title": "Manovra 2027 fatture fino a 3mila euro senza ritenuta dal 2028",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4821-manovra-2027-fatture-fino-a-3mila-euro-senza-ritenuta-dal-2028.html",
+      "id": "b644b025c703ffaf4f",
+      "title": "Crisi dimpresa il lavoratore conserva lauto nella liquidazione controllata",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4818-crisi-dimpresa-il-lavoratore-conserva-lauto-nella-liquidazione-controllata.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-19T00:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
+      "category": "Lavoro e paghe",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -436,12 +436,12 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "b644b025c703ffaf4f",
-      "title": "Crisi dimpresa il lavoratore conserva lauto nella liquidazione controllata",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4818-crisi-dimpresa-il-lavoratore-conserva-lauto-nella-liquidazione-controllata.html",
+      "id": "fab5d14d809cd8af83",
+      "title": "Manovra 2027 fatture fino a 3mila euro senza ritenuta dal 2028",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4821-manovra-2027-fatture-fino-a-3mila-euro-senza-ritenuta-dal-2028.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-19T00:00:00+00:00",
-      "category": "Lavoro e paghe",
+      "category": "Dichiarazioni e Fisco",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -499,15 +499,6 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "98c3456f41b612baa3",
-      "title": "Ore 08.38 – Acconti IRES e IRAP, con l'esercizio abbreviato il secondo versamento potrebbe saltare",
-      "url": "https://www.fiscal-focus.it/news,190167",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-17T23:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
       "id": "23e7ac78200a14ae31",
       "title": "Ore 08.01 – Regime forfettario, rimborsi spese esclusi dai compensi ma cresce il rischio di nuove imposte",
       "url": "https://www.fiscal-focus.it/news,190165",
@@ -517,12 +508,21 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "dcda0c75b90d3801b8",
-      "title": "Ore 17:40 - Regime impatriati: l’agevolazione spetta anche se si inizia a lavorare anni dopo il trasferimento in Italia",
-      "url": "https://www.fiscal-focus.it/news,190159",
+      "id": "98c3456f41b612baa3",
+      "title": "Ore 08.38 – Acconti IRES e IRAP, con l'esercizio abbreviato il secondo versamento potrebbe saltare",
+      "url": "https://www.fiscal-focus.it/news,190167",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-17T23:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "4c1240125dbed8e526",
+      "title": "Ore 16:55 - Catasto e ipoteche online: visure gratis anche sugli immobili di altri, la nuova guida delle Entrate",
+      "url": "https://www.fiscal-focus.it/news,190158",
       "source": "Fiscal Focus",
       "published_at": "2026-11-16T23:00:00+00:00",
-      "category": "Bandi e finanziamenti",
+      "category": "Locazioni e immobili",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -535,12 +535,12 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "4c1240125dbed8e526",
-      "title": "Ore 16:55 - Catasto e ipoteche online: visure gratis anche sugli immobili di altri, la nuova guida delle Entrate",
-      "url": "https://www.fiscal-focus.it/news,190158",
+      "id": "dcda0c75b90d3801b8",
+      "title": "Ore 17:40 - Regime impatriati: l’agevolazione spetta anche se si inizia a lavorare anni dopo il trasferimento in Italia",
+      "url": "https://www.fiscal-focus.it/news,190159",
       "source": "Fiscal Focus",
       "published_at": "2026-11-16T23:00:00+00:00",
-      "category": "Locazioni e immobili",
+      "category": "Bandi e finanziamenti",
       "status": "accesso_gratuito_verificato"
     }
   ],
@@ -548,15 +548,14 @@
     "Fiscal Focus",
     "Fisco e Tasse",
     "Informazione Fiscale",
+    "IPSOA Fisco",
     "IPSOA Impresa",
     "LavoroSì",
     "Eutekne",
     "Euroconference News",
     "Redazione Fiscale"
   ],
-  "feeds_failed": [
-    "IPSOA Fisco"
-  ],
+  "feeds_failed": [],
   "other_sources": [
     {
       "name": "IPSOA - aree ulteriori",
