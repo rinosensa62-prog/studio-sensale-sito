@@ -1,7 +1,55 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-22T21:09:37+00:00",
+  "updated_at": "2026-11-24T08:39:10+00:00",
   "items": [
+    {
+      "id": "b1c8edfa3bf73fc5c5",
+      "title": "MINISTERO DELLE IMPRESE E DEL MADE IN ITALY - COMUNICATO",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/23/26A06081/SG",
+      "source": "Gazzetta Ufficiale - Serie Generale",
+      "category": "Aprire e gestire un’attività",
+      "published_at": "2026-11-23T19:01:43+00:00"
+    },
+    {
+      "id": "2a54e63669162ba54c",
+      "title": "Cooperanti all’estero, per i Co.co.co. tassazione Irpef in via ordinaria",
+      "url": "https://www.fiscooggi.it/portale/-/cooperanti-all-estero-per-i-co.co.co.-tassazione-irpef-in-via-ordinaria",
+      "source": "FiscoOggi Normativa",
+      "category": "Dichiarazioni e Fisco",
+      "published_at": "2026-11-23T17:16:00+00:00"
+    },
+    {
+      "id": "8df86fbd32a1a0a157",
+      "title": "Intrastat, dal 2027 addio a Intr@web, debutta il nuovo servizio online",
+      "url": "https://www.fiscooggi.it/portale/-/intrastat-dal-2027-addio-a-intr-web-debutta-il-nuovo-servizio-online",
+      "source": "FiscoOggi Attualità",
+      "category": "Dichiarazioni e Fisco",
+      "published_at": "2026-11-23T13:25:00+00:00"
+    },
+    {
+      "id": "e6c413fb333251f1d9",
+      "title": "Istituzione dei codici tributo per il versamento anticipato, tramite modello “F24 Versamenti con elementi identificativi” (F24 ELIDE), di somme commisurate alle ritenute e alle imposte sosti",
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/10440314/RIS_versam_anticipato_rit_dividendi_gruppi_energetici_23.11.26/42ceda16-e16d-93f5-b112-e6e33c2c1e78",
+      "source": "Agenzia delle Entrate",
+      "category": "Dichiarazioni e Fisco",
+      "published_at": "2026-11-23T00:00:00+00:00"
+    },
+    {
+      "id": "8871742376aea993f7",
+      "title": "A Tor Vergata l’evento per avvicinare i giovani alla previdenza",
+      "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.11.a-tor-vergata-l-evento-per-avvicinare-i-giovani-alla-previdenza.html",
+      "source": "INPS Notizie",
+      "category": "Lavoro e paghe",
+      "published_at": "2026-11-23T00:00:00+00:00"
+    },
+    {
+      "id": "14641db1c14f1ef6c8",
+      "title": "Online il Dossier scuola 2026",
+      "url": "https://www.inail.it/portale/it/inail-comunica/news/notizia.2026.11.online-il-dossier-scuola-2026.html",
+      "source": "INAIL Notizie",
+      "category": "Lavoro e paghe",
+      "published_at": "2026-11-23T00:00:00+00:00"
+    },
     {
       "id": "99699d594caf0fcb60",
       "title": "CAMERA DI COMMERCIO, INDUSTRIA, ARTIGIANATO E AGRICOLTURA TOSCANA NORD-OVEST - COMUNICATO",
@@ -97,14 +145,6 @@
       "source": "INAIL Notizie",
       "category": "Lavoro e paghe",
       "published_at": "2026-11-18T00:00:00+00:00"
-    },
-    {
-      "id": "278f1489a6d07f3e90",
-      "title": "Tax credit fondazioni bancarie: fissata la percentuale 2026",
-      "url": "https://www.fiscooggi.it/portale/-/tax-credit-fondazioni-bancarie-fissata-la-percentuale-2026",
-      "source": "FiscoOggi Normativa",
-      "category": "Dichiarazioni e Fisco",
-      "published_at": "2026-11-17T19:24:00+00:00"
     },
     {
       "id": "e242f8f1f6e54193f1",
