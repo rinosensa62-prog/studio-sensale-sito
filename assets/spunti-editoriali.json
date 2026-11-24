@@ -1,8 +1,71 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-24T09:49:53+00:00",
+  "updated_at": "2026-11-24T19:46:46+00:00",
   "publication_mode": "link_esterni_per_categoria",
   "items": [
+    {
+      "id": "63ea2de07e55dc2270",
+      "title": "Bonus edicole: domanda per i contributi entro il 22 dicembre",
+      "url": "https://www.informazionefiscale.it/bonus-edicole-2026-domanda-contributi-scadenza-novita-istruzioni",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-24T15:26:05+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "da4b982da9e2354501",
+      "title": "SIISL, Vacancy e Unilav: cosa fare in pratica dal 1° dicembre",
+      "url": "https://www.informazionefiscale.it/SIISL-vacancy-unilav-come-registrare-caricare-procedura",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-24T13:47:20+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "0b4e1c6d540d4c1f24",
+      "title": "Progressività, equità, trasparenza: Mattarella richiama i principi fiscali nella stagione delle flat tax",
+      "url": "https://www.informazionefiscale.it/flat-tax-manovra-2027-progressivita-equita-mattarella",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-24T11:40:45+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "3a4b6fb64850d5e180",
+      "title": "Testo Unico adempimenti e accertamento (D.Lgs. 141/2026): dichiarazioni, concordato e controlli, l'analisi completa",
+      "url": "https://www.informazionefiscale.it/testo-unico-adempimenti-accertamento-dlgs-141-2026-analisi-novita",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-24T11:06:40+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "58fc4d7a5d13448fbb",
+      "title": "Decontribuzione Sud PMI: assunzioni entro dicembre per l'esonero più alto",
+      "url": "https://www.informazionefiscale.it/decontribuzione-sud-pmi-assunzioni-dicembre-2026-esonero-piu-alto",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-24T10:30:15+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "dce715a9c033570ee9",
+      "title": "Contratto d'affitto in scadenza: così la nuova cedolare secca 2027 cambia i piani di inquilini e proprietari",
+      "url": "https://www.informazionefiscale.it/contratto-affitto-scadenza-novita-aliquote-cedolare-secca-2027",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-24T10:18:28+00:00",
+      "category": "Locazioni e immobili",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "5e264fdc8a9974f074",
+      "title": "Collaboratori sportivi come fare liscrizione alla Gestione separata INPS",
+      "url": "https://www.fiscoetasse.com/approfondimenti/17546-collaboratori-sportivi-come-fare-liscrizione-alla-gestione-separata-inps.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-24T00:00:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
     {
       "id": "4c43ac865f7a4e1e5e",
       "title": "TARI da pagare anche senza avviso del Comune legittime le sanzioni",
@@ -13,12 +76,75 @@
       "status": "accesso_gratuito_verificato"
     },
     {
+      "id": "ec3bc1238e8288a3a0",
+      "title": "Grandi gruppi energetici ecco i codici tributo per imposte su utili",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4850-grandi-gruppi-energetici-ecco-i-codici-tributo-per-imposte-su-utili.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-24T00:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "46687cb2f1f28b3bbc",
+      "title": "Cooperanti con cococo allestero non si utilizzano le retribuzioni convenzionali",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4851-cooperanti-con-cococo-non-si-utilizzano-le-retribuzioni-convenzionali.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-24T00:00:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "f7f3bf0fe95cf7c074",
+      "title": "Disegni 2026 contributi fino a 60000 euro domande dal 17 dicembre",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4845-disegni-2026-contributi-fino-a-60000-euro-domande-dal-17-dicembre.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-24T00:00:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
       "id": "70cb710028ea171808",
       "title": "Antiriciclaggio titolare effettivo da comunicare anche per le societ di persone",
       "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4835-antiriciclaggio-titolare-effettivo-da-comunicare-anche-per-le-societa-di-persone.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-24T00:00:00+00:00",
       "category": "Aprire e gestire un’attività",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "96a77d9f4ef566f514",
+      "title": "Ore 14:25 - IMU precompilata: debutto previsto con il saldo 2027",
+      "url": "https://www.fiscal-focus.it/news,190407",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-23T23:00:00+00:00",
+      "category": "Successioni e tributi locali",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "ee6a4a9532cbc122b4",
+      "title": "Ore 18:30 - TARI: il mancato invio dell’avviso di pagamento non esclude le sanzioni",
+      "url": "https://www.fiscal-focus.it/news,190410",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-23T23:00:00+00:00",
+      "category": "Successioni e tributi locali",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "d235134c0083f98e28",
+      "title": "Ore 11.24 - SIISL e incentivi, anche l'UNILAV inviato dal portale regionale va collegato alla vacancy",
+      "url": "https://www.fiscal-focus.it/news,190379",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-23T23:00:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "5f259f22e2e3c41d9c",
+      "title": "Ore 15:38 - Regime impatriati: agevolazione anche per chi lavora in smart working per un datore estero",
+      "url": "https://www.fiscal-focus.it/news,190408",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-23T23:00:00+00:00",
+      "category": "Bandi e finanziamenti",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -139,18 +265,27 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "8ede367f9cf23dccc2",
-      "title": "Ore 10:25 - IVA sotto i 100 euro: avvisi bonari errati, come ottenere l’annullamento",
-      "url": "https://www.fiscal-focus.it/news,190350",
+      "id": "b4a1860f5be0eaac5a",
+      "title": "Ore 12:56 - SIISL e incentivi contributivi: come associare la vacancy all’UNILAV regionale",
+      "url": "https://www.fiscal-focus.it/news,190352",
       "source": "Fiscal Focus",
       "published_at": "2026-11-22T23:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
+      "category": "Lavoro e paghe",
       "status": "accesso_gratuito_verificato"
     },
     {
       "id": "db74758d7d457db16e",
       "title": "Ore 16:02 - Imposta di registro: nullo l’avviso di rettifica senza gli atti di comparazione",
       "url": "https://www.fiscal-focus.it/news,190354",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-22T23:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "ce0391963b35dc45a9",
+      "title": "Ore 09:06 - Fattura elettronica 2027: debutta il codice RF21 per il Terzo settore",
+      "url": "https://www.fiscal-focus.it/news,190349",
       "source": "Fiscal Focus",
       "published_at": "2026-11-22T23:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
@@ -166,18 +301,9 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "b4a1860f5be0eaac5a",
-      "title": "Ore 12:56 - SIISL e incentivi contributivi: come associare la vacancy all’UNILAV regionale",
-      "url": "https://www.fiscal-focus.it/news,190352",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-22T23:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "ce0391963b35dc45a9",
-      "title": "Ore 09:06 - Fattura elettronica 2027: debutta il codice RF21 per il Terzo settore",
-      "url": "https://www.fiscal-focus.it/news,190349",
+      "id": "8ede367f9cf23dccc2",
+      "title": "Ore 10:25 - IVA sotto i 100 euro: avvisi bonari errati, come ottenere l’annullamento",
+      "url": "https://www.fiscal-focus.it/news,190350",
       "source": "Fiscal Focus",
       "published_at": "2026-11-22T23:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
@@ -292,9 +418,9 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "151c13785b0d39ecf0",
-      "title": "INAIL e SIISL fermi per manutenzione tra il 20 e il 24 novembre",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4828-inail-e-siisl-fermi-per-manutenzione-tra-il-20-e-il-24-novembre.html",
+      "id": "f9d08deb5f4682f3b6",
+      "title": "Fotovoltaico sui tetti contributi fino all80 per adeguare le coperture degli edifici",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4822-fotovoltaico-sui-tetti-contributi-fino-all80-per-adeguare-le-coperture-degli-edifici.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-20T00:00:00+00:00",
       "category": "Lavoro e paghe",
@@ -319,39 +445,21 @@
       "status": "accesso_gratuito_verificato"
     },
     {
+      "id": "151c13785b0d39ecf0",
+      "title": "INAIL e SIISL fermi per manutenzione tra il 20 e il 24 novembre",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4828-inail-e-siisl-fermi-per-manutenzione-tra-il-20-e-il-24-novembre.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
       "id": "50d5f3b5c822ef8bb4",
       "title": "Ecobonus 2027 emendamento per salvaguardare i tetti di spesa dei lavori gi iniziati",
       "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4825-ecobonus-2027-emendamento-per-salvaguardare-i-tetti-di-spesa-dei-lavori-gia-iniziati.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-20T00:00:00+00:00",
       "category": "Locazioni e immobili",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "f9d08deb5f4682f3b6",
-      "title": "Fotovoltaico sui tetti contributi fino all80 per adeguare le coperture degli edifici",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4822-fotovoltaico-sui-tetti-contributi-fino-all80-per-adeguare-le-coperture-degli-edifici.html",
-      "source": "Fisco e Tasse",
-      "published_at": "2026-11-20T00:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "6fcda1eb31d06e0d79",
-      "title": "12.39 - Distacchi Italia-Turchia: l’INPS chiarisce contributi e compilazione dell’Uniemens",
-      "url": "https://www.fiscal-focus.it/news,190291",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-19T23:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "346166d5a6346469c6",
-      "title": "Ore 09:03 - Rottamazione cartelle, tre scadenze al 30 novembre: attenzione alle regole sulla decade",
-      "url": "https://www.fiscal-focus.it/news,190281",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-19T23:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -364,12 +472,12 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "207b78d6769951cfe8",
-      "title": "Ore 10:26 - Testi Unici tributari, dal 2027 cambia la numerazione ma non le regole",
-      "url": "https://www.fiscal-focus.it/news,190282",
+      "id": "6fcda1eb31d06e0d79",
+      "title": "12.39 - Distacchi Italia-Turchia: l’INPS chiarisce contributi e compilazione dell’Uniemens",
+      "url": "https://www.fiscal-focus.it/news,190291",
       "source": "Fiscal Focus",
       "published_at": "2026-11-19T23:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
+      "category": "Lavoro e paghe",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -382,12 +490,30 @@
       "status": "accesso_gratuito_verificato"
     },
     {
+      "id": "346166d5a6346469c6",
+      "title": "Ore 09:03 - Rottamazione cartelle, tre scadenze al 30 novembre: attenzione alle regole sulla decade",
+      "url": "https://www.fiscal-focus.it/news,190281",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-19T23:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
       "id": "800ab1717fe7ed453e",
       "title": "Ore 11:22 - Welfare aziendale, CU 2026 senza obbligo di rettifica: recupero delle imposte con l’integrativa",
       "url": "https://www.fiscal-focus.it/news,190284",
       "source": "Fiscal Focus",
       "published_at": "2026-11-19T23:00:00+00:00",
       "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "207b78d6769951cfe8",
+      "title": "Ore 10:26 - Testi Unici tributari, dal 2027 cambia la numerazione ma non le regole",
+      "url": "https://www.fiscal-focus.it/news,190282",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-19T23:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -517,21 +643,21 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "133c2505ff0b57c5d0",
-      "title": "Ore 08.19 – Manovra 2027, per i giovani dipendenti arriva l'ipotesi di una tassa all'1% sugli aumenti di reddito",
-      "url": "https://www.fiscal-focus.it/news,190166",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-17T23:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
       "id": "98c3456f41b612baa3",
       "title": "Ore 08.38 – Acconti IRES e IRAP, con l'esercizio abbreviato il secondo versamento potrebbe saltare",
       "url": "https://www.fiscal-focus.it/news,190167",
       "source": "Fiscal Focus",
       "published_at": "2026-11-17T23:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "133c2505ff0b57c5d0",
+      "title": "Ore 08.19 – Manovra 2027, per i giovani dipendenti arriva l'ipotesi di una tassa all'1% sugli aumenti di reddito",
+      "url": "https://www.fiscal-focus.it/news,190166",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-17T23:00:00+00:00",
+      "category": "Lavoro e paghe",
       "status": "accesso_gratuito_verificato"
     },
     {
