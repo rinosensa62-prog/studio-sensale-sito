@@ -1,7 +1,15 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-25T18:03:13+00:00",
+  "updated_at": "2026-11-26T08:41:05+00:00",
   "items": [
+    {
+      "id": "93ea9dcb09e8009d18",
+      "title": "MINISTERO DELLE IMPRESE E DEL MADE IN ITALY - COMUNICATO",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/25/26A06128/SG",
+      "source": "Gazzetta Ufficiale - Serie Generale",
+      "category": "Aprire e gestire un’attività",
+      "published_at": "2026-11-25T18:34:24+00:00"
+    },
     {
       "id": "f115e9d4027c15863a",
       "title": "Dividendi da partecipazioni donate, per gli Ets sono imponibili Ires",
@@ -31,6 +39,14 @@
       "title": "Osservatorio politiche occupazionali e del lavoro: i dati del 2025",
       "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.11.osservatorio-politiche-occupazionali-e-del-lavoro-i-dati-del-2025.html",
       "source": "INPS Notizie",
+      "category": "Lavoro e paghe",
+      "published_at": "2026-11-25T00:00:00+00:00"
+    },
+    {
+      "id": "f0d95843a9b25d7635",
+      "title": "Dr Campania: avviso per la stipula di convenzioni per l’erogazione di prestazioni di soggiorno connesse alle cure idro-fango termali e climatiche in favore degli infortunati sul lavoro",
+      "url": "https://www.inail.it/portale/it/inail-comunica/scadenze/scadenza.2026.11.scadenza-avv-stipula-conv-idro-fango.html",
+      "source": "INAIL Avvisi",
       "category": "Lavoro e paghe",
       "published_at": "2026-11-25T00:00:00+00:00"
     },
@@ -107,28 +123,12 @@
       "published_at": "2026-11-24T00:00:00+00:00"
     },
     {
-      "id": "b1c8edfa3bf73fc5c5",
-      "title": "MINISTERO DELLE IMPRESE E DEL MADE IN ITALY - COMUNICATO",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/23/26A06081/SG",
-      "source": "Gazzetta Ufficiale - Serie Generale",
-      "category": "Aprire e gestire un’attività",
-      "published_at": "2026-11-23T19:01:43+00:00"
-    },
-    {
       "id": "2a54e63669162ba54c",
       "title": "Cooperanti all’estero, per i Co.co.co. tassazione Irpef in via ordinaria",
       "url": "https://www.fiscooggi.it/portale/-/cooperanti-all-estero-per-i-co.co.co.-tassazione-irpef-in-via-ordinaria",
       "source": "FiscoOggi Normativa",
       "category": "Dichiarazioni e Fisco",
       "published_at": "2026-11-23T17:16:00+00:00"
-    },
-    {
-      "id": "8df86fbd32a1a0a157",
-      "title": "Intrastat, dal 2027 addio a Intr@web, debutta il nuovo servizio online",
-      "url": "https://www.fiscooggi.it/portale/-/intrastat-dal-2027-addio-a-intr-web-debutta-il-nuovo-servizio-online",
-      "source": "FiscoOggi Attualità",
-      "category": "Dichiarazioni e Fisco",
-      "published_at": "2026-11-23T13:25:00+00:00"
     },
     {
       "id": "e6c413fb333251f1d9",
