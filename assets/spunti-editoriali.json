@@ -1,8 +1,80 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-26T09:49:48+00:00",
+  "updated_at": "2026-11-26T19:50:25+00:00",
   "publication_mode": "link_esterni_per_categoria",
   "items": [
+    {
+      "id": "cd81a72cafc21f701b",
+      "title": "Reddito di libertà: dalle istruzioni INPS per la domanda ai nodi sulle risorse",
+      "url": "https://www.informazionefiscale.it/reddito-di-liberta-istruzioni-INPS-presentazione-domanda",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-26T15:47:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "9f8584bb19ddc2ae59",
+      "title": "Codice tributo 3813: cos'è, quando si usa e come compilare il modello F24",
+      "url": "https://www.informazionefiscale.it/codice-tributo-3813-cos-e-quando-si-usa-Irap-istruzioni-modello-F24",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-26T14:06:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "d7b3722ba5739b1875",
+      "title": "Codice tributo 4034 nel modello F24: quando si usa",
+      "url": "https://www.informazionefiscale.it/codice-tributo-4034-modello-F24-cos-e-e-a-cosa-si-riferisce-acconto-irpef",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-26T13:58:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "0637f564a31cc5a41f",
+      "title": "B&B e affittacamere nel mirino del Fisco: come sanare le omissioni sulle commissioni estere",
+      "url": "https://www.informazionefiscale.it/b-and-b-affittacamere-controlli-fisco-commissioni-estere-forfettari",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-26T12:32:18+00:00",
+      "category": "Locazioni e immobili",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "b065c47395139b0164",
+      "title": "Assegno unico: importo più alto dal 2027 con la rivalutazione",
+      "url": "https://www.informazionefiscale.it/aumento-assegno-unico-inps-2027-importo",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-26T12:14:28+00:00",
+      "category": "Famiglie e CAF",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "1617e4c933b0f4013b",
+      "title": "Saldo IMU 2026, la scadenza si avvicina. Tutto su esenzioni, agevolazioni e novità",
+      "url": "https://www.informazionefiscale.it/saldo-imu-2026-scadenza-esenzioni-agevolazioni-novita",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-26T11:45:50+00:00",
+      "category": "Successioni e tributi locali",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "daf308420055296ac9",
+      "title": "Pensioni: il recupero dell'inflazione più alto delle stime pesa su tagli e spesa pubblica",
+      "url": "https://www.informazionefiscale.it/pensioni-adeguamento-inflazione-tagli-assegni-rivalutazione-2027",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-26T10:41:28+00:00",
+      "category": "Famiglie e CAF",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "79df9bda3d116aa34a",
+      "title": "ISEE verso la scadenza, rinnovo obbligatorio per i bonus nel 2027",
+      "url": "https://www.informazionefiscale.it/isee-2027-rinnovo-bonus-scadenza",
+      "source": "Informazione Fiscale",
+      "published_at": "2026-11-26T10:36:54+00:00",
+      "category": "Famiglie e CAF",
+      "status": "accesso_gratuito_verificato"
+    },
     {
       "id": "884325a7edca335c46",
       "title": "Parola d'Ordine: gestione dell'impresa e continuità aziendale, il focus con R. Lombardi, ODCEC Roma",
@@ -13,11 +85,65 @@
       "status": "accesso_gratuito_verificato"
     },
     {
+      "id": "17d9579e5df9487f07",
+      "title": "Professionisti obbligo comunicazioni digitali con la PA nel nuovo Codice",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4861-nuovo-cad-obbligo-comunicazioni-digitali-con-la-pa-per-i-professionisti.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-26T00:00:00+00:00",
+      "category": "Aprire e gestire un’attività",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
       "id": "5c26d1d07395c813d6",
       "title": "Diritti dautore a non residenti quando non si applica la ritenuta del 30",
       "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4846-diritti-dautore-a-non-residenti-quando-non-si-applica-la-ritenuta-del-30.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-26T00:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "4568dd8694cb816aec",
+      "title": "Ore 11.08 – Cooperanti all'estero con contratto di collaborazione, le regole su compensi, contributi e assicurazione",
+      "url": "https://www.fiscal-focus.it/news,190537",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-25T23:00:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "1aa28e082e7e8a40d9",
+      "title": "Ore 14:22 - Saldo IMU 2026: conguaglio entro il 16 dicembre con le aliquote comunali aggiornate",
+      "url": "https://www.fiscal-focus.it/news,190622",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-25T23:00:00+00:00",
+      "category": "Successioni e tributi locali",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "015374674ddc547e3a",
+      "title": "Ore 12.47 – Radiazioni ionizzanti, nuovo Archivio nazionale per monitorare l'esposizione dei lavoratori",
+      "url": "https://www.fiscal-focus.it/news,190539",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-25T23:00:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "418b20f872a56f073a",
+      "title": "Ore 15:55 - Rottamazione-quinquies degli enti locali: la decadenza non fa rivivere il giudizio estinto",
+      "url": "https://www.fiscal-focus.it/news,190626",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-25T23:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "de0684beb666931323",
+      "title": "Ore 18:00 - Conferimento dello studio professionale in STP: neutralità fiscale subordinata al requisito organizzativo",
+      "url": "https://www.fiscal-focus.it/news,190628",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-25T23:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
       "status": "accesso_gratuito_verificato"
     },
@@ -76,12 +202,12 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "c8f3a9279491c2808a",
-      "title": "Rivalutazione pensioni da gennaio 2027 il decreto ministeriale",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4860-rivalutazione-pensioni-da-gennaio-2027-il-decreto.html",
+      "id": "c3919a48a4fd5ff8f3",
+      "title": "Detrazione IVA ristrutturazione immobili passaggio da strumentale ad abitazione",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4857-detrazione-iva-ristrutturazione-immobile-passaggio-da-strumentale-ad-abitatazione.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-25T00:00:00+00:00",
-      "category": "Famiglie e CAF",
+      "category": "Locazioni e immobili",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -94,12 +220,12 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "c3919a48a4fd5ff8f3",
-      "title": "Detrazione IVA ristrutturazione immobili passaggio da strumentale ad abitazione",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4857-detrazione-iva-ristrutturazione-immobile-passaggio-da-strumentale-ad-abitatazione.html",
+      "id": "b191eaf476d5ace65f",
+      "title": "Lavoratori esposti a radiazioni al via lArchivio nazionale",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4855-lavoratori-esposti-a-radiazioni-al-via-larchivio-nazionale.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-25T00:00:00+00:00",
-      "category": "Locazioni e immobili",
+      "category": "Lavoro e paghe",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -112,12 +238,12 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "b191eaf476d5ace65f",
-      "title": "Lavoratori esposti a radiazioni al via lArchivio nazionale",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4855-lavoratori-esposti-a-radiazioni-al-via-larchivio-nazionale.html",
+      "id": "c8f3a9279491c2808a",
+      "title": "Rivalutazione pensioni da gennaio 2027 il decreto ministeriale",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4860-rivalutazione-pensioni-da-gennaio-2027-il-decreto.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-25T00:00:00+00:00",
-      "category": "Lavoro e paghe",
+      "category": "Famiglie e CAF",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -130,12 +256,12 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "eb953510aa6964909b",
-      "title": "Ore 12:55 - Pensione in cumulo per i lavoratori delle organizzazioni internazionali: domanda online",
-      "url": "https://www.fiscal-focus.it/news,190427",
+      "id": "88a22479d597dce207",
+      "title": "Ore 16.24 – Contributi previdenziali non versati, la Cassazione esclude l'obbligo di chiamare in causa l'INPS",
+      "url": "https://www.fiscal-focus.it/news,190442",
       "source": "Fiscal Focus",
       "published_at": "2026-11-24T23:00:00+00:00",
-      "category": "Famiglie e CAF",
+      "category": "Lavoro e paghe",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -148,15 +274,6 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "882626ff0dfed6abbc",
-      "title": "Ore 12:34 - ETS non commerciali, dividendi imponibili con esclusione del 50% ma senza IRES ridotta",
-      "url": "https://www.fiscal-focus.it/news,190426",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-24T23:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
       "id": "b758b604c27a9ce7ee",
       "title": "Ore 09:12 - Cedolare secca per le locazioni alle imprese: le Sezioni Unite superano i limiti del Fisco",
       "url": "https://www.fiscal-focus.it/news,190423",
@@ -166,21 +283,30 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "88a22479d597dce207",
-      "title": "Ore 16.24 – Contributi previdenziali non versati, la Cassazione esclude l'obbligo di chiamare in causa l'INPS",
-      "url": "https://www.fiscal-focus.it/news,190442",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-24T23:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
       "id": "089f18ff20fa2e81d2",
       "title": "Ore 11:02 - Cambio di destinazione d’uso: IVA detraibile sui lavori di ristrutturazione, limiti per le spese successive",
       "url": "https://www.fiscal-focus.it/news,190425",
       "source": "Fiscal Focus",
       "published_at": "2026-11-24T23:00:00+00:00",
       "category": "Locazioni e immobili",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "eb953510aa6964909b",
+      "title": "Ore 12:55 - Pensione in cumulo per i lavoratori delle organizzazioni internazionali: domanda online",
+      "url": "https://www.fiscal-focus.it/news,190427",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-24T23:00:00+00:00",
+      "category": "Famiglie e CAF",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "882626ff0dfed6abbc",
+      "title": "Ore 12:34 - ETS non commerciali, dividendi imponibili con esclusione del 50% ma senza IRES ridotta",
+      "url": "https://www.fiscal-focus.it/news,190426",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-24T23:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -247,15 +373,6 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "46687cb2f1f28b3bbc",
-      "title": "Cooperanti con cococo allestero non si utilizzano le retribuzioni convenzionali",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4851-cooperanti-con-cococo-non-si-utilizzano-le-retribuzioni-convenzionali.html",
-      "source": "Fisco e Tasse",
-      "published_at": "2026-11-24T00:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
       "id": "ec3bc1238e8288a3a0",
       "title": "Grandi gruppi energetici ecco i codici tributo per imposte su utili",
       "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4850-grandi-gruppi-energetici-ecco-i-codici-tributo-per-imposte-su-utili.html",
@@ -265,21 +382,12 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "f7f3bf0fe95cf7c074",
-      "title": "Disegni 2026 contributi fino a 60000 euro domande dal 17 dicembre",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4845-disegni-2026-contributi-fino-a-60000-euro-domande-dal-17-dicembre.html",
+      "id": "46687cb2f1f28b3bbc",
+      "title": "Cooperanti con cococo allestero non si utilizzano le retribuzioni convenzionali",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4851-cooperanti-con-cococo-non-si-utilizzano-le-retribuzioni-convenzionali.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-24T00:00:00+00:00",
       "category": "Lavoro e paghe",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "4c43ac865f7a4e1e5e",
-      "title": "TARI da pagare anche senza avviso del Comune legittime le sanzioni",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4844-tari-da-pagare-anche-senza-avviso-del-comune-legittime-le-sanzioni.html",
-      "source": "Fisco e Tasse",
-      "published_at": "2026-11-24T00:00:00+00:00",
-      "category": "Successioni e tributi locali",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -292,11 +400,20 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "d235134c0083f98e28",
-      "title": "Ore 11.24 - SIISL e incentivi, anche l'UNILAV inviato dal portale regionale va collegato alla vacancy",
-      "url": "https://www.fiscal-focus.it/news,190379",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-23T23:00:00+00:00",
+      "id": "4c43ac865f7a4e1e5e",
+      "title": "TARI da pagare anche senza avviso del Comune legittime le sanzioni",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4844-tari-da-pagare-anche-senza-avviso-del-comune-legittime-le-sanzioni.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-24T00:00:00+00:00",
+      "category": "Successioni e tributi locali",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "f7f3bf0fe95cf7c074",
+      "title": "Disegni 2026 contributi fino a 60000 euro domande dal 17 dicembre",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4845-disegni-2026-contributi-fino-a-60000-euro-domande-dal-17-dicembre.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-24T00:00:00+00:00",
       "category": "Lavoro e paghe",
       "status": "accesso_gratuito_verificato"
     },
@@ -304,6 +421,15 @@
       "id": "ee6a4a9532cbc122b4",
       "title": "Ore 18:30 - TARI: il mancato invio dell’avviso di pagamento non esclude le sanzioni",
       "url": "https://www.fiscal-focus.it/news,190410",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-23T23:00:00+00:00",
+      "category": "Successioni e tributi locali",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "96a77d9f4ef566f514",
+      "title": "Ore 14:25 - IMU precompilata: debutto previsto con il saldo 2027",
+      "url": "https://www.fiscal-focus.it/news,190407",
       "source": "Fiscal Focus",
       "published_at": "2026-11-23T23:00:00+00:00",
       "category": "Successioni e tributi locali",
@@ -319,12 +445,12 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "96a77d9f4ef566f514",
-      "title": "Ore 14:25 - IMU precompilata: debutto previsto con il saldo 2027",
-      "url": "https://www.fiscal-focus.it/news,190407",
+      "id": "d235134c0083f98e28",
+      "title": "Ore 11.24 - SIISL e incentivi, anche l'UNILAV inviato dal portale regionale va collegato alla vacancy",
+      "url": "https://www.fiscal-focus.it/news,190379",
       "source": "Fiscal Focus",
       "published_at": "2026-11-23T23:00:00+00:00",
-      "category": "Successioni e tributi locali",
+      "category": "Lavoro e paghe",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -409,12 +535,12 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "f77a25834e368a3a95",
-      "title": "Addizionale sui bonus dei manager anche per le societ di consulenza",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4820-addizionale-sui-bonus-dei-manager-anche-per-le-societa-di-consulenza.html",
+      "id": "270d0a568d5018f7fa",
+      "title": "Esenzione IMU prima casa residenza e dimora necessarie anche durante i lavori",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4833-esenzione-imu-prima-casa-residenza-e-dimora-necessarie-anche-durante-i-lavori.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-23T00:00:00+00:00",
-      "category": "Aprire e gestire un’attività",
+      "category": "Successioni e tributi locali",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -427,21 +553,12 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "270d0a568d5018f7fa",
-      "title": "Esenzione IMU prima casa residenza e dimora necessarie anche durante i lavori",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4833-esenzione-imu-prima-casa-residenza-e-dimora-necessarie-anche-durante-i-lavori.html",
+      "id": "f77a25834e368a3a95",
+      "title": "Addizionale sui bonus dei manager anche per le societ di consulenza",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4820-addizionale-sui-bonus-dei-manager-anche-per-le-societa-di-consulenza.html",
       "source": "Fisco e Tasse",
       "published_at": "2026-11-23T00:00:00+00:00",
-      "category": "Successioni e tributi locali",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "0f9baeaecb5cf07b8e",
-      "title": "Ore 14:33 - ZES agricola 2026: comunicazione integrativa entro il 2 dicembre per non perdere il credito d’imposta",
-      "url": "https://www.fiscal-focus.it/news,190353",
-      "source": "Fiscal Focus",
-      "published_at": "2026-11-22T23:00:00+00:00",
-      "category": "Bandi e finanziamenti",
+      "category": "Aprire e gestire un’attività",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -454,18 +571,27 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "8ede367f9cf23dccc2",
-      "title": "Ore 10:25 - IVA sotto i 100 euro: avvisi bonari errati, come ottenere l’annullamento",
-      "url": "https://www.fiscal-focus.it/news,190350",
+      "id": "0f9baeaecb5cf07b8e",
+      "title": "Ore 14:33 - ZES agricola 2026: comunicazione integrativa entro il 2 dicembre per non perdere il credito d’imposta",
+      "url": "https://www.fiscal-focus.it/news,190353",
       "source": "Fiscal Focus",
       "published_at": "2026-11-22T23:00:00+00:00",
-      "category": "Dichiarazioni e Fisco",
+      "category": "Bandi e finanziamenti",
       "status": "accesso_gratuito_verificato"
     },
     {
       "id": "ce0391963b35dc45a9",
       "title": "Ore 09:06 - Fattura elettronica 2027: debutta il codice RF21 per il Terzo settore",
       "url": "https://www.fiscal-focus.it/news,190349",
+      "source": "Fiscal Focus",
+      "published_at": "2026-11-22T23:00:00+00:00",
+      "category": "Dichiarazioni e Fisco",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "8ede367f9cf23dccc2",
+      "title": "Ore 10:25 - IVA sotto i 100 euro: avvisi bonari errati, come ottenere l’annullamento",
+      "url": "https://www.fiscal-focus.it/news,190350",
       "source": "Fiscal Focus",
       "published_at": "2026-11-22T23:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
@@ -544,78 +670,6 @@
       "status": "accesso_gratuito_verificato"
     },
     {
-      "id": "6f419105f7b3f1a080",
-      "title": "Ape Sociale: ultima possibilità per la pensione anticipata in attesa del rinnovo al 2027",
-      "url": "https://www.informazionefiscale.it/ape-sociale-2026-scadenza-domanda-pensione-anticipata-rinnovo",
-      "source": "Informazione Fiscale",
-      "published_at": "2026-11-20T14:03:00+00:00",
-      "category": "Famiglie e CAF",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "90ff97a26803f2fad0",
-      "title": "Tutto sul bonus mamme: da esonero o contributo, un percorso a ostacoli",
-      "url": "https://www.informazionefiscale.it/bonus-mamme-2027-come-funziona-lavoratrici-madri-novita-contributo",
-      "source": "Informazione Fiscale",
-      "published_at": "2026-11-20T12:30:42+00:00",
-      "category": "Famiglie e CAF",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "9a554ef4bae1586b31",
-      "title": "Regime forfettario a 100.000 euro, la Manovra 2027 va in tilt sullo sconto INPS",
-      "url": "https://www.informazionefiscale.it/regime-forfettario-100000-euro-manovra-2027-sconto-contributi-inps",
-      "source": "Informazione Fiscale",
-      "published_at": "2026-11-20T11:53:21+00:00",
-      "category": "Lavoro e paghe",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "2b76e22e8bee747cab",
-      "title": "Tredicesima pensionati 2026: quando è pagata e come si calcola",
-      "url": "https://www.informazionefiscale.it/tredicesima-pensioni-2026-quando-arriva-pagamento-importo-calcolo",
-      "source": "Informazione Fiscale",
-      "published_at": "2026-11-20T10:23:44+00:00",
-      "category": "Famiglie e CAF",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "a71f1dc5c670415d03",
-      "title": "Targhe estere e flotte a noleggio, scatta la stretta del Fisco sull'IPT",
-      "url": "https://www.informazionefiscale.it/targhe-estere-noleggio-auto-novita-imposta-provinciale-trascrizione",
-      "source": "Informazione Fiscale",
-      "published_at": "2026-11-20T10:02:35+00:00",
-      "category": "Dichiarazioni e Fisco",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "50d5f3b5c822ef8bb4",
-      "title": "Ecobonus 2027 emendamento per salvaguardare i tetti di spesa dei lavori gi iniziati",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4825-ecobonus-2027-emendamento-per-salvaguardare-i-tetti-di-spesa-dei-lavori-gia-iniziati.html",
-      "source": "Fisco e Tasse",
-      "published_at": "2026-11-20T00:00:00+00:00",
-      "category": "Locazioni e immobili",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "f9d08deb5f4682f3b6",
-      "title": "Fotovoltaico sui tetti contributi fino all80 per adeguare le coperture degli edifici",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4822-fotovoltaico-sui-tetti-contributi-fino-all80-per-adeguare-le-coperture-degli-edifici.html",
-      "source": "Fisco e Tasse",
-      "published_at": "2026-11-20T00:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "151c13785b0d39ecf0",
-      "title": "INAIL e SIISL fermi per manutenzione tra il 20 e il 24 novembre",
-      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4828-inail-e-siisl-fermi-per-manutenzione-tra-il-20-e-il-24-novembre.html",
-      "source": "Fisco e Tasse",
-      "published_at": "2026-11-20T00:00:00+00:00",
-      "category": "Lavoro e paghe",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
       "id": "38b2c28ea169031f3c",
       "title": "Pensionati esteri bonus fiscale del 7 anche con il fondo SIPP",
       "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4824-pensionati-esteri-bonus-fiscale-del-7-anche-con-il-fondo-sipp.html",
@@ -631,6 +685,33 @@
       "source": "Fisco e Tasse",
       "published_at": "2026-11-20T00:00:00+00:00",
       "category": "Dichiarazioni e Fisco",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "50d5f3b5c822ef8bb4",
+      "title": "Ecobonus 2027 emendamento per salvaguardare i tetti di spesa dei lavori gi iniziati",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4825-ecobonus-2027-emendamento-per-salvaguardare-i-tetti-di-spesa-dei-lavori-gia-iniziati.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "category": "Locazioni e immobili",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "151c13785b0d39ecf0",
+      "title": "INAIL e SIISL fermi per manutenzione tra il 20 e il 24 novembre",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4828-inail-e-siisl-fermi-per-manutenzione-tra-il-20-e-il-24-novembre.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "category": "Lavoro e paghe",
+      "status": "accesso_gratuito_verificato"
+    },
+    {
+      "id": "f9d08deb5f4682f3b6",
+      "title": "Fotovoltaico sui tetti contributi fino all80 per adeguare le coperture degli edifici",
+      "url": "https://www.fiscoetasse.com/new-rassegna-stampa/4822-fotovoltaico-sui-tetti-contributi-fino-all80-per-adeguare-le-coperture-degli-edifici.html",
+      "source": "Fisco e Tasse",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "category": "Lavoro e paghe",
       "status": "accesso_gratuito_verificato"
     },
     {
@@ -685,33 +766,6 @@
       "source": "Fiscal Focus",
       "published_at": "2026-11-19T23:00:00+00:00",
       "category": "Aprire e gestire un’attività",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "f8422afe565e7208ed",
-      "title": "Pensionati italiani all'estero: come funziona la totalizzazione?",
-      "url": "https://www.informazionefiscale.it/pensioni-italiani-estero-totalizzazione",
-      "source": "Informazione Fiscale",
-      "published_at": "2026-11-19T15:18:00+00:00",
-      "category": "Famiglie e CAF",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "c2b32da4f0e5c4e022",
-      "title": "Il bonus prima casa diventa più accessibile: le novità nel DdL di Bilancio 2027",
-      "url": "https://www.informazionefiscale.it/bonus-prima-casa-novita-scadenze-legge-bilancio-2027",
-      "source": "Informazione Fiscale",
-      "published_at": "2026-11-19T13:25:31+00:00",
-      "category": "Locazioni e immobili",
-      "status": "accesso_gratuito_verificato"
-    },
-    {
-      "id": "fd56811130b5cd8ff2",
-      "title": "SIISL e offerte di lavoro: per quali bonus assunzione è obbligatorio pubblicare l'ID vacancy?",
-      "url": "https://www.informazionefiscale.it/offerta-lavoro-siisl-id-vacancy-quali-bonus-assunzione-lista-completa",
-      "source": "Informazione Fiscale",
-      "published_at": "2026-11-19T10:19:33+00:00",
-      "category": "Lavoro e paghe",
       "status": "accesso_gratuito_verificato"
     },
     {
