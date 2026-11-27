@@ -1,7 +1,15 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T13:39:27+00:00",
+  "updated_at": "2026-11-27T18:07:54+00:00",
   "items": [
+    {
+      "id": "39f028d409fc3d18b7",
+      "title": "Adempimento collaborativo, consultazione sul ravvedimento guidato",
+      "url": "https://www.fiscooggi.it/portale/-/adempimento-collaborativo-",
+      "source": "FiscoOggi Attualità",
+      "category": "Dichiarazioni e Fisco",
+      "published_at": "2026-11-27T16:51:00+00:00"
+    },
     {
       "id": "1aa74445fd268e6932",
       "title": "Gestione Separata: ricongiunzione con enti di previdenza obbligatoria",
@@ -97,14 +105,6 @@
       "source": "FiscoOggi Normativa",
       "category": "Dichiarazioni e Fisco",
       "published_at": "2026-11-24T18:30:00+00:00"
-    },
-    {
-      "id": "437835c47559aeb507",
-      "title": "Il cambio d’indirizzo dentro il comune non pregiudica il credito Zes previsto",
-      "url": "https://www.fiscooggi.it/portale/-/il-cambio-d-indirizzo-dentro-il-comune-non-pregiudica-il-credito-zes-previsto",
-      "source": "FiscoOggi Normativa",
-      "category": "Bandi e finanziamenti",
-      "published_at": "2026-11-24T17:49:00+00:00"
     },
     {
       "id": "9924320534f9342432",
