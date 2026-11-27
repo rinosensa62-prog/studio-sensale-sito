@@ -1,7 +1,15 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T08:41:24+00:00",
+  "updated_at": "2026-11-27T13:39:27+00:00",
   "items": [
+    {
+      "id": "1aa74445fd268e6932",
+      "title": "Gestione Separata: ricongiunzione con enti di previdenza obbligatoria",
+      "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.11.gestione-separata-ricongiunzione-con-enti-di-previdenza-obbligatoria.html",
+      "source": "INPS Notizie",
+      "category": "Lavoro e paghe",
+      "published_at": "2026-11-27T00:00:00+00:00"
+    },
     {
       "id": "213aa5beb84c3ead98",
       "title": "Precompilata: dagli enti locali nuovi dati su mensa e scuolabus",
@@ -126,14 +134,6 @@
       "id": "f49f71d1652d2a9c29",
       "title": "Ustioni e cicatrici nell’infortunato da lavoro: dalle cure ambulatoriali all’utilizzo delle tecnologie digitali per il trattamento e il reinserimento socio-lavorativo",
       "url": "https://www.inail.it/portale/it/inail-comunica/news/notizia.2026.11.ustioni-e-cicatrici-nell-infortunato-da-lavoro-dalle-cure-ambulatoriali-all-utilizzo-delle-tecnologie-digitali-per-il-trattamento-e-il-reinserimento-socio-lavorativo.html",
-      "source": "INAIL Notizie",
-      "category": "Lavoro e paghe",
-      "published_at": "2026-11-24T00:00:00+00:00"
-    },
-    {
-      "id": "c9ddf6a41c04837d92",
-      "title": "Protetti, online il quarto episodio: il lavoro che cambia, la tutela che si trasforma",
-      "url": "https://www.inail.it/portale/it/inail-comunica/news/notizia.2026.11.protetti--online-il-quarto-episodio--il-lavoro-che-cambia--la-tutela-che-si-trasforma.html",
       "source": "INAIL Notizie",
       "category": "Lavoro e paghe",
       "published_at": "2026-11-24T00:00:00+00:00"
