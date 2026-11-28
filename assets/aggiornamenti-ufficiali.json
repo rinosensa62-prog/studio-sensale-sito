@@ -1,7 +1,31 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T08:24:39+00:00",
+  "updated_at": "2026-11-28T13:25:21+00:00",
   "items": [
+    {
+      "id": "0dc3af86f20f0d1fdb",
+      "title": "CAMERA DI COMMERCIO, INDUSTRIA, ARTIGIANATO, TURISMO E AGRICOLTURA DI BOLZANO - COMUNICATO",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/28/26A06197/SG",
+      "source": "Gazzetta Ufficiale - Serie Generale",
+      "category": "Aprire e gestire un’attività",
+      "published_at": "2026-11-28T10:50:53+00:00"
+    },
+    {
+      "id": "65babd6c1890f6263a",
+      "title": "CAMERA DI COMMERCIO, INDUSTRIA, ARTIGIANATO E AGRICOLTURA DI TORINO - COMUNICATO",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/28/26A06196/SG",
+      "source": "Gazzetta Ufficiale - Serie Generale",
+      "category": "Aprire e gestire un’attività",
+      "published_at": "2026-11-28T10:50:53+00:00"
+    },
+    {
+      "id": "4028719eb536e5e261",
+      "title": "MINISTERO DELLE IMPRESE E DEL MADE IN ITALY - DECRETO 17 novembre 2026",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/28/26A06191/SG",
+      "source": "Gazzetta Ufficiale - Serie Generale",
+      "category": "Aprire e gestire un’attività",
+      "published_at": "2026-11-28T10:50:52+00:00"
+    },
     {
       "id": "39f028d409fc3d18b7",
       "title": "Adempimento collaborativo, consultazione sul ravvedimento guidato",
