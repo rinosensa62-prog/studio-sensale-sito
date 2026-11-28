@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T18:07:54+00:00",
+  "updated_at": "2026-11-28T08:24:39+00:00",
   "items": [
     {
       "id": "39f028d409fc3d18b7",
@@ -14,6 +14,22 @@
       "id": "1aa74445fd268e6932",
       "title": "Gestione Separata: ricongiunzione con enti di previdenza obbligatoria",
       "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.11.gestione-separata-ricongiunzione-con-enti-di-previdenza-obbligatoria.html",
+      "source": "INPS Notizie",
+      "category": "Lavoro e paghe",
+      "published_at": "2026-11-27T00:00:00+00:00"
+    },
+    {
+      "id": "efe1386c8362b5db25",
+      "title": "Contributi per disabilità e grave malattia: pubblicato bando 2026",
+      "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.11.contributi-per-disabilit-e-grave-malattia-pubblicato-bando-2026.html",
+      "source": "INPS Notizie",
+      "category": "Bandi e finanziamenti",
+      "published_at": "2026-11-27T00:00:00+00:00"
+    },
+    {
+      "id": "e00d944c1cc4d1c98a",
+      "title": "La video guida per pagare online i contributi dei lavoratori domestici",
+      "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.11.la-video-guida-per-pagare-online-i-contributi-dei-lavoratori-domestici.html",
       "source": "INPS Notizie",
       "category": "Lavoro e paghe",
       "published_at": "2026-11-27T00:00:00+00:00"
